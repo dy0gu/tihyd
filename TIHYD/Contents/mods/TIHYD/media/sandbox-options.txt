@@ -1,0 +1,65 @@
+VERSION = 1,
+
+option TIHYD.startingAge
+{
+	type = integer,
+	min = 18,
+	max = 90,
+	default = 25,
+	page = TIHYD,
+	translation = startingAge,
+}
+
+option TIHYD.isDeathEnabled
+{
+	type = boolean,
+	default = true,
+	page = TIHYD,
+	translation = isDeathEnabled,
+}
+
+option TIHYD.deathAge
+{
+	type = integer,
+	min = 56,
+	max = 130,
+	default = 75,
+	page = TIHYD,
+	translation = deathAge,
+}
+
+option TIHYD.isGrayHairEnabled
+{
+	type = boolean,
+	default = true,
+	page = TIHYD,
+	translation = isGrayHairEnabled,
+}
+
+option TIHYD.grayHairAge
+{
+	type = integer,
+	min = 30,
+	max = 90,
+	default = 45,
+	page = TIHYD,
+	translation = grayHairAge,
+}
+
+option TIHYD.isWhiteHairEnabled
+{
+	type = boolean,
+	default = true,
+	page = TIHYD,
+	translation = isWhiteHairEnabled,
+}
+
+option TIHYD.whiteHairAge
+{
+	type = integer,
+	min = 30,
+	max = 90,
+	default = 60,
+	page = TIHYD,
+	translation = whiteHairAge,
+}

@@ -1,0 +1,12 @@
+Sandbox_EN = {
+
+	Sandbox_TIHYD = "This Is How You Died",
+
+	Sandbox_startingAge = "Starting age:"
+	Sandbox_isDeathEnabled = "Can die of old age?",
+	Sandbox_deathAge = "Minimum age for death by old age:",
+	Sandbox_isGrayHairEnabled = "Does hair turn gray?",
+	Sandbox_grayHairAge = "Gray hair age:",
+	Sandbox_isWhiteHairEnabled = "Does hair turn white?",
+	Sandbox_whiteHairAge = "White hair age:",
+}
