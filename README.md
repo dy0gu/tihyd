@@ -19,3 +19,14 @@
     <img src="https://img.shields.io/badge/steam- subscribe-green" alt="Steam workshop link">
   </a>
 </p>
+
+<br>
+<h2></h2>
+<h2 align="center">
+  ©️ Acknowledgments
+  <br>
+  <br>
+</h2>
+<br>
+
+Thank you to all the contributors behind the [Umbrella](https://github.com/asledgehammer/Umbrella) collection, which provides EmmyLua typings for the Project Zomboid API, massively speeding up my development time!
