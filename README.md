@@ -23,10 +23,48 @@
 <br>
 <h2></h2>
 <h2 align="center">
+  🛠️ Installation
+  <br>
+  <br>
+</h2>
+<br>
+<br>
+
+<b>The following steps detail how to locally install the latest experimental build, if you want to play on a stable release you should subscribe to the mod on the Steam Workshop page instead.</b>
+<br>
+<br>
+
+* Clone the repository:
+  
+  ```
+  git clone https://github.com/Dy0gu/TIHYD.git
+  ```
+
+* Copy the `inner` TIHYD folder to PZ's mods folder:
+  <br>
+  <br>
+
+  * Windows
+    
+    ```
+    C:\Users\YOURNAME\Zomboid\Mods
+    ```
+  * MacOS / Linux
+    
+    ```
+    ~/Zomboid/Mods
+    ```
+    
+* Launch the game and activate the mod in the respective panel.
+
+<br>
+<h2></h2>
+<h2 align="center">
   ©️ Acknowledgments
   <br>
   <br>
 </h2>
+<br>
 <br>
 
 Thank you to all the contributors behind the [Umbrella](https://github.com/asledgehammer/Umbrella) collection, which provides EmmyLua typings for the Project Zomboid API, massively speeding up my development time!
