@@ -1,5 +1,5 @@
 version=1
 title=This Is How You Died
-description= Adds fully configurable death by old age.
+description=
 tags=
 visibility=public
