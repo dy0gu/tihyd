@@ -134,12 +134,12 @@ function TIHYD.tryDeath(player, age)
         healthiness = TIHYD.getHealthiness(player)
     end
 
-    local probability = TIHYD.clamp(((1 / (100 * math.exp(age * - 0.091))) - healthiness), 0, 100)
+    local chance = TIHYD.clamp(((1 / (100 * math.exp(age * - 0.091))) - healthiness), 0, 100)
     local random = ZombRand(0, 10001) / 100
-    local isDead = random < probability
+    local isDead = random < chance
 
     TIHYD.log("Player can die at his current age.")
-    TIHYD.log("Player has a " .. math.floor(probability) .. "% chance of dying of old age today!")
+    TIHYD.log("Player has a " .. math.floor(chance) .. "% chance of dying of old age today!")
     TIHYD.log("Player rolled a " .. math.floor(random) .. "%, which is " .. (isDead and "less, so they died." or "more, so they lived."))
 
     if isDead then
