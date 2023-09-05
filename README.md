@@ -34,27 +34,28 @@
 <br>
 <br>
 
-* Clone the repository:
-  
-  ```
+- Clone the repository:
+
+  ```shell
   git clone https://github.com/Dy0gu/TIHYD.git
   ```
 
-* Copy the `inner` TIHYD folder to PZ's mods folder:
+- Copy the `inner` TIHYD folder to PZ's mods folder:
   <br>
   <br>
 
-  * Windows
-    
-    ```
+  - Windows
+
+    ```shell
     C:\Users\YOURNAME\Zomboid\Mods
     ```
-  * MacOS / Linux
-    
-    ```
+
+  - MacOS / Linux
+
+    ```shell
     ~/Zomboid/Mods
     ```
-    
+
 <br>
 <h2></h2>
 <h2 align="center">
@@ -65,9 +66,7 @@
 <br>
 <br>
 
-
-* Launch the game and activate the mod in the respective panel.
-
+- Launch the game and activate the mod in the respective panel.
 
 <br>
 <h2></h2>
