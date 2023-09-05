@@ -55,7 +55,19 @@
     ~/Zomboid/Mods
     ```
     
+<br>
+<h2></h2>
+<h2 align="center">
+  🚩 Usage
+  <br>
+  <br>
+</h2>
+<br>
+<br>
+
+
 * Launch the game and activate the mod in the respective panel.
+
 
 <br>
 <h2></h2>
