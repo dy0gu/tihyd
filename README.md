@@ -30,8 +30,8 @@
 <br>
 <br>
 
-<b>The following steps detail how to locally install the latest experimental build, if you want to play on a stable release you should subscribe to the mod on the Steam Workshop page instead.</b>
-<br>
+> [!NOTE] 
+> The following steps detail how to locally install the latest experimental build, if you want to play on a stable release you should subscribe to the mod on the Steam Workshop page instead!
 <br>
 
 - Clone the repository:
