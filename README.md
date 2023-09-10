@@ -39,7 +39,8 @@
   ```shell
   git clone https://github.com/Dy0gu/TIHYD.git
   ```
-
+  
+  <br>
 - Copy the `inner` TIHYD folder to PZ's mods folder:
   <br>
   <br>
