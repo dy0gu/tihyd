@@ -15,6 +15,7 @@ luac.out
 
 # Shortcuts
 *.lnk
+*.url
 
 # Precompiled Headers
 *.gch
