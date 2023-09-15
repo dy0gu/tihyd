@@ -13,6 +13,9 @@ luac.out
 *.obj
 *.elf
 
+# Shortcuts
+*.lnk
+
 # Precompiled Headers
 *.gch
 *.pch
