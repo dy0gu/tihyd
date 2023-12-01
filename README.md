@@ -14,7 +14,7 @@ _The repository folder structure is in accordance with the PZ Steam Workshop gui
   git clone https://github.com/Dy0gu/TIHYD.git
   ```
 
-- Copy the inner `TIHYD` folder to the PZ mod folder or subscribe to it on the Steam Workshop.
+- Copy the inner `TIHYD` folder to the PZ mod folder.
   
 ## Usage ▶️ 
 
