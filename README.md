@@ -10,7 +10,7 @@
   TIHYD (pronounced <b>TIDE</b>) is a mod that focuses on adding fully configurable character aging functionality. Also know as "The mod you will never experience!", it is guaranteed to test your commitment to your favorite character. For more details please refer to the Steam page.
 </p>
 <p align="center">
-  <i>The repository folder structure is in accordance with the PZ Workshop guidelines.</i>
+  <i>The repository folder structure is in accordance with the PZ Steam Workshop guidelines.</i>
 </p>
 <br>
 
