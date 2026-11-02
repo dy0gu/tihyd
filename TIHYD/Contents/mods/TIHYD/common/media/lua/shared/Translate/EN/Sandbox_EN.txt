@@ -2,7 +2,7 @@ Sandbox_EN = {
 
 	Sandbox_TIHYD = "This Is How You Died",
 
-	Sandbox_startingAge = "Starting age:",
+
 		Sandbox_daysPerYear = "Days per year:",
 		Sandbox_daysPerYear_tooltip = "Number of in-game survival days that count as one year of character age. Useful with mods such as Surviving Through Seasons that change the length of a year. This only changes aging in TIHYD, not the game's calendar or day length. Default: 365.",
 	Sandbox_isDeathEnabled = "Can die of old age?",

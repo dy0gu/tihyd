@@ -1,0 +1,4 @@
+UI_EN = {
+    UI_TIHYD_StartingAge = "Starting age:",
+    UI_TIHYD_StartingAgeTooltip = "Your character's age when entering the world (18-90). Starts randomly selected. The character Random button also randomizes age. Each character keeps their own starting age.",
+}

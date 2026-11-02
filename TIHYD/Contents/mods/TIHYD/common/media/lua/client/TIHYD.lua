@@ -39,8 +39,7 @@ end
 ------------------------------------------------
 
 function TIHYD.build()
-    TIHYD.startingAge = TIHYD.getSandboxValue("TIHYD.startingAge", "number")
-        TIHYD.daysPerYear = TIHYD.getSandboxValue("TIHYD.daysPerYear", "number")
+    TIHYD.daysPerYear = TIHYD.getSandboxValue("TIHYD.daysPerYear", "number")
     TIHYD.isDeathEnabled = TIHYD.getSandboxValue("TIHYD.isDeathEnabled", "boolean")
     TIHYD.deathAge = TIHYD.getSandboxValue("TIHYD.deathAge", "number")
     TIHYD.isGrayHairEnabled = TIHYD.getSandboxValue("TIHYD.isGrayHairEnabled", "boolean")
@@ -49,20 +48,48 @@ function TIHYD.build()
     TIHYD.whiteHairAge = TIHYD.getSandboxValue("TIHYD.whiteHairAge", "number")
 end
 
-function TIHYD.init()
-    local player = getPlayer()
+function TIHYD.randomStartingAge()
+    return ZombRand(18, 91)
+end
 
+function TIHYD.getCharacterData(player)
+    local modData = player:getModData()
+    modData.TIHYD = modData.TIHYD or {}
+    local data = modData.TIHYD
+    if data.startingAge == nil then
+        local descriptor = player:getDescriptor()
+        local meta = descriptor and descriptor:getMeta()
+        local selectedAge = meta and meta.TIHYDStartingAge
+        if player:getHoursSurvived() == 0 then
+            data.startingAge = selectedAge or TIHYD.randomStartingAge()
+        else
+            -- Preserve current age when migrating a character without per-character data.
+            data.startingAge = player:getAge()
+                - math.floor(player:getHoursSurvived() / 24 / TIHYD.daysPerYear)
+        end
+        if meta then meta.TIHYDStartingAge = nil end
+    end
+    return data
+end
+
+function TIHYD.init(playerNum, player)
+    if not player or player:isDead() then return end
+    TIHYD.build()
     TIHYD.age(player, false)
+    TIHYD.updateVisual(player, player:getAge())
 end
 
 function TIHYD.main()
-    local player = getPlayer()
-
-    local age = TIHYD.age(player, true)
-    if not age then return end
-
-    TIHYD.updateVisual(player, age)
-    TIHYD.tryDeath(player, age)
+    for playerNum = 0, getNumActivePlayers() - 1 do
+        local player = getSpecificPlayer(playerNum)
+        if player and not player:isDead() then
+            local age = TIHYD.age(player, true)
+            if age then
+                TIHYD.updateVisual(player, age)
+                TIHYD.tryDeath(player, age)
+            end
+        end
+    end
 end
 
 function TIHYD.age(player, init)
@@ -73,7 +100,8 @@ function TIHYD.age(player, init)
     local lifespan = player:getHoursSurvived()
     local previousAge = player:getAge()
 
-    local newAge = TIHYD.startingAge + math.floor(lifespan / 24 / TIHYD.daysPerYear)
+    local newAge = TIHYD.getCharacterData(player).startingAge
+            + math.floor(lifespan / 24 / TIHYD.daysPerYear)
     player:setAge(newAge)
 
     local hasAged = newAge > previousAge
@@ -105,10 +133,12 @@ function TIHYD.updateVisual(player, age)
     local white = TIHYD.isWhiteHairEnabled and age >= TIHYD.whiteHairAge
 
     -- The color with highest age requirement takes priority if both requirements are met
-    if white and gray and TIHYD.whiteHairAge > TIHYD.grayHairAge then
-        gray = false
-    else
-        white = false
+    if white and gray then
+        if TIHYD.whiteHairAge > TIHYD.grayHairAge then
+            gray = false
+        else
+            white = false
+        end
     end
 
     if white then
@@ -198,5 +228,5 @@ function TIHYD.getHealthiness(player)
 end
 
 Events.OnInitGlobalModData.Add(TIHYD.build)
-Events.OnGameStart.Add(TIHYD.init)
+Events.OnCreatePlayer.Add(TIHYD.init)
 Events.EveryDays.Add(TIHYD.main)

@@ -1,20 +1,11 @@
 VERSION = 1,
 
-option TIHYD.startingAge
-{
-	type = integer,
-	min = 18,
-	max = 90,
-	default = 25,
-	page = TIHYD,
-	translation = startingAge,
-}
 
 option TIHYD.daysPerYear
 {
 	type = integer,
 	min = 1,
-	max = 36500,
+	max = 1000,
 	default = 365,
 	page = TIHYD,
 	translation = daysPerYear,
