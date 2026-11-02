@@ -40,6 +40,7 @@ end
 
 function TIHYD.build()
     TIHYD.startingAge = TIHYD.getSandboxValue("TIHYD.startingAge", "number")
+        TIHYD.daysPerYear = TIHYD.getSandboxValue("TIHYD.daysPerYear", "number")
     TIHYD.isDeathEnabled = TIHYD.getSandboxValue("TIHYD.isDeathEnabled", "boolean")
     TIHYD.deathAge = TIHYD.getSandboxValue("TIHYD.deathAge", "number")
     TIHYD.isGrayHairEnabled = TIHYD.getSandboxValue("TIHYD.isGrayHairEnabled", "boolean")
@@ -72,7 +73,7 @@ function TIHYD.age(player, init)
     local lifespan = player:getHoursSurvived()
     local previousAge = player:getAge()
 
-    local newAge = TIHYD.startingAge + math.floor(lifespan / 24 / 365)
+    local newAge = TIHYD.startingAge + math.floor(lifespan / 24 / TIHYD.daysPerYear)
     player:setAge(newAge)
 
     local hasAged = newAge > previousAge

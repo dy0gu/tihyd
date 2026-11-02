@@ -10,6 +10,16 @@ option TIHYD.startingAge
 	translation = startingAge,
 }
 
+option TIHYD.daysPerYear
+{
+	type = integer,
+	min = 1,
+	max = 36500,
+	default = 365,
+	page = TIHYD,
+	translation = daysPerYear,
+}
+
 option TIHYD.isDeathEnabled
 {
 	type = boolean,
