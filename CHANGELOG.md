@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/dy0gu/tihyd/compare/v2.0.0...v2.0.1) (2026-11-03)
+
+
+### Bug Fixes
+
+* Improve steam workshop description and documentation ([d165bcf](https://github.com/dy0gu/tihyd/commit/d165bcfdea8e5add65466f773aef9e1248ac1271))
+
 ## [2.0.0](https://github.com/dy0gu/tihyd/compare/v1.0.0...v2.0.0) (2026-11-03)
 
 
