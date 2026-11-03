@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Zile pe an",
-    "Sandbox_daysPerYear_tooltip": "Numărul de zile de supraviețuire în joc care echivalează cu un an din vârsta personajului. Util cu moduri precum Surviving Through Seasons, care modifică durata unui an. Această opțiune modifică doar îmbătrânirea în TIHYD, nu calendarul jocului sau durata zilei.",
+    "Sandbox_daysPerYear_tooltip": "Numărul de zile de supraviețuire în joc care echivalează cu un an din vârsta personajului. Util cu moduri precum Surviving Through Seasons, care modifică durata unui an. Această opțiune modifică doar îmbătrânirea în TIHYD, nu calendarul jocului sau durata zilei. Ziua în care personajul a fost creat în această lume este considerată data sa de naștere.",
     "Sandbox_isDeathEnabled": "Se poate muri de bătrânețe",
     "Sandbox_isDeathEnabled_tooltip": "Se efectuează o tragere la sorți o dată în fiecare zi din joc după vârsta minimă. Riscul zilnic este calculat din riscul anual folosind setarea „Zile pe an”.",
     "Sandbox_isTraitsConsidered": "Trăsăturile influențează mortalitatea de bătrânețe",
     "Sandbox_isTraitsConsidered_tooltip": "Trăsăturile fizice și de sănătate pot reduce sau crește riscul anual de mortalitate înainte de conversia acestuia în risc zilnic.",
     "Sandbox_deathAge": "Vârsta minimă pentru moartea de bătrânețe",
     "Sandbox_isGrayHairEnabled": "Părul devine cărunt",
+    "Sandbox_isGrayHairEnabled_tooltip": "Se verifică la fiecare aniversare și la încărcarea personajului. La atingerea sau depășirea vârstei pentru părul cărunt, culorile actuale ale părului și bărbii sunt înlocuite cu gri.",
     "Sandbox_grayHairAge": "Vârsta pentru părul cărunt"
 }

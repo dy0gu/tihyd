@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Dias por ano",
-    "Sandbox_daysPerYear_tooltip": "Número de dias de sobrevivência no jogo que contam como um ano de idade do personagem. Útil com mods como Surviving Through Seasons, que alteram a duração de um ano. Esta opção só altera o envelhecimento no TIHYD, não o calendário do jogo nem a duração do dia.",
+    "Sandbox_daysPerYear_tooltip": "Número de dias de sobrevivência no jogo que contam como um ano de idade do personagem. Útil com mods como Surviving Through Seasons, que alteram a duração de um ano. Esta opção só altera o envelhecimento no TIHYD, não o calendário do jogo nem a duração do dia. O dia em que o personagem foi criado neste mundo é considerado sua data de nascimento.",
     "Sandbox_isDeathEnabled": "É possível morrer de velhice",
     "Sandbox_isDeathEnabled_tooltip": "É realizado um sorteio por dia de jogo após a idade mínima. O risco diário é calculado a partir do risco anual usando a opção “Dias por ano”.",
     "Sandbox_isTraitsConsidered": "Os traços afetam a mortalidade por velhice",
     "Sandbox_isTraitsConsidered_tooltip": "Os traços físicos e de saúde podem reduzir ou aumentar o risco anual de mortalidade antes de ele ser convertido em risco diário.",
     "Sandbox_deathAge": "Idade mínima para morrer de velhice",
     "Sandbox_isGrayHairEnabled": "O cabelo fica grisalho",
+    "Sandbox_isGrayHairEnabled_tooltip": "A verificação é feita em cada aniversário e quando o personagem é carregado. Ao atingir ou ultrapassar a idade para o cabelo grisalho, as cores atuais do cabelo e da barba são substituídas por cinza.",
     "Sandbox_grayHairAge": "Idade para o cabelo grisalho"
 }

@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Days per year",
-    "Sandbox_daysPerYear_tooltip": "Number of in-game survival days that count as one year of character age. Useful with mods such as Surviving Through Seasons that change the length of a year. This only changes aging in TIHYD, not the game's calendar or day length.",
+    "Sandbox_daysPerYear_tooltip": "Number of in-game survival days that count as one year of character age. Useful with mods such as Surviving Through Seasons that change the length of a year. This only changes aging in TIHYD, not the game's calendar or day length. The day the character was created in this world is treated as their birthdate.",
     "Sandbox_isDeathEnabled": "Can die of old age",
     "Sandbox_isDeathEnabled_tooltip": "Rolls once each in-game day after the minimum age. Daily risk is derived from annual risk using Days per year.",
     "Sandbox_isTraitsConsidered": "Traits affect old-age mortality",
     "Sandbox_isTraitsConsidered_tooltip": "Physical and health traits can lower or raise annual mortality risk before it is converted to daily risk.",
     "Sandbox_deathAge": "Minimum age for death by old age",
     "Sandbox_isGrayHairEnabled": "Hair turns gray",
+    "Sandbox_isGrayHairEnabled_tooltip": "Checked on every birthday and when the character is loaded. At or above the gray hair age, the current hair and beard colors are overwritten with gray.",
     "Sandbox_grayHairAge": "Gray hair age"
 }

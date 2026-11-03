@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Päiviä vuodessa",
-    "Sandbox_daysPerYear_tooltip": "Pelissä selviydyttyjen päivien määrä, joka vastaa yhtä hahmon ikävuotta. Hyödyllinen vuoden pituutta muuttavien modien, kuten Surviving Through Seasons, kanssa. Tämä muuttaa vain TIHYD:n ikääntymistä, ei pelin kalenteria tai vuorokauden pituutta.",
+    "Sandbox_daysPerYear_tooltip": "Pelissä selviydyttyjen päivien määrä, joka vastaa yhtä hahmon ikävuotta. Hyödyllinen vuoden pituutta muuttavien modien, kuten Surviving Through Seasons, kanssa. Tämä muuttaa vain TIHYD:n ikääntymistä, ei pelin kalenteria tai vuorokauden pituutta. Päivää, jona hahmo luotiin tähän maailmaan, pidetään hahmon syntymäpäivänä.",
     "Sandbox_isDeathEnabled": "Vanhuuteen voi kuolla",
     "Sandbox_isDeathEnabled_tooltip": "Arvonta tehdään kerran jokaisena pelipäivänä vähimmäisiän ylittämisen jälkeen. Päivittäinen riski johdetaan vuosittaisesta riskistä asetuksen ”Päiviä vuodessa” avulla.",
     "Sandbox_isTraitsConsidered": "Ominaispiirteet vaikuttavat vanhuuskuolleisuuteen",
     "Sandbox_isTraitsConsidered_tooltip": "Fyysiset ja terveyteen liittyvät ominaispiirteet voivat pienentää tai suurentaa vuosittaista kuolleisuusriskiä ennen sen muuntamista päivittäiseksi riskiksi.",
     "Sandbox_deathAge": "Vähimmäisikä vanhuuteen kuolemiselle",
     "Sandbox_isGrayHairEnabled": "Hiukset harmaantuvat",
+    "Sandbox_isGrayHairEnabled_tooltip": "Tarkistetaan jokaisena syntymäpäivänä ja hahmoa ladattaessa. Kun hahmo on saavuttanut hiusten harmaantumisiän tai ylittänyt sen, nykyiset hiusten ja parran värit korvataan harmaalla.",
     "Sandbox_grayHairAge": "Hiusten harmaantumisikä"
 }

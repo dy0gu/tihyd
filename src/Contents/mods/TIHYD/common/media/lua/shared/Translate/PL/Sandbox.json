@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Dni w roku",
-    "Sandbox_daysPerYear_tooltip": "Liczba dni przetrwanych w grze, które liczą się jako jeden rok życia postaci. Przydatne z modami takimi jak Surviving Through Seasons, które zmieniają długość roku. Zmienia to tylko starzenie się w TIHYD, a nie kalendarz gry ani długość doby.",
+    "Sandbox_daysPerYear_tooltip": "Liczba dni przetrwanych w grze, które liczą się jako jeden rok życia postaci. Przydatne z modami takimi jak Surviving Through Seasons, które zmieniają długość roku. Zmienia to tylko starzenie się w TIHYD, a nie kalendarz gry ani długość doby. Dzień, w którym postać została utworzona w tym świecie, jest traktowany jako jej data urodzenia.",
     "Sandbox_isDeathEnabled": "Można umrzeć ze starości",
     "Sandbox_isDeathEnabled_tooltip": "Po przekroczeniu minimalnego wieku losowanie odbywa się raz na każdy dzień w grze. Dzienne ryzyko jest obliczane na podstawie rocznego ryzyka i ustawienia „Dni w roku”.",
     "Sandbox_isTraitsConsidered": "Cechy wpływają na śmiertelność ze starości",
     "Sandbox_isTraitsConsidered_tooltip": "Cechy fizyczne i zdrowotne mogą zmniejszać lub zwiększać roczne ryzyko śmierci przed przeliczeniem go na ryzyko dzienne.",
     "Sandbox_deathAge": "Minimalny wiek śmierci ze starości",
     "Sandbox_isGrayHairEnabled": "Włosy siwieją",
+    "Sandbox_isGrayHairEnabled_tooltip": "Sprawdzane w każde urodziny oraz podczas wczytywania postaci. Po osiągnięciu lub przekroczeniu wieku siwienia włosów obecne kolory włosów i brody są zastępowane szarym.",
     "Sandbox_grayHairAge": "Wiek siwienia włosów"
 }

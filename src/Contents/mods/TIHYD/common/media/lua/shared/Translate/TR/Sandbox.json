@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Yıl başına gün sayısı",
-    "Sandbox_daysPerYear_tooltip": "Karakterin yaşına bir yıl eklenmesi için gereken oyun içi hayatta kalma günü sayısı. Yılın uzunluğunu değiştiren Surviving Through Seasons gibi modlarla kullanışlıdır. Bu ayar yalnızca TIHYD'deki yaşlanmayı değiştirir; oyunun takvimini veya gün uzunluğunu değiştirmez.",
+    "Sandbox_daysPerYear_tooltip": "Karakterin yaşına bir yıl eklenmesi için gereken oyun içi hayatta kalma günü sayısı. Yılın uzunluğunu değiştiren Surviving Through Seasons gibi modlarla kullanışlıdır. Bu ayar yalnızca TIHYD'deki yaşlanmayı değiştirir; oyunun takvimini veya gün uzunluğunu değiştirmez. Karakterin bu dünyada oluşturulduğu gün, doğum tarihi olarak kabul edilir.",
     "Sandbox_isDeathEnabled": "Yaşlılıktan ölebilir",
     "Sandbox_isDeathEnabled_tooltip": "Asgari yaştan sonra her oyun gününde bir kez rastgele kontrol yapılır. Günlük risk, “Yıl başına gün sayısı” ayarı kullanılarak yıllık riskten hesaplanır.",
     "Sandbox_isTraitsConsidered": "Özellikler yaşlılıktan ölüm riskini etkiler",
     "Sandbox_isTraitsConsidered_tooltip": "Fiziksel ve sağlıkla ilgili özellikler, yıllık ölüm riskini günlük riske dönüştürülmeden önce azaltabilir veya artırabilir.",
     "Sandbox_deathAge": "Yaşlılıktan ölüm için asgari yaş",
     "Sandbox_isGrayHairEnabled": "Saçlar grileşir",
+    "Sandbox_isGrayHairEnabled_tooltip": "Her doğum gününde ve karakter yüklendiğinde kontrol edilir. Saçların grileşme yaşına ulaşıldığında veya bu yaş aşıldığında mevcut saç ve sakal renkleri griyle değiştirilir.",
     "Sandbox_grayHairAge": "Saçların grileşme yaşı"
 }

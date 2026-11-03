@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Tage pro Jahr",
-    "Sandbox_daysPerYear_tooltip": "Anzahl der im Spiel überlebten Tage, die als ein Lebensjahr des Charakters zählen. Nützlich mit Mods wie Surviving Through Seasons, die die Länge eines Jahres ändern. Dies ändert nur das Altern in TIHYD, nicht den Kalender oder die Tageslänge des Spiels.",
+    "Sandbox_daysPerYear_tooltip": "Anzahl der im Spiel überlebten Tage, die als ein Lebensjahr des Charakters zählen. Nützlich mit Mods wie Surviving Through Seasons, die die Länge eines Jahres ändern. Dies ändert nur das Altern in TIHYD, nicht den Kalender oder die Tageslänge des Spiels. Der Tag, an dem der Charakter in dieser Welt erstellt wurde, gilt als sein Geburtsdatum.",
     "Sandbox_isDeathEnabled": "Tod durch Altersschwäche möglich",
     "Sandbox_isDeathEnabled_tooltip": "Ab dem Mindestalter wird einmal pro Spieltag gewürfelt. Das tägliche Risiko wird anhand von Tage pro Jahr aus dem jährlichen Risiko berechnet.",
     "Sandbox_isTraitsConsidered": "Eigenschaften beeinflussen die Alterssterblichkeit",
     "Sandbox_isTraitsConsidered_tooltip": "Körperliche und gesundheitliche Eigenschaften können das jährliche Sterberisiko senken oder erhöhen, bevor es in ein tägliches Risiko umgerechnet wird.",
     "Sandbox_deathAge": "Mindestalter für Tod durch Altersschwäche",
     "Sandbox_isGrayHairEnabled": "Die Haare werden grau",
+    "Sandbox_isGrayHairEnabled_tooltip": "Wird an jedem Geburtstag und beim Laden des Charakters geprüft. Ab dem Alter für graue Haare werden die aktuellen Haar- und Bartfarben durch Grau ersetzt.",
     "Sandbox_grayHairAge": "Alter für graue Haare"
 }

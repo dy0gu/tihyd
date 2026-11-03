@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Jumlah hari per tahun",
-    "Sandbox_daysPerYear_tooltip": "Jumlah hari bertahan hidup di dalam gim yang dihitung sebagai satu tahun usia karakter. Berguna untuk mod seperti Surviving Through Seasons yang mengubah panjang satu tahun. Ini hanya mengubah penuaan di TIHYD, bukan kalender gim atau panjang satu hari.",
+    "Sandbox_daysPerYear_tooltip": "Jumlah hari bertahan hidup di dalam gim yang dihitung sebagai satu tahun usia karakter. Berguna untuk mod seperti Surviving Through Seasons yang mengubah panjang satu tahun. Ini hanya mengubah penuaan di TIHYD, bukan kalender gim atau panjang satu hari. Hari saat karakter dibuat di dunia ini dianggap sebagai tanggal lahirnya.",
     "Sandbox_isDeathEnabled": "Bisa meninggal karena usia tua",
     "Sandbox_isDeathEnabled_tooltip": "Pengundian dilakukan sekali setiap hari dalam gim setelah melewati usia minimum. Risiko harian dihitung dari risiko tahunan menggunakan pengaturan “Jumlah hari per tahun”.",
     "Sandbox_isTraitsConsidered": "Sifat memengaruhi kematian karena usia tua",
     "Sandbox_isTraitsConsidered_tooltip": "Sifat fisik dan kesehatan dapat menurunkan atau meningkatkan risiko kematian tahunan sebelum dikonversi menjadi risiko harian.",
     "Sandbox_deathAge": "Usia minimum untuk meninggal karena usia tua",
     "Sandbox_isGrayHairEnabled": "Rambut bisa menjadi abu-abu",
+    "Sandbox_isGrayHairEnabled_tooltip": "Diperiksa pada setiap ulang tahun dan saat karakter dimuat. Pada atau di atas usia rambut menjadi abu-abu, warna rambut dan janggut saat ini diganti dengan warna abu-abu.",
     "Sandbox_grayHairAge": "Usia rambut menjadi abu-abu"
 }

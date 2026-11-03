@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Dies per any",
-    "Sandbox_daysPerYear_tooltip": "Nombre de dies de supervivència dins del joc que compten com un any d'edat del personatge. Útil amb mods com Surviving Through Seasons, que canvien la durada d'un any. Això només modifica l'envelliment a TIHYD, no el calendari del joc ni la durada del dia.",
+    "Sandbox_daysPerYear_tooltip": "Nombre de dies de supervivència dins del joc que compten com un any d'edat del personatge. Útil amb mods com Surviving Through Seasons, que canvien la durada d'un any. Això només modifica l'envelliment a TIHYD, no el calendari del joc ni la durada del dia. El dia en què es va crear el personatge en aquest món es considera la seva data de naixement.",
     "Sandbox_isDeathEnabled": "Es pot morir de vellesa",
     "Sandbox_isDeathEnabled_tooltip": "Es fa una tirada cada dia del joc a partir de l’edat mínima. El risc diari es calcula a partir del risc anual amb Dies per any.",
     "Sandbox_isTraitsConsidered": "Els trets afecten la mortalitat per vellesa",
     "Sandbox_isTraitsConsidered_tooltip": "Els trets físics i de salut poden reduir o augmentar el risc anual de mort abans de convertir-lo en risc diari.",
     "Sandbox_deathAge": "Edat mínima per morir de vellesa",
     "Sandbox_isGrayHairEnabled": "Els cabells es tornen grisos",
+    "Sandbox_isGrayHairEnabled_tooltip": "Es comprova en cada aniversari i en carregar el personatge. En arribar a l’edat per als cabells grisos o superar-la, els colors actuals dels cabells i de la barba se substitueixen per gris.",
     "Sandbox_grayHairAge": "Edat per als cabells grisos"
 }

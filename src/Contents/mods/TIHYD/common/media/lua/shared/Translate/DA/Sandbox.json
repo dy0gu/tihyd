@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Dage pr. år",
-    "Sandbox_daysPerYear_tooltip": "Antal overlevede dage i spillet, der tæller som ét år af figurens alder. Nyttigt med mods som Surviving Through Seasons, der ændrer årets længde. Dette ændrer kun aldring i TIHYD, ikke spillets kalender eller døgnlængde.",
+    "Sandbox_daysPerYear_tooltip": "Antal overlevede dage i spillet, der tæller som ét år af figurens alder. Nyttigt med mods som Surviving Through Seasons, der ændrer årets længde. Dette ændrer kun aldring i TIHYD, ikke spillets kalender eller døgnlængde. Den dag, figuren blev oprettet i denne verden, regnes som figurens fødselsdato.",
     "Sandbox_isDeathEnabled": "Man kan dø af alderdom",
     "Sandbox_isDeathEnabled_tooltip": "Fra minimumsalderen foretages ét slag hver dag i spillet. Den daglige risiko beregnes ud fra den årlige risiko med Dage pr. år.",
     "Sandbox_isTraitsConsidered": "Egenskaber påvirker dødelighed ved alderdom",
     "Sandbox_isTraitsConsidered_tooltip": "Fysiske og helbredsmæssige egenskaber kan sænke eller øge den årlige dødsrisiko, før den omregnes til daglig risiko.",
     "Sandbox_deathAge": "Minimumsalder for at dø af alderdom",
     "Sandbox_isGrayHairEnabled": "Håret bliver gråt",
+    "Sandbox_isGrayHairEnabled_tooltip": "Kontrolleres på hver fødselsdag og ved indlæsning af figuren. Når alderen for gråt hår nås eller overskrides, erstattes de nuværende hår- og skægfarver med grå.",
     "Sandbox_grayHairAge": "Alder for gråt hår"
 }

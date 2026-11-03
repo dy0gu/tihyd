@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Mga araw bawat taon",
-    "Sandbox_daysPerYear_tooltip": "Bilang ng mga araw na nabuhay sa laro na katumbas ng isang taon sa edad ng karakter. Kapaki-pakinabang sa mga mod tulad ng Surviving Through Seasons na nagbabago sa haba ng isang taon. Pagtanda sa TIHYD lamang ang binabago nito, hindi ang kalendaryo ng laro o ang haba ng isang araw.",
+    "Sandbox_daysPerYear_tooltip": "Bilang ng mga araw na nabuhay sa laro na katumbas ng isang taon sa edad ng karakter. Kapaki-pakinabang sa mga mod tulad ng Surviving Through Seasons na nagbabago sa haba ng isang taon. Pagtanda sa TIHYD lamang ang binabago nito, hindi ang kalendaryo ng laro o ang haba ng isang araw. Ang araw kung kailan nilikha ang karakter sa mundong ito ay itinuturing na petsa ng kapanganakan nito.",
     "Sandbox_isDeathEnabled": "Maaaring mamatay sa katandaan",
     "Sandbox_isDeathEnabled_tooltip": "Isang beses na isinasagawa ang sapalarang pagsusuri bawat araw sa laro matapos lumampas sa pinakamababang edad. Kinakalkula ang pang-araw-araw na panganib mula sa taunang panganib gamit ang “Mga araw bawat taon”.",
     "Sandbox_isTraitsConsidered": "Nakaaapekto ang mga katangian sa pagkamatay sa katandaan",
     "Sandbox_isTraitsConsidered_tooltip": "Maaaring magpababa o magpataas ang mga katangiang pisikal at pangkalusugan ng taunang panganib ng pagkamatay bago ito gawing pang-araw-araw na panganib.",
     "Sandbox_deathAge": "Pinakamababang edad para mamatay sa katandaan",
     "Sandbox_isGrayHairEnabled": "Nagiging kulay-abo ang buhok",
+    "Sandbox_isGrayHairEnabled_tooltip": "Sinusuri sa bawat kaarawan at kapag nilo-load ang karakter. Kapag naabot o nalampasan na ang edad kung kailan nagiging kulay-abo ang buhok, pinapalitan ng kulay-abo ang kasalukuyang kulay ng buhok at balbas.",
     "Sandbox_grayHairAge": "Edad kung kailan nagiging kulay-abo ang buhok"
 }

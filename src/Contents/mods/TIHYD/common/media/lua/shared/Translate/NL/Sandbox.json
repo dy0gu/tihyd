@@ -1,12 +1,13 @@
 {
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Dagen per jaar",
-    "Sandbox_daysPerYear_tooltip": "Aantal overleefde dagen in het spel dat telt als één levensjaar van het personage. Handig bij mods zoals Surviving Through Seasons die de lengte van een jaar veranderen. Dit verandert alleen de veroudering in TIHYD, niet de kalender of de daglengte van het spel.",
+    "Sandbox_daysPerYear_tooltip": "Aantal overleefde dagen in het spel dat telt als één levensjaar van het personage. Handig bij mods zoals Surviving Through Seasons die de lengte van een jaar veranderen. Dit verandert alleen de veroudering in TIHYD, niet de kalender of de daglengte van het spel. De dag waarop het personage in deze wereld is aangemaakt, wordt als geboortedatum beschouwd.",
     "Sandbox_isDeathEnabled": "Het personage kan van ouderdom sterven",
     "Sandbox_isDeathEnabled_tooltip": "Na de minimumleeftijd wordt elke speldag één keer geloot. Het dagelijkse risico wordt afgeleid van het jaarlijkse risico met de instelling ‘Dagen per jaar’.",
     "Sandbox_isTraitsConsidered": "Eigenschappen beïnvloeden sterfte door ouderdom",
     "Sandbox_isTraitsConsidered_tooltip": "Lichamelijke en gezondheidseigenschappen kunnen het jaarlijkse sterfterisico verlagen of verhogen voordat het wordt omgerekend naar een dagelijks risico.",
     "Sandbox_deathAge": "Minimumleeftijd voor overlijden door ouderdom",
     "Sandbox_isGrayHairEnabled": "Het haar wordt grijs",
+    "Sandbox_isGrayHairEnabled_tooltip": "Wordt gecontroleerd op elke verjaardag en wanneer het personage wordt geladen. Vanaf de leeftijd voor grijs haar worden de huidige haar- en baardkleuren overschreven met grijs.",
     "Sandbox_grayHairAge": "Leeftijd voor grijs haar"
 }
