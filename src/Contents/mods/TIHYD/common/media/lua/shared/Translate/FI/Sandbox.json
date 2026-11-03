@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "Päiviä vuodessa",
+    "Sandbox_daysPerYear_tooltip": "Pelissä selviydyttyjen päivien määrä, joka vastaa yhtä hahmon ikävuotta. Hyödyllinen vuoden pituutta muuttavien modien, kuten Surviving Through Seasons, kanssa. Tämä muuttaa vain TIHYD:n ikääntymistä, ei pelin kalenteria tai vuorokauden pituutta.",
+    "Sandbox_isDeathEnabled": "Vanhuuteen voi kuolla",
+    "Sandbox_deathAge": "Vähimmäisikä vanhuuteen kuolemiselle",
+    "Sandbox_isGrayHairEnabled": "Hiukset harmaantuvat",
+    "Sandbox_grayHairAge": "Hiusten harmaantumisikä",
+    "Sandbox_isWhiteHairEnabled": "Hiukset muuttuvat valkoisiksi",
+    "Sandbox_whiteHairAge": "Hiusten valkoisiksi muuttumisen ikä"
+}

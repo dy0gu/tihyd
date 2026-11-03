@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "Dni w roku",
+    "Sandbox_daysPerYear_tooltip": "Liczba dni przetrwanych w grze, które liczą się jako jeden rok życia postaci. Przydatne z modami takimi jak Surviving Through Seasons, które zmieniają długość roku. Zmienia to tylko starzenie się w TIHYD, a nie kalendarz gry ani długość doby.",
+    "Sandbox_isDeathEnabled": "Można umrzeć ze starości",
+    "Sandbox_deathAge": "Minimalny wiek śmierci ze starości",
+    "Sandbox_isGrayHairEnabled": "Włosy siwieją",
+    "Sandbox_grayHairAge": "Wiek siwienia włosów",
+    "Sandbox_isWhiteHairEnabled": "Włosy stają się białe",
+    "Sandbox_whiteHairAge": "Wiek, w którym włosy stają się białe"
+}

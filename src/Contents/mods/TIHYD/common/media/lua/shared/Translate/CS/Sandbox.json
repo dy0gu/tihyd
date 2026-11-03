@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "Dní za rok",
+    "Sandbox_daysPerYear_tooltip": "Počet herních dní přežití, které se počítají jako jeden rok věku postavy. Užitečné s mody, jako je Surviving Through Seasons, které mění délku roku. Mění pouze stárnutí v TIHYD, nikoli herní kalendář ani délku dne.",
+    "Sandbox_isDeathEnabled": "Lze zemřít stářím",
+    "Sandbox_deathAge": "Minimální věk pro smrt stářím",
+    "Sandbox_isGrayHairEnabled": "Vlasy šedivějí",
+    "Sandbox_grayHairAge": "Věk zešedivění vlasů",
+    "Sandbox_isWhiteHairEnabled": "Vlasy bělají",
+    "Sandbox_whiteHairAge": "Věk zbělení vlasů"
+}

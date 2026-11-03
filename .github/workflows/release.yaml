@@ -1,0 +1,57 @@
+name: release
+
+on:
+  push:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  metadata:
+    runs-on: ubuntu-latest
+    outputs:
+      tag-name: ${{ steps.metadata.outputs.tag_name }}
+      release-created: ${{ steps.metadata.outputs.release_created }}
+    steps:
+      - name: Update project metadata and the release pull request
+        uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5.0.0
+        id: metadata
+        with:
+          config-file: release.json
+          manifest-file: .manifest.json
+
+  build:
+    needs: [metadata]
+    if: ${{ needs.metadata.outputs.release-created == 'true' }}
+    uses: ./.github/workflows/build.yaml
+    permissions:
+      contents: read
+
+
+  upload:
+    needs: [metadata, build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Workshop package
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          name: TIHYD
+          path: dist
+      - name: Append package to draft release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG_NAME: ${{ needs.metadata.outputs.tag-name }}
+        run: gh release upload "$TAG_NAME" dist/TIHYD.zip --clobber
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          TAG_NAME: ${{ needs.metadata.outputs.tag-name }}
+        run: gh release edit "$TAG_NAME" --draft=false

@@ -1,4 +1,12 @@
 {
-  "format.enable": true,
-  "workspace.library": ["./umbrella/library"]
+  "format.enable": false,
+  "workspace.library": ["./typings/library"],
+  "diagnostics.libraryFiles": "Disable",
+  "diagnostics.ignoredFiles": "Disable",
+  "workspace.ignoreDir": ["typings"],
+  "runtime.path": [
+    "?.lua",
+    "?/init.lua",
+    "src/Contents/mods/TIHYD/common/media/lua/client/?.lua"
+  ]
 }

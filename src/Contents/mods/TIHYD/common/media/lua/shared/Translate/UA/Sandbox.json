@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "Днів на рік",
+    "Sandbox_daysPerYear_tooltip": "Кількість прожитих у грі днів виживання, які зараховуються як один рік віку персонажа. Корисно з модами на кшталт Surviving Through Seasons, які змінюють тривалість року. Це змінює лише старіння в TIHYD, а не ігровий календар чи тривалість доби.",
+    "Sandbox_isDeathEnabled": "Можна померти від старості",
+    "Sandbox_deathAge": "Мінімальний вік смерті від старості",
+    "Sandbox_isGrayHairEnabled": "Волосся сивіє",
+    "Sandbox_grayHairAge": "Вік появи сивого волосся",
+    "Sandbox_isWhiteHairEnabled": "Волосся стає білим",
+    "Sandbox_whiteHairAge": "Вік появи білого волосся"
+}

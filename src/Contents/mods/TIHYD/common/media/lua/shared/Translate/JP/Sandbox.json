@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "1年あたりの日数",
+    "Sandbox_daysPerYear_tooltip": "キャラクターが1歳年を取るのに必要な、ゲーム内での生存日数です。1年の長さを変更する Surviving Through Seasons などのMODで役立ちます。この設定はTIHYDでの加齢のみを変更し、ゲームの暦や1日の長さは変更しません。",
+    "Sandbox_isDeathEnabled": "老衰で死亡する",
+    "Sandbox_deathAge": "老衰で死亡する最低年齢",
+    "Sandbox_isGrayHairEnabled": "髪が灰色になる",
+    "Sandbox_grayHairAge": "髪が灰色になる年齢",
+    "Sandbox_isWhiteHairEnabled": "髪が白くなる",
+    "Sandbox_whiteHairAge": "髪が白くなる年齢"
+}

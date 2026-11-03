@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "Yıl başına gün sayısı",
+    "Sandbox_daysPerYear_tooltip": "Karakterin yaşına bir yıl eklenmesi için gereken oyun içi hayatta kalma günü sayısı. Yılın uzunluğunu değiştiren Surviving Through Seasons gibi modlarla kullanışlıdır. Bu ayar yalnızca TIHYD'deki yaşlanmayı değiştirir; oyunun takvimini veya gün uzunluğunu değiştirmez.",
+    "Sandbox_isDeathEnabled": "Yaşlılıktan ölebilir",
+    "Sandbox_deathAge": "Yaşlılıktan ölüm için asgari yaş",
+    "Sandbox_isGrayHairEnabled": "Saçlar grileşir",
+    "Sandbox_grayHairAge": "Saçların grileşme yaşı",
+    "Sandbox_isWhiteHairEnabled": "Saçlar beyazlaşır",
+    "Sandbox_whiteHairAge": "Saçların beyazlaşma yaşı"
+}
