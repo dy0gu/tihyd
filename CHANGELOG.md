@@ -1,0 +1,19 @@
+# Changelog
+
+## [2.0.0](https://github.com/dy0gu/tihyd/compare/v1.0.0...v2.0.0) (2026-11-03)
+
+
+### ⚠ BREAKING CHANGES
+
+* add support for B42 ([#1](https://github.com/dy0gu/tihyd/issues/1))
+
+### Features
+
+* Add support for B42 ([#1](https://github.com/dy0gu/tihyd/issues/1)) ([33efb20](https://github.com/dy0gu/tihyd/commit/33efb206c552504c294cc7898f55a800841b5488))
+* Add translations for all game supported languages ([0104c1d](https://github.com/dy0gu/tihyd/commit/0104c1d6f50c743ce45165fc1ba856abc07e31c2))
+* Simplify aging appearance to gray hair only ([f8be874](https://github.com/dy0gu/tihyd/commit/f8be87419ceded25dfb4b28f8d9c8346fbd48ee7))
+
+
+### Bug Fixes
+
+* Make old-age mortality consistent with daily checks ([7634131](https://github.com/dy0gu/tihyd/commit/7634131074e8edfde024bae109e89367d3134774))
