@@ -7,7 +7,6 @@ function TIHYD.log(message)
     DebugLog.log(DebugType.Mod, TIHYD.NAME .. ": " .. message)
 end
 
-
 function TIHYD.clamp(value, min, max)
     if min and value < min then
         return min
