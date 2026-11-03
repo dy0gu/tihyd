@@ -2,7 +2,7 @@ package.path = "src/Contents/mods/TIHYD/common/media/lua/client/?.lua;" .. packa
 
 require("TIHYD/Appearance")
 
-TIHYD.log = function() end
+rawset(TIHYD, "log", function() end)
 TIHYD.grayHairAge = 45
 TIHYD.isGrayHairEnabled = true
 

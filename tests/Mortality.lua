@@ -2,7 +2,7 @@ package.path = "src/Contents/mods/TIHYD/common/media/lua/client/?.lua;" .. packa
 
 require("TIHYD/Mortality")
 
-TIHYD.log = function() end
+rawset(TIHYD, "log", function() end)
 
 local annualRisk = (1 / (100 * math.exp(75 * -0.091))) / 100
 

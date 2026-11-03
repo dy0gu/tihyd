@@ -19,20 +19,20 @@ getSpecificPlayer = function()
     return player
 end
 
-TIHYD.age = function()
+rawset(TIHYD, "age", function()
     return false
-end
+end)
 
-TIHYD.updateVisual = function()
+rawset(TIHYD, "updateVisual", function()
     error("Appearance must not update between birthdays")
-end
+end)
 
 local checks = 0
 
-TIHYD.tryDeath = function(_, age)
+rawset(TIHYD, "tryDeath", function(_, age)
     assert(age == 75, "Mortality must use the character's current age")
     checks = checks + 1
-end
+end)
 
 TIHYD.main()
 TIHYD.main()
