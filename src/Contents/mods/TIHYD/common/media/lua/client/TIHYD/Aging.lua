@@ -26,17 +26,13 @@ function TIHYD.main()
             local age = TIHYD.age(player, true)
             if age then
                 TIHYD.updateVisual(player, age)
-                TIHYD.tryDeath(player, age)
             end
+            TIHYD.tryDeath(player, player:getAge())
         end
     end
 end
 
 function TIHYD.age(player, init)
-    -- ONLY FOR DEBUG
-    -- player:setHoursSurvived(player:getHoursSurvived() + (24*364))
-    -- ONLY FOR DEBUG
-
     local lifespan = player:getHoursSurvived()
     local previousAge = player:getAge()
 
@@ -53,12 +49,12 @@ function TIHYD.age(player, init)
     end
 
     TIHYD.log("Updating player age!")
-    TIHYD.log("Player has survived for " .. math.floor(lifespan) .. " hours, making him " .. newAge .. " years old.")
+    TIHYD.log("Player has survived for " .. math.floor(lifespan) .. " hours, they are " .. newAge .. " years old.")
 
     if not hasAged then
         return false
     else
-        TIHYD.log("Player aged up since the last iteration! Hair color change and death will be checked...")
+        TIHYD.log("Player aged up since the last iteration!")
         -- Only return age if player aged this iteration, else return false
         return newAge
     end

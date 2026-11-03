@@ -19,6 +19,14 @@ option TIHYD.isDeathEnabled
 	translation = isDeathEnabled,
 }
 
+option TIHYD.isTraitsConsidered
+{
+	type = boolean,
+	default = true,
+	page = TIHYD,
+	translation = isTraitsConsidered,
+}
+
 option TIHYD.deathAge
 {
 	type = integer,

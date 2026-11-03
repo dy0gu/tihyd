@@ -1,10 +1,8 @@
 TIHYD = TIHYD or {}
 
-TIHYD.NAME = "TIHYD"
-TIHYD.VERSION = "1.0.0" -- x-release-please-version
 
 function TIHYD.log(message)
-    DebugLog.log(DebugType.Mod, TIHYD.NAME .. ": " .. message)
+    DebugLog.log(DebugType.Mod, "TIHYD: " .. message)
 end
 
 function TIHYD.clamp(value, min, max)
@@ -33,6 +31,7 @@ end
 function TIHYD.build()
     TIHYD.daysPerYear = TIHYD.getSandboxValue("TIHYD.daysPerYear", "number")
     TIHYD.isDeathEnabled = TIHYD.getSandboxValue("TIHYD.isDeathEnabled", "boolean")
+    TIHYD.isTraitsConsidered = TIHYD.getSandboxValue("TIHYD.isTraitsConsidered", "boolean")
     TIHYD.deathAge = TIHYD.getSandboxValue("TIHYD.deathAge", "number")
     TIHYD.isGrayHairEnabled = TIHYD.getSandboxValue("TIHYD.isGrayHairEnabled", "boolean")
     TIHYD.grayHairAge = TIHYD.getSandboxValue("TIHYD.grayHairAge", "number")

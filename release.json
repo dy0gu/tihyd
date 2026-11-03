@@ -13,10 +13,6 @@
         }
     ],
     "packages": {
-        ".": {
-            "extra-files": [
-                "src/Contents/mods/TIHYD/common/media/lua/client/TIHYD/Config.lua"
-            ]
-        }
+        ".": {}
     }
 }

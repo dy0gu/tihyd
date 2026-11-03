@@ -1,4 +1,4 @@
-name: lint & format
+name: lint & test
 
 on:
   push:
@@ -13,7 +13,7 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  lua:
+  mod:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
@@ -44,4 +44,13 @@ jobs:
           chmod +x /tmp/stylua/stylua
 
       - name: Check Lua formatting
-        run: /tmp/stylua/stylua --check src/Contents/mods/TIHYD/common/media/lua/client
+        run: /tmp/stylua/stylua --check src/Contents/mods/TIHYD/common/media/lua/client tests
+
+      - name: Install Lua
+        run: sudo apt-get update && sudo apt-get install --yes lua5.1
+
+      - name: Run Lua tests
+        run: |
+          for test in tests/*.lua; do
+            lua5.1 "$test"
+          done
