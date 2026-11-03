@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "ลักษณะนิสัยด้านร่างกายและสุขภาพอาจลดหรือเพิ่มความเสี่ยงการเสียชีวิตรายปีก่อนแปลงเป็นความเสี่ยงรายวัน",
     "Sandbox_deathAge": "อายุขั้นต่ำที่สามารถตายเพราะชรา",
     "Sandbox_isGrayHairEnabled": "ผมเปลี่ยนเป็นสีเทา",
-    "Sandbox_grayHairAge": "อายุที่ผมเปลี่ยนเป็นสีเทา",
-    "Sandbox_isWhiteHairEnabled": "ผมเปลี่ยนเป็นสีขาว",
-    "Sandbox_whiteHairAge": "อายุที่ผมเปลี่ยนเป็นสีขาว"
+    "Sandbox_grayHairAge": "อายุที่ผมเปลี่ยนเป็นสีเทา"
 }

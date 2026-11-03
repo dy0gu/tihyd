@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Fyysiset ja terveyteen liittyvät ominaispiirteet voivat pienentää tai suurentaa vuosittaista kuolleisuusriskiä ennen sen muuntamista päivittäiseksi riskiksi.",
     "Sandbox_deathAge": "Vähimmäisikä vanhuuteen kuolemiselle",
     "Sandbox_isGrayHairEnabled": "Hiukset harmaantuvat",
-    "Sandbox_grayHairAge": "Hiusten harmaantumisikä",
-    "Sandbox_isWhiteHairEnabled": "Hiukset muuttuvat valkoisiksi",
-    "Sandbox_whiteHairAge": "Hiusten valkoisiksi muuttumisen ikä"
+    "Sandbox_grayHairAge": "Hiusten harmaantumisikä"
 }

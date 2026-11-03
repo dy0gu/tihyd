@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "身体や健康に関する特性は、年間の死亡リスクを増減させます。その後、1日あたりのリスクに換算されます。",
     "Sandbox_deathAge": "老衰で死亡する最低年齢",
     "Sandbox_isGrayHairEnabled": "髪が灰色になる",
-    "Sandbox_grayHairAge": "髪が灰色になる年齢",
-    "Sandbox_isWhiteHairEnabled": "髪が白くなる",
-    "Sandbox_whiteHairAge": "髪が白くなる年齢"
+    "Sandbox_grayHairAge": "髪が灰色になる年齢"
 }

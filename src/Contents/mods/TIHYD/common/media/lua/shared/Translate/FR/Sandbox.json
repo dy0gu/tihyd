@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Les traits physiques et de santé peuvent diminuer ou augmenter le risque annuel de mortalité avant sa conversion en risque quotidien.",
     "Sandbox_deathAge": "Âge minimum pour mourir de vieillesse",
     "Sandbox_isGrayHairEnabled": "Les cheveux deviennent gris",
-    "Sandbox_grayHairAge": "Âge des cheveux gris",
-    "Sandbox_isWhiteHairEnabled": "Les cheveux deviennent blancs",
-    "Sandbox_whiteHairAge": "Âge des cheveux blancs"
+    "Sandbox_grayHairAge": "Âge des cheveux gris"
 }

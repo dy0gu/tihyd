@@ -54,21 +54,3 @@ option TIHYD.grayHairAge
 	page = TIHYD,
 	translation = grayHairAge,
 }
-
-option TIHYD.isWhiteHairEnabled
-{
-	type = boolean,
-	default = true,
-	page = TIHYD,
-	translation = isWhiteHairEnabled,
-}
-
-option TIHYD.whiteHairAge
-{
-	type = integer,
-	min = 30,
-	max = 90,
-	default = 60,
-	page = TIHYD,
-	translation = whiteHairAge,
-}

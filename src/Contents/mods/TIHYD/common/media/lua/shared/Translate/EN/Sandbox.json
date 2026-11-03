@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Physical and health traits can lower or raise annual mortality risk before it is converted to daily risk.",
     "Sandbox_deathAge": "Minimum age for death by old age",
     "Sandbox_isGrayHairEnabled": "Hair turns gray",
-    "Sandbox_grayHairAge": "Gray hair age",
-    "Sandbox_isWhiteHairEnabled": "Hair turns white",
-    "Sandbox_whiteHairAge": "White hair age"
+    "Sandbox_grayHairAge": "Gray hair age"
 }

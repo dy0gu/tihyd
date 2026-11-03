@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Fysiske og helserelaterte egenskaper kan senke eller øke den årlige dødsrisikoen før den omregnes til daglig risiko.",
     "Sandbox_deathAge": "Minimumsalder for å dø av alderdom",
     "Sandbox_isGrayHairEnabled": "Håret blir grått",
-    "Sandbox_grayHairAge": "Alder for grått hår",
-    "Sandbox_isWhiteHairEnabled": "Håret blir hvitt",
-    "Sandbox_whiteHairAge": "Alder for hvitt hår"
+    "Sandbox_grayHairAge": "Alder for grått hår"
 }

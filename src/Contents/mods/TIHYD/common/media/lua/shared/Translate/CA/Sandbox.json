@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Els trets físics i de salut poden reduir o augmentar el risc anual de mort abans de convertir-lo en risc diari.",
     "Sandbox_deathAge": "Edat mínima per morir de vellesa",
     "Sandbox_isGrayHairEnabled": "Els cabells es tornen grisos",
-    "Sandbox_grayHairAge": "Edat per als cabells grisos",
-    "Sandbox_isWhiteHairEnabled": "Els cabells es tornen blancs",
-    "Sandbox_whiteHairAge": "Edat per als cabells blancs"
+    "Sandbox_grayHairAge": "Edat per als cabells grisos"
 }

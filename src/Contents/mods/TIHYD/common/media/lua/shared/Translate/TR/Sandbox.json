@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Fiziksel ve sağlıkla ilgili özellikler, yıllık ölüm riskini günlük riske dönüştürülmeden önce azaltabilir veya artırabilir.",
     "Sandbox_deathAge": "Yaşlılıktan ölüm için asgari yaş",
     "Sandbox_isGrayHairEnabled": "Saçlar grileşir",
-    "Sandbox_grayHairAge": "Saçların grileşme yaşı",
-    "Sandbox_isWhiteHairEnabled": "Saçlar beyazlaşır",
-    "Sandbox_whiteHairAge": "Saçların beyazlaşma yaşı"
+    "Sandbox_grayHairAge": "Saçların grileşme yaşı"
 }

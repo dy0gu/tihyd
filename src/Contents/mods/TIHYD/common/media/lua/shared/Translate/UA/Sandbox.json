@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Фізичні риси та риси здоров’я можуть знижувати або підвищувати річний ризик смерті до його перетворення на добовий ризик.",
     "Sandbox_deathAge": "Мінімальний вік смерті від старості",
     "Sandbox_isGrayHairEnabled": "Волосся сивіє",
-    "Sandbox_grayHairAge": "Вік появи сивого волосся",
-    "Sandbox_isWhiteHairEnabled": "Волосся стає білим",
-    "Sandbox_whiteHairAge": "Вік появи білого волосся"
+    "Sandbox_grayHairAge": "Вік появи сивого волосся"
 }

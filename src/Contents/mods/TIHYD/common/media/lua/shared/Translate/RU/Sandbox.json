@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Физические черты и черты здоровья могут снижать или повышать годовой риск смерти до его преобразования в суточный риск.",
     "Sandbox_deathAge": "Минимальный возраст смерти от старости",
     "Sandbox_isGrayHairEnabled": "Волосы седеют",
-    "Sandbox_grayHairAge": "Возраст появления седых волос",
-    "Sandbox_isWhiteHairEnabled": "Волосы становятся белыми",
-    "Sandbox_whiteHairAge": "Возраст появления белых волос"
+    "Sandbox_grayHairAge": "Возраст появления седых волос"
 }

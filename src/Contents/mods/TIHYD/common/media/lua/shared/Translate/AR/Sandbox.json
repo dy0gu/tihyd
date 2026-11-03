@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Los rasgos físicos y de salud pueden reducir o aumentar el riesgo anual de muerte antes de convertirlo en riesgo diario.",
     "Sandbox_deathAge": "Edad mínima para morir de vejez",
     "Sandbox_isGrayHairEnabled": "El pelo se vuelve gris",
-    "Sandbox_grayHairAge": "Edad para el pelo gris",
-    "Sandbox_isWhiteHairEnabled": "El pelo se vuelve blanco",
-    "Sandbox_whiteHairAge": "Edad para el pelo blanco"
+    "Sandbox_grayHairAge": "Edad para el pelo gris"
 }

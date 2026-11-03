@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Tělesné a zdravotní vlastnosti mohou snížit nebo zvýšit roční riziko úmrtí před jeho přepočtem na denní riziko.",
     "Sandbox_deathAge": "Minimální věk pro smrt stářím",
     "Sandbox_isGrayHairEnabled": "Vlasy šedivějí",
-    "Sandbox_grayHairAge": "Věk zešedivění vlasů",
-    "Sandbox_isWhiteHairEnabled": "Vlasy bělají",
-    "Sandbox_whiteHairAge": "Věk zbělení vlasů"
+    "Sandbox_grayHairAge": "Věk zešedivění vlasů"
 }

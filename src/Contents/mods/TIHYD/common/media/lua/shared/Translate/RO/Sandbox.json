@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Trăsăturile fizice și de sănătate pot reduce sau crește riscul anual de mortalitate înainte de conversia acestuia în risc zilnic.",
     "Sandbox_deathAge": "Vârsta minimă pentru moartea de bătrânețe",
     "Sandbox_isGrayHairEnabled": "Părul devine cărunt",
-    "Sandbox_grayHairAge": "Vârsta pentru părul cărunt",
-    "Sandbox_isWhiteHairEnabled": "Părul devine alb",
-    "Sandbox_whiteHairAge": "Vârsta pentru părul alb"
+    "Sandbox_grayHairAge": "Vârsta pentru părul cărunt"
 }

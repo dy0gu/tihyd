@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Cechy fizyczne i zdrowotne mogą zmniejszać lub zwiększać roczne ryzyko śmierci przed przeliczeniem go na ryzyko dzienne.",
     "Sandbox_deathAge": "Minimalny wiek śmierci ze starości",
     "Sandbox_isGrayHairEnabled": "Włosy siwieją",
-    "Sandbox_grayHairAge": "Wiek siwienia włosów",
-    "Sandbox_isWhiteHairEnabled": "Włosy stają się białe",
-    "Sandbox_whiteHairAge": "Wiek, w którym włosy stają się białe"
+    "Sandbox_grayHairAge": "Wiek siwienia włosów"
 }

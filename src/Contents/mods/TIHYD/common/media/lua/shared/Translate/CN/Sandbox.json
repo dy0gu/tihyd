@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "身体和健康特征可以降低或提高年度死亡风险，然后再将其换算为每日风险。",
     "Sandbox_deathAge": "因年老而死亡的最低年龄",
     "Sandbox_isGrayHairEnabled": "头发会变灰",
-    "Sandbox_grayHairAge": "头发变灰的年龄",
-    "Sandbox_isWhiteHairEnabled": "头发会变白",
-    "Sandbox_whiteHairAge": "头发变白的年龄"
+    "Sandbox_grayHairAge": "头发变灰的年龄"
 }

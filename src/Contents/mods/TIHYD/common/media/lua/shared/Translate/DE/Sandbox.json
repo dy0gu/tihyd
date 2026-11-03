@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "Körperliche und gesundheitliche Eigenschaften können das jährliche Sterberisiko senken oder erhöhen, bevor es in ein tägliches Risiko umgerechnet wird.",
     "Sandbox_deathAge": "Mindestalter für Tod durch Altersschwäche",
     "Sandbox_isGrayHairEnabled": "Die Haare werden grau",
-    "Sandbox_grayHairAge": "Alter für graue Haare",
-    "Sandbox_isWhiteHairEnabled": "Die Haare werden weiß",
-    "Sandbox_whiteHairAge": "Alter für weiße Haare"
+    "Sandbox_grayHairAge": "Alter für graue Haare"
 }

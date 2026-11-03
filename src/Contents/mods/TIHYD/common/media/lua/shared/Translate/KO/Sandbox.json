@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "신체 및 건강 관련 특성은 연간 사망 위험을 낮추거나 높일 수 있으며, 이후 일일 위험으로 변환됩니다.",
     "Sandbox_deathAge": "노화로 사망할 수 있는 최소 나이",
     "Sandbox_isGrayHairEnabled": "머리카락이 회색으로 변함",
-    "Sandbox_grayHairAge": "머리카락이 회색으로 변하는 나이",
-    "Sandbox_isWhiteHairEnabled": "머리카락이 흰색으로 변함",
-    "Sandbox_whiteHairAge": "머리카락이 흰색으로 변하는 나이"
+    "Sandbox_grayHairAge": "머리카락이 회색으로 변하는 나이"
 }

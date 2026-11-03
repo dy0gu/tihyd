@@ -8,7 +8,5 @@
     "Sandbox_isTraitsConsidered_tooltip": "A fizikai és egészségi tulajdonságok csökkenthetik vagy növelhetik az éves halálozási kockázatot, mielőtt az napi kockázattá alakul.",
     "Sandbox_deathAge": "A végelgyengüléses halál alsó korhatára",
     "Sandbox_isGrayHairEnabled": "Szürkül a haj",
-    "Sandbox_grayHairAge": "A haj szürkülésének életkora",
-    "Sandbox_isWhiteHairEnabled": "Fehérré válik a haj",
-    "Sandbox_whiteHairAge": "A haj fehérré válásának életkora"
+    "Sandbox_grayHairAge": "A haj szürkülésének életkora"
 }
