@@ -1,6 +1,5 @@
 TIHYD = TIHYD or {}
 
-
 function TIHYD.log(message)
     DebugLog.log(DebugType.Mod, "TIHYD: " .. message)
 end
@@ -35,5 +34,4 @@ function TIHYD.build()
     TIHYD.deathAge = TIHYD.getSandboxValue("TIHYD.deathAge", "number")
     TIHYD.isGrayHairEnabled = TIHYD.getSandboxValue("TIHYD.isGrayHairEnabled", "boolean")
     TIHYD.grayHairAge = TIHYD.getSandboxValue("TIHYD.grayHairAge", "number")
-
 end
