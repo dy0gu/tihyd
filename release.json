@@ -1,0 +1,22 @@
+{
+    "release-type": "simple",
+    "separate-pull-requests": true,
+    "always-update": true,
+    "sequential-calls": true,
+    "draft": true,
+    "force-tag-creation": true,
+    "release-search-depth": 500,
+    "commit-search-depth": 1000,
+    "plugins": [
+        {
+            "type": "sentence-case"
+        }
+    ],
+    "packages": {
+        ".": {
+            "extra-files": [
+                "src/Contents/mods/TIHYD/common/media/lua/client/TIHYD/Config.lua"
+            ]
+        }
+    }
+}

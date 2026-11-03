@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "Mga araw bawat taon",
+    "Sandbox_daysPerYear_tooltip": "Bilang ng mga araw na nabuhay sa laro na katumbas ng isang taon sa edad ng karakter. Kapaki-pakinabang sa mga mod tulad ng Surviving Through Seasons na nagbabago sa haba ng isang taon. Pagtanda sa TIHYD lamang ang binabago nito, hindi ang kalendaryo ng laro o ang haba ng isang araw.",
+    "Sandbox_isDeathEnabled": "Maaaring mamatay sa katandaan",
+    "Sandbox_deathAge": "Pinakamababang edad para mamatay sa katandaan",
+    "Sandbox_isGrayHairEnabled": "Nagiging kulay-abo ang buhok",
+    "Sandbox_grayHairAge": "Edad kung kailan nagiging kulay-abo ang buhok",
+    "Sandbox_isWhiteHairEnabled": "Nagiging puti ang buhok",
+    "Sandbox_whiteHairAge": "Edad kung kailan nagiging puti ang buhok"
+}

@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "Dagen per jaar",
+    "Sandbox_daysPerYear_tooltip": "Aantal overleefde dagen in het spel dat telt als één levensjaar van het personage. Handig bij mods zoals Surviving Through Seasons die de lengte van een jaar veranderen. Dit verandert alleen de veroudering in TIHYD, niet de kalender of de daglengte van het spel.",
+    "Sandbox_isDeathEnabled": "Het personage kan van ouderdom sterven",
+    "Sandbox_deathAge": "Minimumleeftijd voor overlijden door ouderdom",
+    "Sandbox_isGrayHairEnabled": "Het haar wordt grijs",
+    "Sandbox_grayHairAge": "Leeftijd voor grijs haar",
+    "Sandbox_isWhiteHairEnabled": "Het haar wordt wit",
+    "Sandbox_whiteHairAge": "Leeftijd voor wit haar"
+}

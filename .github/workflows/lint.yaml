@@ -1,0 +1,47 @@
+name: lint & format
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lua:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+          submodules: true
+
+      - name: Install Lua language server
+        run: |
+          curl --fail --location --silent --show-error \
+            https://github.com/LuaLS/lua-language-server/releases/download/3.19.2/lua-language-server-3.19.2-linux-x64.tar.gz \
+            --output /tmp/luals.tar.gz
+          echo '93ad326b10f6c00911dd8c450fa098332dbd8f9f45d1052f5636a2d54479b947  /tmp/luals.tar.gz' | sha256sum --check
+          mkdir -p /tmp/luals
+          tar -xzf /tmp/luals.tar.gz -C /tmp/luals
+
+      - name: Lint using .luarc.json
+        # Existing game-API typing warnings remain visible in the editor; errors fail CI.
+        run: /tmp/luals/bin/lua-language-server --check=. --configpath=.luarc.json --checklevel=Error --logpath=/tmp/luals-logs
+
+      - name: Install StyLua
+        run: |
+          curl --fail --location --silent --show-error \
+            https://github.com/JohnnyMorganz/StyLua/releases/download/v2.6.0/stylua-linux-x86_64.zip \
+            --output /tmp/stylua.zip
+          echo 'a485f72bbfa22e4642e77a84b5edc2611a5cab7477b34e2e709dd8f78e919895  /tmp/stylua.zip' | sha256sum --check
+          mkdir -p /tmp/stylua
+          unzip -q /tmp/stylua.zip -d /tmp/stylua
+          chmod +x /tmp/stylua/stylua
+
+      - name: Check Lua formatting
+        run: /tmp/stylua/stylua --check src/Contents/mods/TIHYD/common/media/lua/client

@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "每年天数",
+    "Sandbox_daysPerYear_tooltip": "角色年龄每增加一岁所需的游戏内存活天数。适用于 Surviving Through Seasons 等会改变一年长度的模组。此设置只影响 TIHYD 中的衰老，不会改变游戏的日历或一天的长度。",
+    "Sandbox_isDeathEnabled": "会因年老而死亡",
+    "Sandbox_deathAge": "因年老而死亡的最低年龄",
+    "Sandbox_isGrayHairEnabled": "头发会变灰",
+    "Sandbox_grayHairAge": "头发变灰的年龄",
+    "Sandbox_isWhiteHairEnabled": "头发会变白",
+    "Sandbox_whiteHairAge": "头发变白的年龄"
+}

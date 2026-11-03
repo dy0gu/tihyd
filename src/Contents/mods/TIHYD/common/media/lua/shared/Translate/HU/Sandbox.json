@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "Napok száma évente",
+    "Sandbox_daysPerYear_tooltip": "A játékban túlélt napok száma, amely a karakter életkorának egy évével egyenértékű. Hasznos az év hosszát módosító modokkal, például a Surviving Through Seasons moddal. Ez csak a TIHYD öregedését módosítja, a játék naptárát és a nap hosszát nem.",
+    "Sandbox_isDeathEnabled": "Meg lehet halni végelgyengülésben",
+    "Sandbox_deathAge": "A végelgyengüléses halál alsó korhatára",
+    "Sandbox_isGrayHairEnabled": "Szürkül a haj",
+    "Sandbox_grayHairAge": "A haj szürkülésének életkora",
+    "Sandbox_isWhiteHairEnabled": "Fehérré válik a haj",
+    "Sandbox_whiteHairAge": "A haj fehérré válásának életkora"
+}

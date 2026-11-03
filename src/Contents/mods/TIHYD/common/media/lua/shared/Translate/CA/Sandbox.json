@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "Dies per any",
+    "Sandbox_daysPerYear_tooltip": "Nombre de dies de supervivència dins del joc que compten com un any d'edat del personatge. Útil amb mods com Surviving Through Seasons, que canvien la durada d'un any. Això només modifica l'envelliment a TIHYD, no el calendari del joc ni la durada del dia.",
+    "Sandbox_isDeathEnabled": "Es pot morir de vellesa",
+    "Sandbox_deathAge": "Edat mínima per morir de vellesa",
+    "Sandbox_isGrayHairEnabled": "Els cabells es tornen grisos",
+    "Sandbox_grayHairAge": "Edat per als cabells grisos",
+    "Sandbox_isWhiteHairEnabled": "Els cabells es tornen blancs",
+    "Sandbox_whiteHairAge": "Edat per als cabells blancs"
+}

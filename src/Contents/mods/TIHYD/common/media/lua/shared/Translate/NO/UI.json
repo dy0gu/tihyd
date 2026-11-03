@@ -1,0 +1,4 @@
+{
+    "UI_TIHYD_StartingAge": "Alder",
+    "UI_TIHYD_StartingAgeTooltip": "Figurens alder når den kommer inn i verden (18–90). Velges tilfeldig til å begynne med. Knappen for tilfeldig figur velger også en tilfeldig alder. Hver figur beholder sin egen startalder."
+}

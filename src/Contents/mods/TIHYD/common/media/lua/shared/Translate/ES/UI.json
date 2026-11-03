@@ -1,0 +1,4 @@
+{
+    "UI_TIHYD_StartingAge": "Edad",
+    "UI_TIHYD_StartingAgeTooltip": "La edad de tu personaje al entrar en el mundo (18-90). Se selecciona al azar inicialmente. El botón Aleatorio del personaje también elige la edad al azar. Cada personaje conserva su propia edad inicial."
+}

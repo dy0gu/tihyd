@@ -1,0 +1,4 @@
+{
+    "UI_TIHYD_StartingAge": "Életkor",
+    "UI_TIHYD_StartingAgeTooltip": "A karaktered életkora a világba lépéskor (18–90). Kezdetben véletlenszerűen kerül kiválasztásra. A karakter véletlenszerű létrehozására szolgáló gomb az életkort is véletlenszerűen választja ki. Minden karakter megőrzi a saját kezdő életkorát."
+}

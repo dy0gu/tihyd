@@ -1,5 +1,0 @@
-version=1
-title=This Is How You Died
-description=
-tags=
-visibility=public

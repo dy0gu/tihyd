@@ -1,0 +1,28 @@
+name: build
+
+on:
+  workflow_dispatch:
+  workflow_call:
+
+permissions:
+  contents: read
+
+jobs:
+  mod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+        with:
+
+          persist-credentials: false
+      - name: Zip Workshop package
+        working-directory: src
+        run: |
+          mkdir -p ../dist
+          zip -r ../dist/TIHYD.zip .
+      - name: Upload artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: TIHYD
+          path: dist/TIHYD.zip
+          if-no-files-found: error

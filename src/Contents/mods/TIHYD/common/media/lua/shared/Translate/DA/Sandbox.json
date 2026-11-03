@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "Dage pr. år",
+    "Sandbox_daysPerYear_tooltip": "Antal overlevede dage i spillet, der tæller som ét år af figurens alder. Nyttigt med mods som Surviving Through Seasons, der ændrer årets længde. Dette ændrer kun aldring i TIHYD, ikke spillets kalender eller døgnlængde.",
+    "Sandbox_isDeathEnabled": "Man kan dø af alderdom",
+    "Sandbox_deathAge": "Minimumsalder for at dø af alderdom",
+    "Sandbox_isGrayHairEnabled": "Håret bliver gråt",
+    "Sandbox_grayHairAge": "Alder for gråt hår",
+    "Sandbox_isWhiteHairEnabled": "Håret bliver hvidt",
+    "Sandbox_whiteHairAge": "Alder for hvidt hår"
+}

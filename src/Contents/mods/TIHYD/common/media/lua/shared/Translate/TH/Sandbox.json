@@ -1,0 +1,11 @@
+{
+    "Sandbox_TIHYD": "This Is How You Died",
+    "Sandbox_daysPerYear": "จำนวนวันต่อปี",
+    "Sandbox_daysPerYear_tooltip": "จำนวนวันที่เอาชีวิตรอดในเกมซึ่งนับเป็นอายุที่เพิ่มขึ้นหนึ่งปีของตัวละคร มีประโยชน์เมื่อใช้กับม็อดอย่าง Surviving Through Seasons ที่เปลี่ยนความยาวของหนึ่งปี การตั้งค่านี้เปลี่ยนเฉพาะการแก่ตัวใน TIHYD เท่านั้น ไม่เปลี่ยนปฏิทินของเกมหรือความยาวของหนึ่งวัน",
+    "Sandbox_isDeathEnabled": "ตายเพราะชราได้",
+    "Sandbox_deathAge": "อายุขั้นต่ำที่สามารถตายเพราะชรา",
+    "Sandbox_isGrayHairEnabled": "ผมเปลี่ยนเป็นสีเทา",
+    "Sandbox_grayHairAge": "อายุที่ผมเปลี่ยนเป็นสีเทา",
+    "Sandbox_isWhiteHairEnabled": "ผมเปลี่ยนเป็นสีขาว",
+    "Sandbox_whiteHairAge": "อายุที่ผมเปลี่ยนเป็นสีขาว"
+}
