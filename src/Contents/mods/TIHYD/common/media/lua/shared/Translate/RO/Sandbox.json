@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "Vârsta minimă pentru moartea de bătrânețe",
     "Sandbox_isGrayHairEnabled": "Părul devine cărunt",
     "Sandbox_isGrayHairEnabled_tooltip": "Se verifică la fiecare aniversare și la încărcarea personajului. La atingerea sau depășirea vârstei pentru părul cărunt, culorile actuale ale părului și bărbii sunt înlocuite cu gri.",
-    "Sandbox_grayHairAge": "Vârsta pentru părul cărunt"
+    "Sandbox_grayHairAge": "Vârsta pentru părul cărunt",
+    "Sandbox_isShortSightedEnabled": "Dezvoltă miopie",
+    "Sandbox_isShortSightedEnabled_tooltip": "Adaugă trăsătura Miopie la atingerea sau depășirea vârstei configurate, cu excepția cazului în care personajul are Vedere de vultur.",
+    "Sandbox_shortSightedAge": "Vârsta pentru miopie",
+    "Sandbox_isHardOfHearingEnabled": "Dezvoltă pierderea auzului",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Adaugă trăsătura Auz slab la atingerea sau depășirea vârstei configurate, cu excepția cazului în care personajul are Auz fin sau Surditate.",
+    "Sandbox_hardOfHearingAge": "Vârsta pentru pierderea auzului"
 }

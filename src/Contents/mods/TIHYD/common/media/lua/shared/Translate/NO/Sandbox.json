@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "Minimumsalder for å dø av alderdom",
     "Sandbox_isGrayHairEnabled": "Håret blir grått",
     "Sandbox_isGrayHairEnabled_tooltip": "Kontrolleres på hver fødselsdag og når figuren lastes inn. Ved eller over alderen for grått hår erstattes de nåværende hår- og skjeggfargene med grått.",
-    "Sandbox_grayHairAge": "Alder for grått hår"
+    "Sandbox_grayHairAge": "Alder for grått hår",
+    "Sandbox_isShortSightedEnabled": "Utvikle nærsynthet",
+    "Sandbox_isShortSightedEnabled_tooltip": "Legger til nærsynt ved eller over den angitte alderen, med mindre figuren har ørneblikk.",
+    "Sandbox_shortSightedAge": "Alder for nærsynthet",
+    "Sandbox_isHardOfHearingEnabled": "Utvikle nedsatt hørsel",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Legger til tunghørt ved eller over den angitte alderen, med mindre figuren har skarp hørsel eller er døv.",
+    "Sandbox_hardOfHearingAge": "Alder for nedsatt hørsel"
 }

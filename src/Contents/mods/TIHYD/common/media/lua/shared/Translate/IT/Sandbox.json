@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "Età minima per morire di vecchiaia",
     "Sandbox_isGrayHairEnabled": "I capelli diventano grigi",
     "Sandbox_isGrayHairEnabled_tooltip": "Il controllo viene effettuato a ogni compleanno e al caricamento del personaggio. Al raggiungimento o al superamento dell’età per i capelli grigi, i colori attuali dei capelli e della barba vengono sostituiti con il grigio.",
-    "Sandbox_grayHairAge": "Età per i capelli grigi"
+    "Sandbox_grayHairAge": "Età per i capelli grigi",
+    "Sandbox_isShortSightedEnabled": "Sviluppa miopia",
+    "Sandbox_isShortSightedEnabled_tooltip": "Aggiunge il tratto Miope dall'età impostata, salvo che il personaggio abbia Vista d'aquila.",
+    "Sandbox_shortSightedAge": "Età della miopia",
+    "Sandbox_isHardOfHearingEnabled": "Sviluppa perdita dell’udito",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Aggiunge il tratto Duro d'orecchi dall'età impostata, salvo che il personaggio abbia Udito acuto o Sordità.",
+    "Sandbox_hardOfHearingAge": "Età della perdita dell'udito"
+
 }

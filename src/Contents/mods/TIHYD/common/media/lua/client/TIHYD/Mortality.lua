@@ -37,7 +37,7 @@ function TIHYD.tryDeath(player, age)
 end
 
 function TIHYD.getHealthiness(player)
-    local traits = player:getTraits()
+    local traits = player:getCharacterTraits()
     local healthiness = 0
 
     ------------------------------------------------
@@ -45,16 +45,16 @@ function TIHYD.getHealthiness(player)
     ------------------------------------------------
 
     -- Traits that greatly lower the chance of death
-    local very_good_traits = { "Strong", "Athletic", "Resilient" }
+    local very_good_traits = { CharacterTrait.STRONG, CharacterTrait.ATHLETIC, CharacterTrait.RESILIENT }
     for _, trait in ipairs(very_good_traits) do
-        if traits:contains(trait) then
+        if traits:get(trait) then
             healthiness = healthiness + 5
         end
     end
     -- Traits that slightly lower the chance of death
-    local good_traits = { "Stout", "Fit", "Lucky" }
+    local good_traits = { CharacterTrait.STOUT, CharacterTrait.FIT }
     for _, trait in ipairs(good_traits) do
-        if traits:contains(trait) then
+        if traits:get(trait) then
             healthiness = healthiness + 2.5
         end
     end
@@ -64,16 +64,28 @@ function TIHYD.getHealthiness(player)
     ------------------------------------------------
 
     -- Traits that greatly raise the chance of death
-    local very_bad_traits = { "Obese", "VeryUnderweight", "Weak", "Unfit", "Smoker" }
+    local very_bad_traits = {
+            CharacterTrait.OBESE,
+            CharacterTrait.VERY_UNDERWEIGHT,
+            CharacterTrait.WEAK,
+            CharacterTrait.UNFIT,
+            CharacterTrait.SMOKER,
+        }
     for _, trait in ipairs(very_bad_traits) do
-        if traits:contains(trait) then
+        if traits:get(trait) then
             healthiness = healthiness - 5
         end
     end
     -- Traits that slightly raise the chance of death
-    local bad_traits = { "ProneToIllness", "Feeble", "Unlucky", "OutOfShape", "Underweight", "Overweight" }
+    local bad_traits = {
+            CharacterTrait.PRONE_TO_ILLNESS,
+            CharacterTrait.FEEBLE,
+            CharacterTrait.OUT_OF_SHAPE,
+            CharacterTrait.UNDERWEIGHT,
+            CharacterTrait.OVERWEIGHT,
+        }
     for _, trait in ipairs(bad_traits) do
-        if traits:contains(trait) then
+        if traits:get(trait) then
             healthiness = healthiness - 2.5
         end
     end

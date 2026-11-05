@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "A végelgyengüléses halál alsó korhatára",
     "Sandbox_isGrayHairEnabled": "Szürkül a haj",
     "Sandbox_isGrayHairEnabled_tooltip": "Az ellenőrzés minden születésnapon és a karakter betöltésekor történik. A haj szürkülésének életkorát elérve vagy azt meghaladva a haj és a szakáll jelenlegi színe szürkére változik.",
-    "Sandbox_grayHairAge": "A haj szürkülésének életkora"
+    "Sandbox_grayHairAge": "A haj szürkülésének életkora",
+    "Sandbox_isShortSightedEnabled": "Rövidlátás alakul ki",
+    "Sandbox_isShortSightedEnabled_tooltip": "A beállított kortól hozzáadja a rövidlátás tulajdonságot, kivéve, ha a karakter sasszemű.",
+    "Sandbox_shortSightedAge": "A rövidlátás életkora",
+    "Sandbox_isHardOfHearingEnabled": "Hallásvesztés alakul ki",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "A beállított kortól hozzáadja a nagyothallás tulajdonságot, kivéve, ha a karakter éles hallású vagy süket.",
+    "Sandbox_hardOfHearingAge": "A hallásvesztés életkora"
+
 }

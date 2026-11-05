@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "อายุขั้นต่ำที่สามารถตายเพราะชรา",
     "Sandbox_isGrayHairEnabled": "ผมเปลี่ยนเป็นสีเทา",
     "Sandbox_isGrayHairEnabled_tooltip": "ตรวจสอบในวันเกิดทุกครั้งและเมื่อโหลดตัวละคร เมื่อมีอายุถึงหรือเกินอายุที่ผมเปลี่ยนเป็นสีเทา สีผมและหนวดเคราปัจจุบันจะถูกแทนที่ด้วยสีเทา",
-    "Sandbox_grayHairAge": "อายุที่ผมเปลี่ยนเป็นสีเทา"
+    "Sandbox_grayHairAge": "อายุที่ผมเปลี่ยนเป็นสีเทา",
+    "Sandbox_isShortSightedEnabled": "เกิดสายตาสั้น",
+    "Sandbox_isShortSightedEnabled_tooltip": "เมื่ออายุถึงหรือเกินที่กำหนดจะเพิ่มลักษณะสายตาสั้น เว้นแต่ตัวละครมีสายตาเฉียบคม",
+    "Sandbox_shortSightedAge": "อายุที่เกิดสายตาสั้น",
+    "Sandbox_isHardOfHearingEnabled": "เกิดการสูญเสียการได้ยิน",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "เมื่ออายุถึงหรือเกินที่กำหนดจะเพิ่มลักษณะหูตึง เว้นแต่ตัวละครมีหูไวหรือหูหนวก",
+    "Sandbox_hardOfHearingAge": "อายุที่เกิดการสูญเสียการได้ยิน"
 }

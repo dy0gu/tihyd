@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "Âge minimum pour mourir de vieillesse",
     "Sandbox_isGrayHairEnabled": "Les cheveux deviennent gris",
     "Sandbox_isGrayHairEnabled_tooltip": "Vérification à chaque anniversaire et au chargement du personnage. À partir de l’âge des cheveux gris, les couleurs actuelles des cheveux et de la barbe sont remplacées par du gris.",
-    "Sandbox_grayHairAge": "Âge des cheveux gris"
+    "Sandbox_grayHairAge": "Âge des cheveux gris",
+    "Sandbox_isShortSightedEnabled": "Développe une myopie",
+    "Sandbox_isShortSightedEnabled_tooltip": "Ajoute le trait Myope à partir de l'âge défini, sauf si le personnage a le trait Œil de lynx.",
+    "Sandbox_shortSightedAge": "Âge de la myopie",
+    "Sandbox_isHardOfHearingEnabled": "Développe une perte auditive",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Ajoute le trait Malentendant à partir de l'âge défini, sauf si le personnage a le trait Ouïe fine ou Sourd.",
+    "Sandbox_hardOfHearingAge": "Âge de la perte auditive"
+
 }

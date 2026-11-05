@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "Usia minimum untuk meninggal karena usia tua",
     "Sandbox_isGrayHairEnabled": "Rambut bisa menjadi abu-abu",
     "Sandbox_isGrayHairEnabled_tooltip": "Diperiksa pada setiap ulang tahun dan saat karakter dimuat. Pada atau di atas usia rambut menjadi abu-abu, warna rambut dan janggut saat ini diganti dengan warna abu-abu.",
-    "Sandbox_grayHairAge": "Usia rambut menjadi abu-abu"
+    "Sandbox_grayHairAge": "Usia rambut menjadi abu-abu",
+    "Sandbox_isShortSightedEnabled": "Mengalami rabun jauh",
+    "Sandbox_isShortSightedEnabled_tooltip": "Menambahkan sifat rabun jauh mulai dari usia yang ditentukan, kecuali karakter memiliki mata elang.",
+    "Sandbox_shortSightedAge": "Usia rabun jauh",
+    "Sandbox_isHardOfHearingEnabled": "Mengalami gangguan pendengaran",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Menambahkan sifat kurang pendengaran mulai dari usia yang ditentukan, kecuali karakter memiliki pendengaran tajam atau tuli.",
+    "Sandbox_hardOfHearingAge": "Usia gangguan pendengaran"
+
 }

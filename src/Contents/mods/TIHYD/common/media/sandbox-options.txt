@@ -54,3 +54,39 @@ option TIHYD.grayHairAge
 	page = TIHYD,
 	translation = grayHairAge,
 }
+
+option TIHYD.isShortSightedEnabled
+{
+	type = boolean,
+	default = false,
+	page = TIHYD,
+	translation = isShortSightedEnabled,
+}
+
+option TIHYD.shortSightedAge
+{
+	type = integer,
+	min = 30,
+	max = 130,
+	default = 60,
+	page = TIHYD,
+	translation = shortSightedAge,
+}
+
+option TIHYD.isHardOfHearingEnabled
+{
+	type = boolean,
+	default = false,
+	page = TIHYD,
+	translation = isHardOfHearingEnabled,
+}
+
+option TIHYD.hardOfHearingAge
+{
+	type = integer,
+	min = 30,
+	max = 130,
+	default = 70,
+	page = TIHYD,
+	translation = hardOfHearingAge,
+}

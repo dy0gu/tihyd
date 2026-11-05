@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "Minimální věk pro smrt stářím",
     "Sandbox_isGrayHairEnabled": "Vlasy šedivějí",
     "Sandbox_isGrayHairEnabled_tooltip": "Kontroluje se při každých narozeninách a při načtení postavy. Po dosažení nebo překročení věku zešedivění vlasů se aktuální barva vlasů a vousů přepíše na šedou.",
-    "Sandbox_grayHairAge": "Věk zešedivění vlasů"
+    "Sandbox_grayHairAge": "Věk zešedivění vlasů",
+    "Sandbox_isShortSightedEnabled": "Rozvíjí se krátkozrakost",
+    "Sandbox_isShortSightedEnabled_tooltip": "Od nastaveného věku přidá vlastnost Krátkozrakost, pokud postava nemá Orlí zrak.",
+    "Sandbox_shortSightedAge": "Věk nástupu krátkozrakosti",
+    "Sandbox_isHardOfHearingEnabled": "Rozvíjí se ztráta sluchu",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Od nastaveného věku přidá vlastnost Nedoslýchavost, pokud postava nemá Ostrý sluch nebo Hluchotu.",
+    "Sandbox_hardOfHearingAge": "Věk nástupu nedoslýchavosti"
+
 }

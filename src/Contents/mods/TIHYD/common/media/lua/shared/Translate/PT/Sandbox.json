@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "Idade mínima para morrer de velhice",
     "Sandbox_isGrayHairEnabled": "O cabelo fica cinzento",
     "Sandbox_isGrayHairEnabled_tooltip": "A verificação é feita em cada aniversário e quando a personagem é carregada. Ao atingir ou ultrapassar a idade para o cabelo cinzento, as cores atuais do cabelo e da barba são substituídas por cinzento.",
-    "Sandbox_grayHairAge": "Idade para o cabelo cinzento"
+    "Sandbox_grayHairAge": "Idade para o cabelo cinzento",
+    "Sandbox_isShortSightedEnabled": "Desenvolver miopia",
+    "Sandbox_isShortSightedEnabled_tooltip": "Adiciona o traço Miopia ao atingir ou ultrapassar a idade configurada, a menos que a personagem tenha o traço Olho de Águia.",
+    "Sandbox_shortSightedAge": "Idade para a miopia",
+    "Sandbox_isHardOfHearingEnabled": "Desenvolver perda de audição",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Adiciona o traço Dificuldade Auditiva ao atingir ou ultrapassar a idade configurada, a menos que a personagem tenha o traço Audição Apurada ou Surdez.",
+    "Sandbox_hardOfHearingAge": "Idade para a perda de audição"
 }

@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "Minimumsalder for at dø af alderdom",
     "Sandbox_isGrayHairEnabled": "Håret bliver gråt",
     "Sandbox_isGrayHairEnabled_tooltip": "Kontrolleres på hver fødselsdag og ved indlæsning af figuren. Når alderen for gråt hår nås eller overskrides, erstattes de nuværende hår- og skægfarver med grå.",
-    "Sandbox_grayHairAge": "Alder for gråt hår"
+    "Sandbox_grayHairAge": "Alder for gråt hår",
+    "Sandbox_isShortSightedEnabled": "Udvikler nærsynethed",
+    "Sandbox_isShortSightedEnabled_tooltip": "Tilføjer egenskaben Nærsynet fra den indstillede alder, medmindre figuren har Ørnesyn.",
+    "Sandbox_shortSightedAge": "Alder for nærsynethed",
+    "Sandbox_isHardOfHearingEnabled": "Udvikler høretab",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Tilføjer egenskaben Hørehæmmet fra den indstillede alder, medmindre figuren har Skarp hørelse eller er døv.",
+    "Sandbox_hardOfHearingAge": "Alder for høretab"
+
 }

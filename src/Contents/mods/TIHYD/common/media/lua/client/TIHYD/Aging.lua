@@ -1,5 +1,6 @@
 require("TIHYD/CharacterData")
 require("TIHYD/Appearance")
+require("TIHYD/Traits")
 require("TIHYD/Mortality")
 
 function TIHYD.init(playerNum, player)
@@ -7,15 +8,16 @@ function TIHYD.init(playerNum, player)
         return
     end
     TIHYD.build()
-    TIHYD.age(player, false)
-    TIHYD.updateVisual(player, player:getAge())
+    local age = TIHYD.age(player, false)
+    TIHYD.updateVisual(player, age)
+    TIHYD.updateAgingTraits(player, age)
     TIHYD.log(
         "OnCreatePlayer: player="
             .. tostring(playerNum)
             .. ", savedStartingAge="
             .. tostring(player:getModData().TIHYD.startingAge)
             .. ", currentAge="
-            .. tostring(player:getAge())
+            .. tostring(age)
     )
 end
 
@@ -23,11 +25,12 @@ function TIHYD.main()
     for playerNum = 0, getNumActivePlayers() - 1 do
         local player = getSpecificPlayer(playerNum)
         if player and not player:isDead() then
-            local age = TIHYD.age(player, true)
-            if age then
+            local age, hasAged = TIHYD.age(player, true)
+            if hasAged then
                 TIHYD.updateVisual(player, age)
+                TIHYD.updateAgingTraits(player, age)
             end
-            TIHYD.tryDeath(player, player:getAge())
+            TIHYD.tryDeath(player, age)
         end
     end
 end
@@ -45,17 +48,14 @@ function TIHYD.age(player, init)
         TIHYD.log("Initializing player age!")
         TIHYD.log("Player age (" .. newAge .. ") loaded.")
         -- Ignore first iteration because setting the age would count as aging
-        return false
+        return newAge, false
     end
 
     TIHYD.log("Updating player age!")
     TIHYD.log("Player has survived for " .. math.floor(lifespan) .. " hours, they are " .. newAge .. " years old.")
 
-    if not hasAged then
-        return false
-    else
+    if hasAged then
         TIHYD.log("Player aged up since the last iteration!")
-        -- Only return age if player aged this iteration, else return false
-        return newAge
     end
+    return newAge, hasAged
 end

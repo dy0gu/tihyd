@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "Yaşlılıktan ölüm için asgari yaş",
     "Sandbox_isGrayHairEnabled": "Saçlar grileşir",
     "Sandbox_isGrayHairEnabled_tooltip": "Her doğum gününde ve karakter yüklendiğinde kontrol edilir. Saçların grileşme yaşına ulaşıldığında veya bu yaş aşıldığında mevcut saç ve sakal renkleri griyle değiştirilir.",
-    "Sandbox_grayHairAge": "Saçların grileşme yaşı"
+    "Sandbox_grayHairAge": "Saçların grileşme yaşı",
+    "Sandbox_isShortSightedEnabled": "Miyopluk gelişir",
+    "Sandbox_isShortSightedEnabled_tooltip": "Karakterde Kartal Gözü özelliği yoksa, belirlenen yaşa ulaşıldığında veya bu yaş aşıldığında Miyop özelliği eklenir.",
+    "Sandbox_shortSightedAge": "Miyopluk yaşı",
+    "Sandbox_isHardOfHearingEnabled": "İşitme kaybı gelişir",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Karakterde Keskin İşitme veya Sağırlık özelliği yoksa, belirlenen yaşa ulaşıldığında veya bu yaş aşıldığında İşitme Güçlüğü özelliği eklenir.",
+    "Sandbox_hardOfHearingAge": "İşitme kaybı yaşı"
 }

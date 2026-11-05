@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "Minimumleeftijd voor overlijden door ouderdom",
     "Sandbox_isGrayHairEnabled": "Het haar wordt grijs",
     "Sandbox_isGrayHairEnabled_tooltip": "Wordt gecontroleerd op elke verjaardag en wanneer het personage wordt geladen. Vanaf de leeftijd voor grijs haar worden de huidige haar- en baardkleuren overschreven met grijs.",
-    "Sandbox_grayHairAge": "Leeftijd voor grijs haar"
+    "Sandbox_grayHairAge": "Leeftijd voor grijs haar",
+    "Sandbox_isShortSightedEnabled": "Bijziendheid ontwikkelen",
+    "Sandbox_isShortSightedEnabled_tooltip": "Voegt vanaf de ingestelde leeftijd de eigenschap Bijziend toe, tenzij het personage Arendsogen heeft.",
+    "Sandbox_shortSightedAge": "Leeftijd voor bijziendheid",
+    "Sandbox_isHardOfHearingEnabled": "Gehoorverlies ontwikkelen",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Voegt vanaf de ingestelde leeftijd de eigenschap Slechthorend toe, tenzij het personage Scherp gehoor of Doof heeft.",
+    "Sandbox_hardOfHearingAge": "Leeftijd voor gehoorverlies"
 }

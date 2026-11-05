@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "Vähimmäisikä vanhuuteen kuolemiselle",
     "Sandbox_isGrayHairEnabled": "Hiukset harmaantuvat",
     "Sandbox_isGrayHairEnabled_tooltip": "Tarkistetaan jokaisena syntymäpäivänä ja hahmoa ladattaessa. Kun hahmo on saavuttanut hiusten harmaantumisiän tai ylittänyt sen, nykyiset hiusten ja parran värit korvataan harmaalla.",
-    "Sandbox_grayHairAge": "Hiusten harmaantumisikä"
+    "Sandbox_grayHairAge": "Hiusten harmaantumisikä",
+    "Sandbox_isShortSightedEnabled": "Kehittää likinäköisyyden",
+    "Sandbox_isShortSightedEnabled_tooltip": "Lisää likinäköisyysominaisuuden asetetusta iästä alkaen, ellei hahmolla ole kotkansilmää.",
+    "Sandbox_shortSightedAge": "Likinäköisyyden alkamisikä",
+    "Sandbox_isHardOfHearingEnabled": "Kehittää kuulonaleneman",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Lisää huonokuuloisuusominaisuuden asetetusta iästä alkaen, ellei hahmolla ole tarkkaa kuuloa tai kuuroutta.",
+    "Sandbox_hardOfHearingAge": "Kuulonaleneman alkamisikä"
+
 }

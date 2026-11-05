@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "Minimalny wiek śmierci ze starości",
     "Sandbox_isGrayHairEnabled": "Włosy siwieją",
     "Sandbox_isGrayHairEnabled_tooltip": "Sprawdzane w każde urodziny oraz podczas wczytywania postaci. Po osiągnięciu lub przekroczeniu wieku siwienia włosów obecne kolory włosów i brody są zastępowane szarym.",
-    "Sandbox_grayHairAge": "Wiek siwienia włosów"
+    "Sandbox_grayHairAge": "Wiek siwienia włosów",
+    "Sandbox_isShortSightedEnabled": "Rozwija krótkowzroczność",
+    "Sandbox_isShortSightedEnabled_tooltip": "Po osiągnięciu ustawionego wieku dodaje cechę Krótkowzroczność, chyba że postać ma cechę Sokoli wzrok.",
+    "Sandbox_shortSightedAge": "Wiek wystąpienia krótkowzroczności",
+    "Sandbox_isHardOfHearingEnabled": "Rozwija niedosłuch",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Po osiągnięciu ustawionego wieku dodaje cechę Niedosłuch, chyba że postać ma cechę Wyostrzony słuch lub Głuchota.",
+    "Sandbox_hardOfHearingAge": "Wiek wystąpienia niedosłuchu"
 }

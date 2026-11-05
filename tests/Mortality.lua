@@ -22,15 +22,24 @@ TIHYD.deathAge = 75
 
 local deaths = 0
 local rolls = 0
+CharacterTrait = {}
+for _, name in ipairs({
+    "STRONG", "ATHLETIC", "RESILIENT", "STOUT", "FIT", "OBESE", "VERY_UNDERWEIGHT", "WEAK", "UNFIT", "SMOKER",
+    "PRONE_TO_ILLNESS", "FEEBLE", "OUT_OF_SHAPE", "UNDERWEIGHT", "OVERWEIGHT",
+}) do
+    CharacterTrait[name] = {}
+end
+
 local selectedTraits = {}
 local player = {
     Kill = function()
         deaths = deaths + 1
     end,
-    getTraits = function()
+    getCharacterTraits = function()
         return {
-            contains = function(_, trait)
-                return selectedTraits[trait]
+            get = function(_, trait)
+                assert(type(trait) == "table", "Trait lookup must use a CharacterTrait constant")
+                return selectedTraits[trait] or false
             end,
         }
     end,
@@ -53,23 +62,35 @@ assert(rolls == 0, "Characters below the minimum age must not roll")
 TIHYD.tryDeath(player, 75)
 assert(rolls == 1 and deaths == 1, "Eligible characters must roll for mortality")
 
-selectedTraits = { Strong = true, Fit = true, Smoker = true, Underweight = true }
+selectedTraits = { [CharacterTrait.STRONG] = true, [CharacterTrait.FIT] = true, [CharacterTrait.SMOKER] = true, [CharacterTrait.UNDERWEIGHT] = true }
 assert(TIHYD.getHealthiness(player) == 0, "Positive and negative modifiers must combine")
 
-selectedTraits = { Strong = true, Athletic = true, Resilient = true }
+for _, group in ipairs({
+    { 5, CharacterTrait.STRONG, CharacterTrait.ATHLETIC, CharacterTrait.RESILIENT },
+    { 2.5, CharacterTrait.STOUT, CharacterTrait.FIT },
+    { -5, CharacterTrait.OBESE, CharacterTrait.VERY_UNDERWEIGHT, CharacterTrait.WEAK, CharacterTrait.UNFIT, CharacterTrait.SMOKER },
+    { -2.5, CharacterTrait.PRONE_TO_ILLNESS, CharacterTrait.FEEBLE, CharacterTrait.OUT_OF_SHAPE, CharacterTrait.UNDERWEIGHT, CharacterTrait.OVERWEIGHT },
+}) do
+    for i = 2, #group do
+        selectedTraits = { [group[i]] = true }
+        assert(TIHYD.getHealthiness(player) == group[1], "Each trait must retain its mortality modifier")
+    end
+end
+
+selectedTraits = { [CharacterTrait.STRONG] = true, [CharacterTrait.ATHLETIC] = true, [CharacterTrait.RESILIENT] = true }
 assert(TIHYD.getHealthiness(player) == 15, "Beneficial traits must reduce mortality risk")
 
 TIHYD.isTraitsConsidered = true
 TIHYD.tryDeath(player, 75)
 assert(deaths == 1, "A zero-risk character must survive even the lowest roll")
 
-selectedTraits = { Smoker = true }
+selectedTraits = { [CharacterTrait.SMOKER] = true }
 assert(TIHYD.getHealthiness(player) == -5, "Harmful traits must increase mortality risk")
 
 TIHYD.tryDeath(player, 75)
 assert(deaths == 2, "Harmful traits must still allow mortality")
 
-selectedTraits = { Strong = true, Athletic = true, Resilient = true }
+selectedTraits = { [CharacterTrait.STRONG] = true, [CharacterTrait.ATHLETIC] = true, [CharacterTrait.RESILIENT] = true }
 TIHYD.isTraitsConsidered = false
 TIHYD.tryDeath(player, 75)
 assert(deaths == 3, "Disabling trait effects must ignore beneficial modifiers")

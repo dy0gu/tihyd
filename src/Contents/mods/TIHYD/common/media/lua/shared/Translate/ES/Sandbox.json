@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "Edad mínima para morir de vejez",
     "Sandbox_isGrayHairEnabled": "El pelo se vuelve gris",
     "Sandbox_isGrayHairEnabled_tooltip": "Se comprueba en cada cumpleaños y al cargar el personaje. Al alcanzar o superar la edad para el pelo gris, los colores actuales del pelo y la barba se sustituyen por gris.",
-    "Sandbox_grayHairAge": "Edad para el pelo gris"
+    "Sandbox_grayHairAge": "Edad para el pelo gris",
+    "Sandbox_isShortSightedEnabled": "Desarrolla miopía",
+    "Sandbox_isShortSightedEnabled_tooltip": "Añade el rasgo de miopía a partir de la edad configurada, salvo que el personaje tenga vista de águila.",
+    "Sandbox_shortSightedAge": "Edad para la miopía",
+    "Sandbox_isHardOfHearingEnabled": "Desarrolla pérdida auditiva",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Añade el rasgo de pérdida auditiva a partir de la edad configurada, salvo que el personaje tenga oído agudo o sordera.",
+    "Sandbox_hardOfHearingAge": "Edad para la pérdida auditiva"
+
 }

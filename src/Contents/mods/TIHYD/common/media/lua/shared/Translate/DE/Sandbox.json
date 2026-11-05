@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "Mindestalter für Tod durch Altersschwäche",
     "Sandbox_isGrayHairEnabled": "Die Haare werden grau",
     "Sandbox_isGrayHairEnabled_tooltip": "Wird an jedem Geburtstag und beim Laden des Charakters geprüft. Ab dem Alter für graue Haare werden die aktuellen Haar- und Bartfarben durch Grau ersetzt.",
-    "Sandbox_grayHairAge": "Alter für graue Haare"
+    "Sandbox_grayHairAge": "Alter für graue Haare",
+    "Sandbox_isShortSightedEnabled": "Entwickelt Kurzsichtigkeit",
+    "Sandbox_isShortSightedEnabled_tooltip": "Fügt ab dem eingestellten Alter Kurzsichtigkeit hinzu, sofern der Charakter nicht Adleraugen hat.",
+    "Sandbox_shortSightedAge": "Alter für Kurzsichtigkeit",
+    "Sandbox_isHardOfHearingEnabled": "Entwickelt Hörverlust",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Fügt ab dem eingestellten Alter Schwerhörigkeit hinzu, sofern der Charakter nicht Gutes Gehör hat oder taub ist.",
+    "Sandbox_hardOfHearingAge": "Alter für Hörverlust"
 }

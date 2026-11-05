@@ -1,7 +1,11 @@
 id=TIHYD
 name=This Is How You Died
+author=Dy0gu
 description=Adds fully configurable player character aging.
 poster=logo.png
 icon=logo.png
 category=features
-url=https://github.com/dy0gu/tihyd
+url=https://steamcommunity.com/sharedfiles/filedetails/?id=3013368173
+# x-release-please-start-version
+modversion=2.0.0
+# x-release-please-end

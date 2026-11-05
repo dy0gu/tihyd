@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "因年老而死亡的最低年龄",
     "Sandbox_isGrayHairEnabled": "头发会变灰",
     "Sandbox_isGrayHairEnabled_tooltip": "每次生日及加载角色时都会检查。达到或超过头发变灰的年龄后，当前的头发和胡须颜色会被覆盖为灰色。",
-    "Sandbox_grayHairAge": "头发变灰的年龄"
+    "Sandbox_grayHairAge": "头发变灰的年龄",
+    "Sandbox_isShortSightedEnabled": "会出现近视",
+    "Sandbox_isShortSightedEnabled_tooltip": "达到设定年龄后，若角色没有鹰眼特征，则添加近视特征。",
+    "Sandbox_shortSightedAge": "出现近视的年龄",
+    "Sandbox_isHardOfHearingEnabled": "会出现听力下降",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "达到设定年龄后，若角色没有敏锐听觉或失聪特征，则添加重听特征。",
+    "Sandbox_hardOfHearingAge": "出现听力下降的年龄"
+
 }

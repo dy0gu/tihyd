@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "Minimum age for death by old age",
     "Sandbox_isGrayHairEnabled": "Hair turns gray",
     "Sandbox_isGrayHairEnabled_tooltip": "Checked on every birthday and when the character is loaded. At or above the gray hair age, the current hair and beard colors are overwritten with gray.",
-    "Sandbox_grayHairAge": "Gray hair age"
+    "Sandbox_grayHairAge": "Gray hair age",
+    "Sandbox_isShortSightedEnabled": "Develops short-sightedness",
+    "Sandbox_isShortSightedEnabled_tooltip": "Adds Short Sighted at or above the configured age unless the character has Eagle Eyed.",
+    "Sandbox_shortSightedAge": "Short-sightedness age",
+    "Sandbox_isHardOfHearingEnabled": "Develops hearing loss",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Adds Hard of Hearing at or above the configured age unless the character has Keen Hearing or Deaf.",
+    "Sandbox_hardOfHearingAge": "Hearing loss age"
 }

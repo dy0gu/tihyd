@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "노화로 사망할 수 있는 최소 나이",
     "Sandbox_isGrayHairEnabled": "머리카락이 회색으로 변함",
     "Sandbox_isGrayHairEnabled_tooltip": "생일마다 그리고 캐릭터를 불러올 때 확인합니다. 머리카락이 회색으로 변하는 나이 이상이면 현재 머리카락과 수염 색을 회색으로 덮어씁니다.",
-    "Sandbox_grayHairAge": "머리카락이 회색으로 변하는 나이"
+    "Sandbox_grayHairAge": "머리카락이 회색으로 변하는 나이",
+    "Sandbox_isShortSightedEnabled": "근시 발생",
+    "Sandbox_isShortSightedEnabled_tooltip": "설정한 나이 이상이면 매의 눈 특성이 없는 경우 근시 특성이 추가됩니다.",
+    "Sandbox_shortSightedAge": "근시 발생 나이",
+    "Sandbox_isHardOfHearingEnabled": "청력 저하 발생",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "설정한 나이 이상이면 예민한 청각 또는 청각 장애 특성이 없는 경우 난청 특성이 추가됩니다.",
+    "Sandbox_hardOfHearingAge": "청력 저하 발생 나이"
 }

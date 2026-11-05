@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "老衰で死亡する最低年齢",
     "Sandbox_isGrayHairEnabled": "髪が灰色になる",
     "Sandbox_isGrayHairEnabled_tooltip": "誕生日ごと、およびキャラクターの読み込み時に判定します。髪が灰色になる年齢以上の場合、現在の髪とひげの色が灰色で上書きされます。",
-    "Sandbox_grayHairAge": "髪が灰色になる年齢"
+    "Sandbox_grayHairAge": "髪が灰色になる年齢",
+    "Sandbox_isShortSightedEnabled": "近視になる",
+    "Sandbox_isShortSightedEnabled_tooltip": "設定された年齢以上になると、「鷹の目」を持っていない限り「近視」が追加されます。",
+    "Sandbox_shortSightedAge": "近視になる年齢",
+    "Sandbox_isHardOfHearingEnabled": "難聴になる",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "設定された年齢以上になると、「鋭い聴覚」または「聴覚障害」を持っていない限り「難聴」が追加されます。",
+    "Sandbox_hardOfHearingAge": "難聴になる年齢"
 }

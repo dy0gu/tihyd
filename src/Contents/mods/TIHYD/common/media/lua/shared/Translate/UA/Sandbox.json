@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "Мінімальний вік смерті від старості",
     "Sandbox_isGrayHairEnabled": "Волосся сивіє",
     "Sandbox_isGrayHairEnabled_tooltip": "Перевірка виконується кожного дня народження та під час завантаження персонажа. Після досягнення віку появи сивого волосся або в старшому віці поточні кольори волосся та бороди замінюються сірим.",
-    "Sandbox_grayHairAge": "Вік появи сивого волосся"
+    "Sandbox_grayHairAge": "Вік появи сивого волосся",
+    "Sandbox_isShortSightedEnabled": "Розвивається короткозорість",
+    "Sandbox_isShortSightedEnabled_tooltip": "Після досягнення заданого віку додає рису «Короткозорість», якщо персонаж не має риси «Орлиний зір».",
+    "Sandbox_shortSightedAge": "Вік появи короткозорості",
+    "Sandbox_isHardOfHearingEnabled": "Розвивається втрата слуху",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Після досягнення заданого віку додає рису «Поганий слух», якщо персонаж не має риси «Гострий слух» або «Глухота».",
+    "Sandbox_hardOfHearingAge": "Вік погіршення слуху"
 }

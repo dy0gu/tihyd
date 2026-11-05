@@ -9,5 +9,11 @@
     "Sandbox_deathAge": "Pinakamababang edad para mamatay sa katandaan",
     "Sandbox_isGrayHairEnabled": "Nagiging kulay-abo ang buhok",
     "Sandbox_isGrayHairEnabled_tooltip": "Sinusuri sa bawat kaarawan at kapag nilo-load ang karakter. Kapag naabot o nalampasan na ang edad kung kailan nagiging kulay-abo ang buhok, pinapalitan ng kulay-abo ang kasalukuyang kulay ng buhok at balbas.",
-    "Sandbox_grayHairAge": "Edad kung kailan nagiging kulay-abo ang buhok"
+    "Sandbox_grayHairAge": "Edad kung kailan nagiging kulay-abo ang buhok",
+    "Sandbox_isShortSightedEnabled": "Magkaroon ng malabong paningin sa malayo",
+    "Sandbox_isShortSightedEnabled_tooltip": "Idinadagdag ang katangiang malabo ang paningin sa malayo sa itinakdang edad o higit pa, maliban kung may matalas na paningin ang karakter.",
+    "Sandbox_shortSightedAge": "Edad para sa malabong paningin sa malayo",
+    "Sandbox_isHardOfHearingEnabled": "Magkaroon ng paghina ng pandinig",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Idinadagdag ang katangiang mahina ang pandinig sa itinakdang edad o higit pa, maliban kung may matalas na pandinig o bingi ang karakter.",
+    "Sandbox_hardOfHearingAge": "Edad para sa paghina ng pandinig"
 }

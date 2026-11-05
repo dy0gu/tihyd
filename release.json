@@ -1,5 +1,11 @@
 {
     "release-type": "simple",
+    "extra-files": [
+        {
+            "type": "generic",
+            "path": "src/Contents/mods/TIHYD/42/mod.info"
+        }
+    ],
     "separate-pull-requests": true,
     "always-update": true,
     "sequential-calls": true,

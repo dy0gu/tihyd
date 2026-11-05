@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "Edad mínima para morir de vejez",
     "Sandbox_isGrayHairEnabled": "El pelo se vuelve gris",
     "Sandbox_isGrayHairEnabled_tooltip": "Se comprueba en cada cumpleaños y al cargar el personaje. Al alcanzar o superar la edad para el pelo gris, los colores actuales del pelo y la barba se sustituyen por gris.",
-    "Sandbox_grayHairAge": "Edad para el pelo gris"
+    "Sandbox_grayHairAge": "Edad para el pelo gris",
+    "Sandbox_isShortSightedEnabled": "يُصاب بقصر النظر",
+    "Sandbox_isShortSightedEnabled_tooltip": "تُضاف سمة قصر النظر عند بلوغ السن المحددة أو تجاوزها، ما لم تكن لدى الشخصية سمة حدة البصر.",
+    "Sandbox_shortSightedAge": "سن الإصابة بقصر النظر",
+    "Sandbox_isHardOfHearingEnabled": "يُصاب بضعف السمع",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "تُضاف سمة ضعف السمع عند بلوغ السن المحددة أو تجاوزها، ما لم تكن لدى الشخصية سمة حدة السمع أو الصمم.",
+    "Sandbox_hardOfHearingAge": "سن الإصابة بضعف السمع"
+
 }

@@ -9,5 +9,12 @@
     "Sandbox_deathAge": "Edat mínima per morir de vellesa",
     "Sandbox_isGrayHairEnabled": "Els cabells es tornen grisos",
     "Sandbox_isGrayHairEnabled_tooltip": "Es comprova en cada aniversari i en carregar el personatge. En arribar a l’edat per als cabells grisos o superar-la, els colors actuals dels cabells i de la barba se substitueixen per gris.",
-    "Sandbox_grayHairAge": "Edat per als cabells grisos"
+    "Sandbox_grayHairAge": "Edat per als cabells grisos",
+    "Sandbox_isShortSightedEnabled": "Desenvolupa miopia",
+    "Sandbox_isShortSightedEnabled_tooltip": "Afegeix el tret de miopia a partir de l'edat configurada, tret que el personatge tingui vista d'àguila.",
+    "Sandbox_shortSightedAge": "Edat per a la miopia",
+    "Sandbox_isHardOfHearingEnabled": "Desenvolupa pèrdua auditiva",
+    "Sandbox_isHardOfHearingEnabled_tooltip": "Afegeix el tret de pèrdua auditiva a partir de l'edat configurada, tret que el personatge tingui oïda aguda o sordesa.",
+    "Sandbox_hardOfHearingAge": "Edat per a la pèrdua auditiva"
+
 }
