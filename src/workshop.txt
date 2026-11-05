@@ -7,6 +7,8 @@ description=TIHYD (/taɪd/) is a mod that focuses on adding fully configurable c
 description=
 description=Your character will now age and become [b]older[/b] as he survives the apocalypse, with a peaceful death now as an option!
 description=
+description=This mod is open source. You can view the [url=https://github.com/dy0gu/tihyd]source code on GitHub[/url] to see how it works.
+description=
 description=▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 description=
 description=[h1]Features[/h1]
@@ -75,6 +77,10 @@ description=[b]How can I see my current age while playing?[/b]
 description=
 description=When your character has a watch equipped you can see the time they have been alive for in the info panel. Simply divide that time by the number of days in a year, according to what was configured in the sandbox options for that world.
 description=
+description=[b]Is death by old age instant, or is there a warning?[/b]
+description=
+description=Death is essencially instant once your character rolls the chance to die. A message appears above their head saying they died of old age, so you're not left wondering what happened.
+description=
 description=[b]What is the performance hit?[/b]
 description=
 description=Aside from the initialization there is only a script running [b]once per in-game day[/b], so your performance will remain untouched.
@@ -93,15 +99,14 @@ description=[h1]Bugs & Ideas[/h1]
 description=
 description=If you find a bug or have a feature idea, [b]don't just leave it in the comments[/b]. Comments aren't the right place for that, and messages left there often get lost or repeated even after I've addressed them.
 description=
-description=For bug reports and suggestions you should instead open a discussion [url=https://steamcommunity.com/sharedfiles/filedetails/discussions/3013368173]here[/url] or create an issue on [url=https://github.com/dy0gu/tihyd]GitHub[/url].
+description=For bug reports and suggestions you should instead open a discussion [url=https://steamcommunity.com/sharedfiles/filedetails/discussions/3013368173]here[/url] or create an issue on [url=https://github.com/dy0gu/tihyd/issues]GitHub[/url].
 description=
 description=▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 description=
 description=[h1]Permission[/h1]
 description=
-description=All the code is open source under the terms of the license in the respective repository.
-description=
-description=I also appreciate if you give credit back to me anywhere you can when discussing my mods.
+description=All the code is under the terms of the open-source license in the git repository, but I
+would appreciate it if you give credit back to me anywhere you can.
 description=
 description=▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 description=
