@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.1](https://github.com/dy0gu/tihyd/compare/v2.1.0...v2.1.1) (2026-11-05)
+
+
+### Bug Fixes
+
+* Adjust aging sandbox defaults and labels ([7af2eba](https://github.com/dy0gu/tihyd/commit/7af2ebaa31b1a89e106d33075c25451916c39cf9))
+
 ## [2.1.0](https://github.com/dy0gu/tihyd/compare/v2.0.1...v2.1.0) (2026-11-05)
 
 
