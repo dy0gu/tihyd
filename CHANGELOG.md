@@ -1,5 +1,13 @@
 # Changelog
 
+## [2.1.0](https://github.com/dy0gu/tihyd/compare/v2.0.1...v2.1.0) (2026-11-05)
+
+
+### Features
+
+* Add age-related vision and hearing loss ([c1f018b](https://github.com/dy0gu/tihyd/commit/c1f018b4d4110faae62c3850f59ffc600aa88411))
+* Add physical decline with aging ([5e0f9b7](https://github.com/dy0gu/tihyd/commit/5e0f9b789b7208ef9988b3445d446e61dbb3dd29))
+
 ## [2.0.1](https://github.com/dy0gu/tihyd/compare/v2.0.0...v2.0.1) (2026-11-03)
 
 
