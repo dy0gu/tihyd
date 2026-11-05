@@ -56,7 +56,7 @@ aging functionality to Project Zomboid.
 5. Launch Project Zomboid through Steam using the account that owns the Workshop
    item. 
 
-6. Open the in-game mod uploader by going to **Workshop → Create and update items**, then select **TIHYD**. If you don't see the mod as an option, the file structure of the previous steps may be incorrect.
+6. Open the in-game mod uploader by going to **Workshop → Create and update items**, then select **TIHYD**. If you don't see the mod as an option, ensure the file structure is correct.
 
 7. Review the detected metadata and confirm everything looks correct.
 
