@@ -18,14 +18,20 @@ TIHYD.hardOfHearingAge = 70
 local present = {}
 local additions = 0
 local traits = {
-    get = function(_, trait) return present[trait] or false end,
+    get = function(_, trait)
+        return present[trait] or false
+    end,
     add = function(_, trait)
         assert(not present[trait], "Traits must not be added twice")
         present[trait] = true
         additions = additions + 1
     end,
 }
-local player = { getCharacterTraits = function() return traits end }
+local player = {
+    getCharacterTraits = function()
+        return traits
+    end,
+}
 
 TIHYD.updateAgingTraits(player, 59)
 assert(additions == 0, "No trait should be added below its threshold")

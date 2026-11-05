@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "Wiek rozpoczęcia fizycznego osłabienia",
+    "Sandbox_declineAge_tooltip": "Od tego wieku raz na dzień w grze stosowana jest dodatkowa utrata punktów doświadczenia kondycji i siły.",
+    "Sandbox_physicalDecline": "Dodatkowa dzienna utrata doświadczenia kondycji i siły (%)",
+    "Sandbox_physicalDecline_tooltip": "Procent aktualnych całkowitych punktów doświadczenia każdej umiejętności tracony każdego dnia w grze od wieku osłabienia.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Dni w roku",
     "Sandbox_daysPerYear_tooltip": "Liczba dni przetrwanych w grze, które liczą się jako jeden rok życia postaci. Przydatne z modami takimi jak Surviving Through Seasons, które zmieniają długość roku. Zmienia to tylko starzenie się w TIHYD, a nie kalendarz gry ani długość doby. Dzień, w którym postać została utworzona w tym świecie, jest traktowany jako jej data urodzenia.",

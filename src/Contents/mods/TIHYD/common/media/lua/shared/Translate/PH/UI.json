@@ -1,4 +1,5 @@
 {
+    "UI_TIHYD_OldAgeDeath": "*Namatay sa katandaan*",
     "UI_TIHYD_StartingAge": "Edad",
     "UI_TIHYD_StartingAgeTooltip": "Edad ng iyong karakter sa pagpasok sa mundo (18–90 taong gulang). Random na pinipili ang paunang edad. Binabago rin nang random ng button na Random sa paggawa ng karakter ang edad. Bawat karakter ay may sariling panimulang edad na pinananatili."
 }

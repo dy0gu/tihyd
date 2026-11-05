@@ -1,4 +1,5 @@
 {
+    "UI_TIHYD_OldAgeDeath": "*Ha mort de vellesa*",
     "UI_TIHYD_StartingAge": "Edat",
     "UI_TIHYD_StartingAgeTooltip": "L'edat del teu personatge en entrar al món (18-90). Inicialment se selecciona a l'atzar. El botó Aleatori del personatge també tria l'edat a l'atzar. Cada personatge conserva la seva pròpia edat inicial."
 }

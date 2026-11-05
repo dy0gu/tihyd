@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "Beginn des körperlichen Abbaus",
+    "Sandbox_declineAge_tooltip": "Ab diesem Alter werden einmal pro Spieltag zusätzlich Fitness- und Stärke-Erfahrungspunkte abgezogen.",
+    "Sandbox_physicalDecline": "Zusätzlicher täglicher Verlust an Fitness- und Stärke-EP (%)",
+    "Sandbox_physicalDecline_tooltip": "Prozentsatz der aktuellen gesamten Erfahrungspunkte jeder Fertigkeit, der ab dem Abbaualter pro Spieltag verloren geht.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Tage pro Jahr",
     "Sandbox_daysPerYear_tooltip": "Anzahl der im Spiel überlebten Tage, die als ein Lebensjahr des Charakters zählen. Nützlich mit Mods wie Surviving Through Seasons, die die Länge eines Jahres ändern. Dies ändert nur das Altern in TIHYD, nicht den Kalender oder die Tageslänge des Spiels. Der Tag, an dem der Charakter in dieser Welt erstellt wurde, gilt als sein Geburtsdatum.",

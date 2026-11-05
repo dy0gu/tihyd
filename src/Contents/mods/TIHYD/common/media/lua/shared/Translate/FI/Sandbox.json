@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "Fyysisen heikkenemisen alkamisikä",
+    "Sandbox_declineAge_tooltip": "Tästä iästä alkaen kunnon ja voiman kokemuspisteitä vähennetään ylimääräisesti kerran pelipäivässä.",
+    "Sandbox_physicalDecline": "Kunnon ja voiman päivittäinen ylimääräinen kokemuspisteiden menetys (%)",
+    "Sandbox_physicalDecline_tooltip": "Osuus kunkin taidon nykyisistä kokonaiskokemuspisteistä, joka menetetään pelipäivässä heikkenemisiän saavuttamisen jälkeen.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Päiviä vuodessa",
     "Sandbox_daysPerYear_tooltip": "Pelissä selviydyttyjen päivien määrä, joka vastaa yhtä hahmon ikävuotta. Hyödyllinen vuoden pituutta muuttavien modien, kuten Surviving Through Seasons, kanssa. Tämä muuttaa vain TIHYD:n ikääntymistä, ei pelin kalenteria tai vuorokauden pituutta. Päivää, jona hahmo luotiin tähän maailmaan, pidetään hahmon syntymäpäivänä.",

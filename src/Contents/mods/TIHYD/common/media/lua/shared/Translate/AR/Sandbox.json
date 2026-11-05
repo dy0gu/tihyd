@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "عمر بدء التدهور البدني",
+    "Sandbox_declineAge_tooltip": "في هذا العمر وما بعده، يُطبَّق انخفاض إضافي في نقاط خبرة اللياقة والقوة مرة كل يوم داخل اللعبة.",
+    "Sandbox_physicalDecline": "فقدان نقاط خبرة اللياقة والقوة اليومية الإضافي (%)",
+    "Sandbox_physicalDecline_tooltip": "النسبة المئوية من إجمالي نقاط الخبرة الحالي لكل مهارة المفقودة يوميًا داخل اللعبة عند بلوغ عمر التدهور أو تجاوزه.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Días por año",
     "Sandbox_daysPerYear_tooltip": "Cantidad de días de supervivencia dentro del juego que cuentan como un año de edad del personaje. Útil con mods como Surviving Through Seasons, que cambian la duración de un año. Esto solo modifica el envejecimiento en TIHYD, no el calendario del juego ni la duración del día. El día en que se creó el personaje en este mundo se considera su fecha de nacimiento.",

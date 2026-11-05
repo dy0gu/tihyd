@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "신체 능력 저하 시작 나이",
+    "Sandbox_declineAge_tooltip": "이 나이부터 게임 내 하루에 한 번 체력과 근력 경험치가 추가로 감소합니다.",
+    "Sandbox_physicalDecline": "하루 체력 및 근력 경험치 추가 손실률 (%)",
+    "Sandbox_physicalDecline_tooltip": "능력 저하 시작 나이부터 게임 내 하루마다 잃는 각 스킬의 현재 총 경험치 비율입니다.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "1년당 일수",
     "Sandbox_daysPerYear_tooltip": "캐릭터의 나이가 한 살 늘어나는 데 필요한 게임 내 생존 일수입니다. 1년의 길이를 변경하는 Surviving Through Seasons 같은 모드와 함께 사용할 때 유용합니다. 이 설정은 TIHYD의 노화만 변경하며, 게임의 달력이나 하루의 길이는 변경하지 않습니다. 이 세계에서 캐릭터가 생성된 날을 생년월일로 간주합니다.",

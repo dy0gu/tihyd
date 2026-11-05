@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "Věk začátku fyzického úpadku",
+    "Sandbox_declineAge_tooltip": "Od tohoto věku se jednou za herní den uplatní dodatečná ztráta zkušeností kondice a síly.",
+    "Sandbox_physicalDecline": "Dodatečná denní ztráta zkušeností kondice a síly (%)",
+    "Sandbox_physicalDecline_tooltip": "Procento současných celkových zkušeností každé dovednosti ztracené za herní den po dosažení věku úpadku.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Dní za rok",
     "Sandbox_daysPerYear_tooltip": "Počet herních dní přežití, které se počítají jako jeden rok věku postavy. Užitečné s mody, jako je Surviving Through Seasons, které mění délku roku. Mění pouze stárnutí v TIHYD, nikoli herní kalendář ani délku dne. Den, kdy byla postava v tomto světě vytvořena, se považuje za její datum narození.",

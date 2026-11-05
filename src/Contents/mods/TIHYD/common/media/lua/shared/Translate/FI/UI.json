@@ -1,4 +1,5 @@
 {
+    "UI_TIHYD_OldAgeDeath": "*Kuoli vanhuuteen*",
     "UI_TIHYD_StartingAge": "Ikä",
     "UI_TIHYD_StartingAgeTooltip": "Hahmosi ikä maailmaan saapuessa (18–90). Valitaan aluksi satunnaisesti. Myös hahmon satunnaistamispainike arpoo iän. Jokainen hahmo säilyttää oman aloitusikänsä."
 }

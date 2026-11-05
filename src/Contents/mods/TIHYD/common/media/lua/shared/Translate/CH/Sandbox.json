@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "體能衰退起始年齡",
+    "Sandbox_declineAge_tooltip": "達到此年齡後，每個遊戲日會額外扣除一次體能與力量經驗值。",
+    "Sandbox_physicalDecline": "每日額外體能與力量經驗值損失（%）",
+    "Sandbox_physicalDecline_tooltip": "達到衰退年齡後，每個遊戲日損失各技能目前總經驗值的百分比。",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "每年天數",
     "Sandbox_daysPerYear_tooltip": "角色年齡每增加一歲所需的遊戲內存活天數。適用於 Surviving Through Seasons 等會改變一年長度的模組。此設定只影響 TIHYD 中的老化，不會改變遊戲的日曆或一天的長度。 角色在此世界中建立的日期視為其出生日期。",

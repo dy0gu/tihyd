@@ -33,7 +33,12 @@ rawset(TIHYD, "updateAgingTraits", function()
 end)
 
 local checks = 0
+local declineChecks = 0
 local expectedAge = 75
+rawset(TIHYD, "applyDecline", function(_, age)
+    assert(age == expectedAge, "Decline must use the character's current age")
+    declineChecks = declineChecks + 1
+end)
 
 rawset(TIHYD, "tryDeath", function(_, age)
     assert(age == expectedAge, "Mortality must use the character's current age")
@@ -43,10 +48,13 @@ end)
 TIHYD.main()
 TIHYD.main()
 assert(checks == 2, "Mortality must be checked daily, not just on birthdays")
+assert(declineChecks == 2, "Decline must be applied daily, not just on birthdays")
 
 local visualUpdates, traitUpdates = 0, 0
 expectedAge = 76
-rawset(TIHYD, "age", function() return 76, true end)
+rawset(TIHYD, "age", function()
+    return 76, true
+end)
 rawset(TIHYD, "updateVisual", function(_, age)
     assert(age == 76)
     visualUpdates = visualUpdates + 1
@@ -58,11 +66,17 @@ end)
 TIHYD.main()
 assert(visualUpdates == 1 and traitUpdates == 1, "Birthday must update appearance and traits")
 
-rawset(TIHYD, "age", function() return 75, false end)
-player.getModData = function() return { TIHYD = { startingAge = 75 } } end
+rawset(TIHYD, "age", function()
+    return 75, false
+end)
+player.getModData = function()
+    return { TIHYD = { startingAge = 75 } }
+end
 rawset(TIHYD, "build", function() end)
 rawset(TIHYD, "log", function() end)
-rawset(TIHYD, "updateVisual", function(_, age) assert(age == 75) end)
+rawset(TIHYD, "updateVisual", function(_, age)
+    assert(age == 75)
+end)
 rawset(TIHYD, "updateAgingTraits", function(_, age)
     assert(age == 75)
     traitUpdates = traitUpdates + 1
@@ -83,15 +97,24 @@ end
 
 TIHYD.main()
 assert(checks == 3, "Missing players must be skipped")
+assert(declineChecks == 3, "Dead and missing players must not receive decline")
 
 local currentAge = 74
 local agingPlayer = {
-    getHoursSurvived = function() return 24 * 365 end,
-    getAge = function() return currentAge end,
-    setAge = function(_, age) currentAge = age end,
+    getHoursSurvived = function()
+        return 24 * 365
+    end,
+    getAge = function()
+        return currentAge
+    end,
+    setAge = function(_, age)
+        currentAge = age
+    end,
 }
 TIHYD.daysPerYear = 365
-rawset(TIHYD, "getCharacterData", function() return { startingAge = 74 } end)
+rawset(TIHYD, "getCharacterData", function()
+    return { startingAge = 74 }
+end)
 local age, hasAged = realAge(agingPlayer, false)
 assert(age == 75 and not hasAged, "Initialization must return age without reporting a birthday")
 age, hasAged = realAge(agingPlayer, true)

@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "Idade de início do declínio físico",
+    "Sandbox_declineAge_tooltip": "A partir desta idade, uma perda adicional de experiência de condicionamento físico e força é aplicada uma vez por dia no jogo.",
+    "Sandbox_physicalDecline": "Perda diária adicional de experiência de condicionamento físico e força (%)",
+    "Sandbox_physicalDecline_tooltip": "Porcentagem da experiência total atual de cada habilidade perdida por dia no jogo a partir da idade de declínio.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Dias por ano",
     "Sandbox_daysPerYear_tooltip": "Número de dias de sobrevivência no jogo que contam como um ano de idade do personagem. Útil com mods como Surviving Through Seasons, que alteram a duração de um ano. Esta opção só altera o envelhecimento no TIHYD, não o calendário do jogo nem a duração do dia. O dia em que o personagem foi criado neste mundo é considerado sua data de nascimento.",

@@ -1,6 +1,7 @@
 require("TIHYD/CharacterData")
 require("TIHYD/Appearance")
 require("TIHYD/Traits")
+require("TIHYD/Decline")
 require("TIHYD/Mortality")
 
 function TIHYD.init(playerNum, player)
@@ -30,6 +31,7 @@ function TIHYD.main()
                 TIHYD.updateVisual(player, age)
                 TIHYD.updateAgingTraits(player, age)
             end
+            TIHYD.applyDecline(player, age)
             TIHYD.tryDeath(player, age)
         end
     end

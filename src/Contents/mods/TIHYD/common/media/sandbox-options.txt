@@ -11,6 +11,26 @@ option TIHYD.daysPerYear
 	translation = daysPerYear,
 }
 
+option TIHYD.declineAge
+{
+	type = integer,
+	min = 30,
+	max = 130,
+	default = 60,
+	page = TIHYD,
+	translation = declineAge,
+}
+
+option TIHYD.physicalDecline
+{
+	type = double,
+	min = 0,
+	max = 3,
+	default = 1.2,
+	page = TIHYD,
+	translation = physicalDecline,
+}
+
 option TIHYD.isDeathEnabled
 {
 	type = boolean,

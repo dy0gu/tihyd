@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "Beginleeftijd van lichamelijke achteruitgang",
+    "Sandbox_declineAge_tooltip": "Vanaf deze leeftijd wordt eenmaal per speldag extra verlies van ervaringspunten voor conditie en kracht toegepast.",
+    "Sandbox_physicalDecline": "Extra dagelijks verlies van ervaringspunten voor conditie en kracht (%)",
+    "Sandbox_physicalDecline_tooltip": "Percentage van de huidige totale ervaringspunten van elke vaardigheid dat per speldag vanaf de achteruitgangsleeftijd verloren gaat.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Dagen per jaar",
     "Sandbox_daysPerYear_tooltip": "Aantal overleefde dagen in het spel dat telt als één levensjaar van het personage. Handig bij mods zoals Surviving Through Seasons die de lengte van een jaar veranderen. Dit verandert alleen de veroudering in TIHYD, niet de kalender of de daglengte van het spel. De dag waarop het personage in deze wereld is aangemaakt, wordt als geboortedatum beschouwd.",

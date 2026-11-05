@@ -1,4 +1,5 @@
 {
+    "UI_TIHYD_OldAgeDeath": "*Zemřel stářím*",
     "UI_TIHYD_StartingAge": "Věk",
     "UI_TIHYD_StartingAgeTooltip": "Věk vaší postavy při vstupu do světa (18–90). Na začátku je vybrán náhodně. Tlačítko pro náhodné vytvoření postavy také náhodně vybere věk. Každá postava si uchovává svůj vlastní počáteční věk."
 }

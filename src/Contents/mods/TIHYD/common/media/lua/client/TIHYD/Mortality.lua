@@ -18,6 +18,10 @@ function TIHYD.tryDeath(player, age)
         healthiness = TIHYD.getHealthiness(player)
     end
 
+    -- Each skill contributes -2.5 to +2.5 percentage points of annual risk.
+    healthiness = healthiness + (player:getPerkLevel(Perks.Fitness) - 5) * 0.5
+    healthiness = healthiness + (player:getPerkLevel(Perks.Strength) - 5) * 0.5
+
     local chance = TIHYD.getDailyDeathRisk(age, healthiness) * 100
     local random = ZombRand(0, 1000000) / 10000
     local isDead = random < chance
@@ -32,6 +36,7 @@ function TIHYD.tryDeath(player, age)
     )
 
     if isDead then
+        player:Say(getText("UI_TIHYD_OldAgeDeath"))
         player:Kill(player)
     end
 end
@@ -65,12 +70,12 @@ function TIHYD.getHealthiness(player)
 
     -- Traits that greatly raise the chance of death
     local very_bad_traits = {
-            CharacterTrait.OBESE,
-            CharacterTrait.VERY_UNDERWEIGHT,
-            CharacterTrait.WEAK,
-            CharacterTrait.UNFIT,
-            CharacterTrait.SMOKER,
-        }
+        CharacterTrait.OBESE,
+        CharacterTrait.VERY_UNDERWEIGHT,
+        CharacterTrait.WEAK,
+        CharacterTrait.UNFIT,
+        CharacterTrait.SMOKER,
+    }
     for _, trait in ipairs(very_bad_traits) do
         if traits:get(trait) then
             healthiness = healthiness - 5
@@ -78,12 +83,12 @@ function TIHYD.getHealthiness(player)
     end
     -- Traits that slightly raise the chance of death
     local bad_traits = {
-            CharacterTrait.PRONE_TO_ILLNESS,
-            CharacterTrait.FEEBLE,
-            CharacterTrait.OUT_OF_SHAPE,
-            CharacterTrait.UNDERWEIGHT,
-            CharacterTrait.OVERWEIGHT,
-        }
+        CharacterTrait.PRONE_TO_ILLNESS,
+        CharacterTrait.FEEBLE,
+        CharacterTrait.OUT_OF_SHAPE,
+        CharacterTrait.UNDERWEIGHT,
+        CharacterTrait.OVERWEIGHT,
+    }
     for _, trait in ipairs(bad_traits) do
         if traits:get(trait) then
             healthiness = healthiness - 2.5

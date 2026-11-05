@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "Fiziksel gerilemenin başlangıç yaşı",
+    "Sandbox_declineAge_tooltip": "Bu yaştan itibaren her oyun gününde bir kez kondisyon ve güç deneyimi ek olarak azalır.",
+    "Sandbox_physicalDecline": "Günlük ek kondisyon ve güç deneyimi kaybı (%)",
+    "Sandbox_physicalDecline_tooltip": "Gerileme yaşından itibaren her oyun günü kaybedilen, her becerinin mevcut toplam deneyim yüzdesi.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Yıl başına gün sayısı",
     "Sandbox_daysPerYear_tooltip": "Karakterin yaşına bir yıl eklenmesi için gereken oyun içi hayatta kalma günü sayısı. Yılın uzunluğunu değiştiren Surviving Through Seasons gibi modlarla kullanışlıdır. Bu ayar yalnızca TIHYD'deki yaşlanmayı değiştirir; oyunun takvimini veya gün uzunluğunu değiştirmez. Karakterin bu dünyada oluşturulduğu gün, doğum tarihi olarak kabul edilir.",

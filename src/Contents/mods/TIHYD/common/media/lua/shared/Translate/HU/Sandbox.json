@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "A fizikai hanyatlás kezdőéletkora",
+    "Sandbox_declineAge_tooltip": "Ettől az életkortól naponta egyszer további erőnléti és erő tapasztalati pontok vesznek el.",
+    "Sandbox_physicalDecline": "További napi erőnléti és erő tapasztalatvesztés (%)",
+    "Sandbox_physicalDecline_tooltip": "Az egyes készségek aktuális összes tapasztalati pontjának naponta elvesztett százaléka a hanyatlási életkortól kezdve.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Napok száma évente",
     "Sandbox_daysPerYear_tooltip": "A játékban túlélt napok száma, amely a karakter életkorának egy évével egyenértékű. Hasznos az év hosszát módosító modokkal, például a Surviving Through Seasons moddal. Ez csak a TIHYD öregedését módosítja, a játék naptárát és a nap hosszát nem. A karakter születési dátumának azt a napot tekintjük, amikor létrehozták ebben a világban.",

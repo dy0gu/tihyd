@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "Usia awal penurunan fisik",
+    "Sandbox_declineAge_tooltip": "Pada usia ini dan setelahnya, pengurangan XP kebugaran dan kekuatan tambahan diterapkan sekali setiap hari dalam game.",
+    "Sandbox_physicalDecline": "Kehilangan XP kebugaran dan kekuatan tambahan per hari (%)",
+    "Sandbox_physicalDecline_tooltip": "Persentase total XP saat ini dari setiap keterampilan yang hilang per hari dalam game pada atau setelah usia penurunan.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Jumlah hari per tahun",
     "Sandbox_daysPerYear_tooltip": "Jumlah hari bertahan hidup di dalam gim yang dihitung sebagai satu tahun usia karakter. Berguna untuk mod seperti Surviving Through Seasons yang mengubah panjang satu tahun. Ini hanya mengubah penuaan di TIHYD, bukan kalender gim atau panjang satu hari. Hari saat karakter dibuat di dunia ini dianggap sebagai tanggal lahirnya.",

@@ -1,4 +1,5 @@
 {
+    "UI_TIHYD_OldAgeDeath": "*Morreu de velhice*",
     "UI_TIHYD_StartingAge": "Idade",
     "UI_TIHYD_StartingAgeTooltip": "A idade do seu personagem ao entrar no mundo (18-90). Ela é escolhida aleatoriamente no início. O botão Aleatório do personagem também escolhe a idade aleatoriamente. Cada personagem mantém sua própria idade inicial."
 }

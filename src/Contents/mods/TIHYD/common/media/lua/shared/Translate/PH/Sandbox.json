@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "Edad ng pagsisimula ng paghina ng katawan",
+    "Sandbox_declineAge_tooltip": "Sa edad na ito at pataas, may dagdag na bawas sa XP ng fitness at lakas isang beses bawat araw sa laro.",
+    "Sandbox_physicalDecline": "Dagdag na pang-araw-araw na bawas sa XP ng fitness at lakas (%)",
+    "Sandbox_physicalDecline_tooltip": "Porsiyento ng kasalukuyang kabuuang XP ng bawat kasanayan na nawawala bawat araw sa laro mula sa edad ng paghina.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Mga araw bawat taon",
     "Sandbox_daysPerYear_tooltip": "Bilang ng mga araw na nabuhay sa laro na katumbas ng isang taon sa edad ng karakter. Kapaki-pakinabang sa mga mod tulad ng Surviving Through Seasons na nagbabago sa haba ng isang taon. Pagtanda sa TIHYD lamang ang binabago nito, hindi ang kalendaryo ng laro o ang haba ng isang araw. Ang araw kung kailan nilikha ang karakter sa mundong ito ay itinuturing na petsa ng kapanganakan nito.",

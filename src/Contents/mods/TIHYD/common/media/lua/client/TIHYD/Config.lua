@@ -29,6 +29,8 @@ end
 
 function TIHYD.build()
     TIHYD.daysPerYear = TIHYD.getSandboxValue("TIHYD.daysPerYear", "number")
+    TIHYD.declineAge = TIHYD.getSandboxValue("TIHYD.declineAge", "number")
+    TIHYD.physicalDecline = TIHYD.getSandboxValue("TIHYD.physicalDecline", "number")
     TIHYD.isDeathEnabled = TIHYD.getSandboxValue("TIHYD.isDeathEnabled", "boolean")
     TIHYD.isTraitsConsidered = TIHYD.getSandboxValue("TIHYD.isTraitsConsidered", "boolean")
     TIHYD.deathAge = TIHYD.getSandboxValue("TIHYD.deathAge", "number")

@@ -1,4 +1,8 @@
 {
+    "Sandbox_declineAge": "Alder for begyndende fysisk svækkelse",
+    "Sandbox_declineAge_tooltip": "Fra denne alder trækkes der ekstra erfaringspoint fra kondition og styrke én gang pr. spildag.",
+    "Sandbox_physicalDecline": "Ekstra dagligt tab af erfaringspoint i kondition og styrke (%)",
+    "Sandbox_physicalDecline_tooltip": "Procentdel af hver færdigheds nuværende samlede erfaringspoint, der mistes pr. spildag fra svækkelsesalderen.",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "Dage pr. år",
     "Sandbox_daysPerYear_tooltip": "Antal overlevede dage i spillet, der tæller som ét år af figurens alder. Nyttigt med mods som Surviving Through Seasons, der ændrer årets længde. Dette ændrer kun aldring i TIHYD, ikke spillets kalender eller døgnlængde. Den dag, figuren blev oprettet i denne verden, regnes som figurens fødselsdato.",

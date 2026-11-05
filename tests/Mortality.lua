@@ -24,14 +24,40 @@ local deaths = 0
 local rolls = 0
 CharacterTrait = {}
 for _, name in ipairs({
-    "STRONG", "ATHLETIC", "RESILIENT", "STOUT", "FIT", "OBESE", "VERY_UNDERWEIGHT", "WEAK", "UNFIT", "SMOKER",
-    "PRONE_TO_ILLNESS", "FEEBLE", "OUT_OF_SHAPE", "UNDERWEIGHT", "OVERWEIGHT",
+    "STRONG",
+    "ATHLETIC",
+    "RESILIENT",
+    "STOUT",
+    "FIT",
+    "OBESE",
+    "VERY_UNDERWEIGHT",
+    "WEAK",
+    "UNFIT",
+    "SMOKER",
+    "PRONE_TO_ILLNESS",
+    "FEEBLE",
+    "OUT_OF_SHAPE",
+    "UNDERWEIGHT",
+    "OVERWEIGHT",
 }) do
     CharacterTrait[name] = {}
 end
 
 local selectedTraits = {}
+local fitness, strength = 5, 5
+local messages = 0
+Perks = { Fitness = {}, Strength = {} }
+getText = function(key)
+    return key
+end
 local player = {
+    Say = function(_, text)
+        assert(text == "UI_TIHYD_OldAgeDeath")
+        messages = messages + 1
+    end,
+    getPerkLevel = function(_, perk)
+        return perk == Perks.Fitness and fitness or strength
+    end,
     Kill = function()
         deaths = deaths + 1
     end,
@@ -61,15 +87,35 @@ assert(rolls == 0, "Characters below the minimum age must not roll")
 
 TIHYD.tryDeath(player, 75)
 assert(rolls == 1 and deaths == 1, "Eligible characters must roll for mortality")
+assert(messages == 1, "Old-age deaths must display a message")
 
-selectedTraits = { [CharacterTrait.STRONG] = true, [CharacterTrait.FIT] = true, [CharacterTrait.SMOKER] = true, [CharacterTrait.UNDERWEIGHT] = true }
+selectedTraits = {
+    [CharacterTrait.STRONG] = true,
+    [CharacterTrait.FIT] = true,
+    [CharacterTrait.SMOKER] = true,
+    [CharacterTrait.UNDERWEIGHT] = true,
+}
 assert(TIHYD.getHealthiness(player) == 0, "Positive and negative modifiers must combine")
 
 for _, group in ipairs({
     { 5, CharacterTrait.STRONG, CharacterTrait.ATHLETIC, CharacterTrait.RESILIENT },
     { 2.5, CharacterTrait.STOUT, CharacterTrait.FIT },
-    { -5, CharacterTrait.OBESE, CharacterTrait.VERY_UNDERWEIGHT, CharacterTrait.WEAK, CharacterTrait.UNFIT, CharacterTrait.SMOKER },
-    { -2.5, CharacterTrait.PRONE_TO_ILLNESS, CharacterTrait.FEEBLE, CharacterTrait.OUT_OF_SHAPE, CharacterTrait.UNDERWEIGHT, CharacterTrait.OVERWEIGHT },
+    {
+        -5,
+        CharacterTrait.OBESE,
+        CharacterTrait.VERY_UNDERWEIGHT,
+        CharacterTrait.WEAK,
+        CharacterTrait.UNFIT,
+        CharacterTrait.SMOKER,
+    },
+    {
+        -2.5,
+        CharacterTrait.PRONE_TO_ILLNESS,
+        CharacterTrait.FEEBLE,
+        CharacterTrait.OUT_OF_SHAPE,
+        CharacterTrait.UNDERWEIGHT,
+        CharacterTrait.OVERWEIGHT,
+    },
 }) do
     for i = 2, #group do
         selectedTraits = { [group[i]] = true }
@@ -101,5 +147,16 @@ end
 
 TIHYD.tryDeath(player, 75)
 assert(deaths == 3, "A roll above the mortality risk must survive")
+
+ZombRand = function()
+    return 250
+end
+fitness, strength = 0, 0
+TIHYD.tryDeath(player, 75)
+assert(deaths == 4, "Low physical skills must increase mortality risk")
+fitness, strength = 10, 10
+TIHYD.tryDeath(player, 75)
+assert(deaths == 4, "High physical skills must reduce mortality risk")
+assert(messages == deaths, "Only old-age deaths should produce a message")
 
 print("Mortality tests passed")
