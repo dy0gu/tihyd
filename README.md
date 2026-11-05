@@ -40,17 +40,18 @@ aging functionality to Project Zomboid.
 
 2. Download `TIHYD.zip` from the published release.
 
-3. Copy the `TIHYD` folder inside the ZIP to `~/Zomboid/Workshop`. The final
-   structure should look like this:
+3. Copy the `TIHYD` folder inside the ZIP to `~/Zomboid/Workshop`. 
 
-  ```text
-  ~/Zomboid/Workshop/TIHYD/
-  ├── Contents/
-  │   └── mods/
-  │       └── TIHYD/
-  ├── preview.png
-  └── workshop.txt
-  ```
+    The final structure should look like this:
+  
+    ```text
+    ~/Zomboid/Workshop/TIHYD/
+    ├── Contents/
+    │   └── mods/
+    │       └── TIHYD/
+    ├── preview.png
+    └── workshop.txt
+    ```
 
 5. Launch Project Zomboid through Steam using the account that owns the Workshop
    item. 
