@@ -26,9 +26,10 @@ function CharacterCreationMain:createNameAndGender(...)
     end
 
     local panel = self.characterPanel
-    local height = getTextManager():getFontHeight(UIFont.Small) + 6
-    local label =
-        ISLabel:new(0, self.yOffset, height, getText("UI_TIHYD_StartingAge", nil), 1, 1, 1, 1, UIFont.Small, false)
+    local font = UIFont.Small
+    ---@cast font UIFont
+    local height = getTextManager():getFontHeight(font) + 6
+    local label = ISLabel:new(0, self.yOffset, height, getText("UI_TIHYD_StartingAge", nil), 1, 1, 1, 1, font, false)
     label:initialise()
     panel:addChild(label)
     table.insert(panel.repos2Table, label)

@@ -29,7 +29,9 @@ aging functionality to Project Zomboid.
     - If the mod is not showing in-game, ensure the file structure is correct.
     
 - Choose your starting age on the character appearance screen and configure
-  aging in the sandbox options.
+  aging in the sandbox options. 
+
+- Open the character info screen to see your current age at any time.
 
 - To test changes to the mod I recommend adding `-debug` to the launch options so you can
   speed up the game time, and set the `daysInAYear` sandbox option to 1 day.

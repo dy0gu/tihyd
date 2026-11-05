@@ -1,3 +1,30 @@
+# IDE
+xcuserdata/
+.vs/
+.vscode/*
+.idea/
+*.swp
+*.*~
+
+# Environment
+.env
+.env.*
+|.pem.example
+!.env.example
+
+# Miscellaneous
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+*.log
+*.logs
+
 # Compiled Lua sources
 luac.out
 
