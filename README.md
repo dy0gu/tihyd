@@ -40,7 +40,7 @@ aging functionality to Project Zomboid.
 
 2. Download `TIHYD.zip` from the published release.
 
-3. Copy the `TIHYD` folder inside the ZIP to `~/Zomboid/Workshop/`. The final
+3. Copy the `TIHYD` folder inside the ZIP to `~/Zomboid/Workshop`. The final
    structure should look like this:
 
   ```text
