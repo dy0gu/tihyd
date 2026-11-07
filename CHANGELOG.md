@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/dy0gu/tihyd/compare/v2.1.1...v2.2.0) (2026-11-07)
+
+
+### Features
+
+* Add current age display to character info panel ([6769c0e](https://github.com/dy0gu/tihyd/commit/6769c0e0f97a4071bacafc78b2fb83f3d755cf19))
+
 ## [2.1.1](https://github.com/dy0gu/tihyd/compare/v2.1.0...v2.1.1) (2026-11-05)
 
 
