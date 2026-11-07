@@ -55,6 +55,7 @@ description=
 description=Mods that can enhance the experience:
 description=[list]
 description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809]Spongie's Character Customisation[/url] - Allows you to make the character face/body look older during creation.
+description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809]This Is Your Life[/url] - Gives life some meaning, before you age to death.
 description=[/list]
 description=
 description=Mods with built-in integration:
@@ -88,7 +89,7 @@ description=Current age can be seen at the bottom of the character info panel.
 description=
 description=[b]Is death by old age instant, or is there a warning?[/b]
 description=
-description=Death is essencially instant once your character rolls the chance to die. A message appears above their head saying they died of old age, so you're not left wondering what happened.
+description=Death is essentially instant once your character rolls the chance to die. A message appears above their head saying they died of old age, so you're not left wondering what happened.
 description=
 description=[b]What is the performance hit?[/b]
 description=

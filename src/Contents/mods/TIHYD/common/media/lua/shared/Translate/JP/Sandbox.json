@@ -5,7 +5,7 @@
     "Sandbox_physicalDecline_tooltip": "衰えの開始年齢以上で、各スキルの現在の総経験値からゲーム内の1日ごとに失われる割合。",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "1年あたりの日数",
-    "Sandbox_daysPerYear_tooltip": "キャラクターが1歳年を取るのに必要な、ゲーム内での生存日数です。1年の長さを変更する Surviving Through Seasons などのMODで役立ちます。この設定はTIHYDでの加齢のみを変更し、ゲームの暦や1日の長さは変更しません。 このワールドでキャラクターが作成された日が、そのキャラクターの生年月日として扱われます。",
+    "Sandbox_daysPerYear_tooltip": "キャラクターが1歳年を取るのに必要な、ゲーム内での生存日数です。1年の長さを変更する Surviving Through Seasons などのMODで役立ちます。この設定はTIHYDでの加齢のみを変更し、ゲームの暦や1日の長さは変更しません。このワールドでキャラクターが作成された日が、そのキャラクターの生年月日として扱われます。",
     "Sandbox_isDeathEnabled": "老衰で死亡する",
     "Sandbox_isDeathEnabled_tooltip": "最低年齢を超えると、ゲーム内で毎日1回判定します。年間の死亡リスクを「1年あたりの日数」の設定に基づいて1日あたりのリスクに換算します。",
     "Sandbox_isTraitsConsidered": "特性が老衰による死亡率に影響する",

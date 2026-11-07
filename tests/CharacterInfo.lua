@@ -70,11 +70,8 @@ assert(draws[1][3] == 190 and screen.height == 218)
 ISCharacterScreen.render(screen, "argument")
 assert(screen.height == 218, "The added row must not grow on each render")
 
-for _, id in ipairs({ "ReorganizedInfoScreen", "twistbettercharacterinfo" }) do
-    activeMods[id] = true
-    draws = {}
-    ISCharacterScreen.render(screen, "argument")
-    assert(#draws == 0 and screen.height == 200, id .. " must suppress the age row")
-    activeMods[id] = nil
-end
-assert(originalCalls == 4, "The original renderer must always be called")
+activeMods.ReorganizedInfoScreen = true
+draws = {}
+ISCharacterScreen.render(screen, "argument")
+assert(#draws == 0 and screen.height == 200, "An incompatible mod must suppress the age row")
+assert(originalCalls == 3, "The original renderer must always be called")

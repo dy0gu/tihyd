@@ -5,7 +5,7 @@
     "Sandbox_physicalDecline_tooltip": "达到衰退年龄后，每个游戏日损失各技能当前总经验值的百分比。",
     "Sandbox_TIHYD": "This Is How You Died",
     "Sandbox_daysPerYear": "每年天数",
-    "Sandbox_daysPerYear_tooltip": "角色年龄每增加一岁所需的游戏内存活天数。适用于 Surviving Through Seasons 等会改变一年长度的模组。此设置只影响 TIHYD 中的衰老，不会改变游戏的日历或一天的长度。 角色在此世界中创建的日期视为其出生日期。",
+    "Sandbox_daysPerYear_tooltip": "角色年龄每增加一岁所需的游戏内存活天数。适用于 Surviving Through Seasons 等会改变一年长度的模组。此设置只影响 TIHYD 中的衰老，不会改变游戏的日历或一天的长度。角色在此世界中创建的日期视为其出生日期。",
     "Sandbox_isDeathEnabled": "会因年老而死亡",
     "Sandbox_isDeathEnabled_tooltip": "达到最低年龄后，每个游戏日进行一次判定。每日风险根据年度风险和“每年天数”计算。",
     "Sandbox_isTraitsConsidered": "特征影响年老死亡风险",

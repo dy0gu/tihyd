@@ -12,7 +12,7 @@ aging functionality to Project Zomboid.
   ```
 
 - Add a local development copy of the mod to the game by copying `src/Contents/mods/TIHYD`
-  into the `~/Zomboid/mods` folder, this copy takes priority over the subscribed workshop version.
+  into the `~/Zomboid/mods` folder. This copy takes priority over the subscribed workshop version.
 
   The final structure should look like this:
 
@@ -55,19 +55,19 @@ aging functionality to Project Zomboid.
     └── workshop.txt
     ```
 
-5. Launch Project Zomboid through Steam using the account that owns the Workshop
+4. Launch Project Zomboid through Steam using the account that owns the Workshop
    item. 
 
-6. Open the in-game mod uploader by going to **Workshop → Create and update items**, then select **TIHYD**. 
+5. Open the in-game mod uploader by going to **Workshop → Create and update items**, then select **TIHYD**.
 
     - If you don't see the mod as an option, ensure the file structure is correct.
 
-7. Review the detected metadata and confirm everything looks correct.
+6. Review the detected metadata and confirm everything looks correct.
 
-8. Continue to the upload screen and accept the workshop legal agreement if
+7. Continue to the upload screen and accept the workshop legal agreement if
    prompted.
 
-9. Wait for success, then verify the [Workshop page][workshop], subscribe to it
+8. Wait for success, then verify the [Workshop page][workshop], subscribe to it
    and test the downloaded update. 
 
    Remove any local copies from `~/Zomboid/mods/` and `~/Zomboid/Workshop/` to

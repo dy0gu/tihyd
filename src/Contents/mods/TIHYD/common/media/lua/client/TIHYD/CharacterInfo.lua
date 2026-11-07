@@ -1,12 +1,20 @@
 require("XpSystem/ISUI/ISCharacterScreen")
 
+local incompatibleInfoModIds = {
+    "ReorganizedInfoScreen",
+    "twistbettercharacterinfo",
+    "NeatUI_CharacterInfo",
+}
+
 local render = ISCharacterScreen.render
 ---@diagnostic disable-next-line: duplicate-set-field
 function ISCharacterScreen:render(...)
     local result = render(self, ...)
     local mods = getActivatedMods()
-    if mods:contains("ReorganizedInfoScreen") or mods:contains("twistbettercharacterinfo") then
-        return result
+    for _, id in ipairs(incompatibleInfoModIds) do
+        if mods:contains(id) then
+            return result
+        end
     end
 
     local textManager = getTextManager()
