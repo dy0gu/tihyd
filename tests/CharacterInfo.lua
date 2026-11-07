@@ -4,9 +4,11 @@ package.preload["XpSystem/ISUI/ISCharacterScreen"] = function() end
 rawset(_G, "UIFont", { Small = "small" })
 local activeMods = {}
 getActivatedMods = function()
-    return { contains = function(_, id)
-        return activeMods[id] == true
-    end }
+    return {
+        contains = function(_, id)
+            return activeMods[id] == true
+        end,
+    }
 end
 getText = function(key)
     return key
@@ -35,9 +37,11 @@ require("TIHYD/CharacterInfo")
 
 local draws = {}
 local screen = {
-    char = { getAge = function()
-        return 42
-    end },
+    char = {
+        getAge = function()
+            return 42
+        end,
+    },
     width = 300,
     getHeight = function(self)
         return self.height

@@ -16,18 +16,23 @@ rawset(_G, "CharacterCreationMain", {
 rawset(_G, "CharacterCreationMainCharacterPanel", { loadJoypadButtons = function() end })
 rawset(_G, "UIFont", { Small = "small" })
 rawset(_G, "getTextManager", function()
-    return { getFontHeight = function()
-        return 12
-    end }
+    return {
+        getFontHeight = function()
+            return 12
+        end,
+    }
 end)
 rawset(_G, "getText", function(key)
     return key
 end)
 rawset(_G, "ISLabel", {
     new = function()
-        return { initialise = function() end, getWidth = function()
-            return 50
-        end }
+        return {
+            initialise = function() end,
+            getWidth = function()
+                return 50
+            end,
+        }
     end,
 })
 rawset(_G, "ISComboBox", {
