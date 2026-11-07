@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.1](https://github.com/dy0gu/tihyd/compare/v2.2.0...v2.2.1) (2026-11-07)
+
+
+### Bug Fixes
+
+* Expand mod compatibility and resolve doc typos ([d4c2eef](https://github.com/dy0gu/tihyd/commit/d4c2eefbc258d2ff8a8b018b0cdc2d60594aadb1))
+
 ## [2.2.0](https://github.com/dy0gu/tihyd/compare/v2.1.1...v2.2.0) (2026-11-07)
 
 
