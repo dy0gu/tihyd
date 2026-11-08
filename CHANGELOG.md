@@ -1,5 +1,14 @@
 # Changelog
 
+## [2.2.3](https://github.com/dy0gu/tihyd/compare/v2.2.2...v2.2.3) (2026-11-08)
+
+
+### Bug Fixes
+
+* Improve support for SPNCC ([22d1bb6](https://github.com/dy0gu/tihyd/commit/22d1bb694452331510acdc5240bea38d207c034e))
+* Limit starting age to 75 ([c3d3de7](https://github.com/dy0gu/tihyd/commit/c3d3de7d18b1197fc62367b32d13f934e7af369c))
+* Support Spongie's character customisation ([55f1a97](https://github.com/dy0gu/tihyd/commit/55f1a9720b30ba13b17db2573968fc898f8e6178))
+
 ## [2.2.2](https://github.com/dy0gu/tihyd/compare/v2.2.1...v2.2.2) (2026-11-08)
 
 
