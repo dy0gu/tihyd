@@ -3,12 +3,14 @@ require("OptionScreens/CharacterCreationMain")
 require("ISUI/ISComboBox")
 require("ISUI/ISLabel")
 
+-- Keep the age selector and the pending age for this character in sync.
 local function selectAge(screen, age)
     screen.TIHYDAgeCombo.selected = age - TIHYD.MIN_STARTING_AGE + 1
     TIHYD.pendingStartingAges[MainScreen.instance.desc] = age
     TIHYD.log("Age selected: descriptor=" .. tostring(MainScreen.instance.desc) .. ", age=" .. tostring(age))
 end
 
+-- Give each new character descriptor its own random starting age.
 local function syncDescriptor(screen)
     local descriptor = MainScreen.instance.desc
     if screen.TIHYDDescriptor ~= descriptor then
@@ -20,11 +22,13 @@ end
 local createNameAndGender = CharacterCreationMain.createNameAndGender
 ---@diagnostic disable-next-line: duplicate-set-field
 function CharacterCreationMain:createNameAndGender(...)
+    -- Let the existing screen create its controls before adding the age row.
     local result = createNameAndGender(self, ...)
     if self.TIHYDAgeCombo then
         return result
     end
 
+    -- Add the label to the existing column layout.
     local panel = self.characterPanel
     local font = UIFont.Small
     ---@cast font UIFont
@@ -36,6 +40,7 @@ function CharacterCreationMain:createNameAndGender(...)
     panel.columnWidth = math.max(panel.columnWidth, label:getWidth())
     self.columnWidth = math.max(self.columnWidth, panel.columnWidth)
 
+    -- Populate the age selector and save changes for the current character.
     local combo = ISComboBox:new(0, self.yOffset, 100, height, self, function(screen, control)
         syncDescriptor(screen)
         selectAge(screen, control.selected + TIHYD.MIN_STARTING_AGE - 1)
@@ -45,6 +50,7 @@ function CharacterCreationMain:createNameAndGender(...)
     for age = TIHYD.MIN_STARTING_AGE, TIHYD.MAX_STARTING_AGE do
         combo:addOptionWithData(tostring(age), nil, tooltip)
     end
+    -- Register the selector for layout and initialize its character's age.
     panel:addChild(combo)
     table.insert(panel.repos3Table, combo)
     table.insert(panel.comboResizeTable, combo)
@@ -57,6 +63,7 @@ end
 local setVisible = CharacterCreationMain.setVisible
 ---@diagnostic disable-next-line: duplicate-set-field
 function CharacterCreationMain:setVisible(visible, ...)
+    -- Refresh the age when the screen is reopened for a different character.
     local result = setVisible(self, visible, ...)
     if visible and self.TIHYDAgeCombo and MainScreen.instance.desc then
         syncDescriptor(self)
@@ -67,6 +74,7 @@ end
 local onRandomCharacter = CharacterCreationMain.onRandomCharacter
 ---@diagnostic disable-next-line: duplicate-set-field
 function CharacterCreationMain:onRandomCharacter(...)
+    -- Randomizing the character also picks a new starting age.
     local result = onRandomCharacter(self, ...)
     if self.TIHYDAgeCombo then
         self.TIHYDDescriptor = MainScreen.instance.desc
@@ -78,6 +86,7 @@ end
 local loadJoypadButtons = CharacterCreationMainCharacterPanel.loadJoypadButtons
 ---@diagnostic disable-next-line: duplicate-set-field
 function CharacterCreationMainCharacterPanel:loadJoypadButtons(...)
+    -- Add the age selector to the existing joypad navigation.
     local result = loadJoypadButtons(self, ...)
     local screen = self.parent
     ---@cast screen CharacterCreationMain

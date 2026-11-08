@@ -46,15 +46,11 @@ local screen = {
     getHeight = function(self)
         return self.height
     end,
-    getWidth = function(self)
-        return self.width
-    end,
+
     setHeightAndParentHeight = function(self, height)
         self.height = height
     end,
-    setWidthAndParentWidth = function(self, width)
-        self.width = width
-    end,
+
     drawTextRight = function(_, text, x, y)
         table.insert(draws, { text, x, y })
     end,
@@ -66,7 +62,7 @@ local screen = {
 assert(ISCharacterScreen.render(screen, "argument") == "original result")
 assert(originalCalls == 1 and #draws == 2)
 assert(draws[1][1] == "UI_TIHYD_StartingAge" and draws[2][1] == "42")
-assert(draws[1][3] == 190 and screen.height == 218)
+assert(draws[1][3] == 190 and screen.height == 218 and screen.width == 300)
 ISCharacterScreen.render(screen, "argument")
 assert(screen.height == 218, "The added row must not grow on each render")
 
@@ -75,3 +71,23 @@ draws = {}
 ISCharacterScreen.render(screen, "argument")
 assert(#draws == 0 and screen.height == 200, "An incompatible mod must suppress the age row")
 assert(originalCalls == 3, "The original renderer must always be called")
+
+activeMods.ReorganizedInfoScreen = nil
+activeMods.SPNCC = true
+
+local buttonCalls = 0
+screen.literatureButton = {
+    y = 100,
+    getY = function(self) return self.y end,
+    setY = function(self, y) self.y = y end,
+    getHeight = function() return 20 end,
+    prerender = function() buttonCalls = buttonCalls + 1 end,
+}
+ISCharacterScreen.render(screen, "argument")
+assert(screen.height == 248)
+screen.literatureButton:prerender()
+assert(screen.literatureButton.y == 218 and buttonCalls == 1)
+ISCharacterScreen.render(screen, "argument")
+screen.literatureButton.y = 120
+screen.literatureButton:prerender()
+assert(screen.height == 248 and screen.literatureButton.y == 218 and buttonCalls == 2)
