@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.2](https://github.com/dy0gu/tihyd/compare/v2.2.1...v2.2.2) (2026-11-08)
+
+
+### Bug Fixes
+
+* Avoid reloading config during initialization ([559c117](https://github.com/dy0gu/tihyd/commit/559c117ce0c22aa74546c3db64bbd4b0ceebdb50))
+
 ## [2.2.1](https://github.com/dy0gu/tihyd/compare/v2.2.0...v2.2.1) (2026-11-07)
 
 
