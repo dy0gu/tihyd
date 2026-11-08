@@ -24,12 +24,20 @@ getTextManager = function()
     }
 end
 
+---@class TIHYDTestCharacterScreen : ISCharacterScreen
+---@field statsY number
+
 local originalCalls = 0
 ISCharacterScreen = {
     render = function(self, argument)
+        ---@cast self TIHYDTestCharacterScreen
         assert(argument == "argument")
         originalCalls = originalCalls + 1
         self.height = 200
+        if self.literatureButton then
+            self.statsY = math.max(150, self.literatureButton:getBottom() + 10)
+            self.height = self.statsY + 50
+        end
         return "original result"
     end,
 }
@@ -75,19 +83,25 @@ assert(originalCalls == 3, "The original renderer must always be called")
 activeMods.ReorganizedInfoScreen = nil
 activeMods.SPNCC = true
 
-local buttonCalls = 0
+screen.char.isFemale = function()
+    return false
+end
+screen.beardButton = {
+    getY = function()
+        return 100
+    end,
+}
+local getBottom = function()
+    return 130
+end
 screen.literatureButton = {
-    y = 100,
-    getY = function(self) return self.y end,
-    setY = function(self, y) self.y = y end,
-    getHeight = function() return 20 end,
-    prerender = function() buttonCalls = buttonCalls + 1 end,
+    getBottom = getBottom,
+    getHeight = function()
+        return 20
+    end,
 }
 ISCharacterScreen.render(screen, "argument")
-assert(screen.height == 248)
-screen.literatureButton:prerender()
-assert(screen.literatureButton.y == 218 and buttonCalls == 1)
+assert(screen.statsY == 217 and screen.height == 285)
+assert(screen.literatureButton.getBottom == getBottom, "The original button method must be restored")
 ISCharacterScreen.render(screen, "argument")
-screen.literatureButton.y = 120
-screen.literatureButton:prerender()
-assert(screen.height == 248 and screen.literatureButton.y == 218 and buttonCalls == 2)
+assert(screen.statsY == 217 and screen.height == 285, "The layout must not grow on each render")
