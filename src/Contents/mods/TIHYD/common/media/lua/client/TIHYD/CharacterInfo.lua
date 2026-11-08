@@ -11,12 +11,13 @@ local render = ISCharacterScreen.render
 function ISCharacterScreen:render(...)
     local mods = getActivatedMods()
 
+    local result
     -- COMPATIBILITY PATCH: Spongie's Character Customisation
-    -- Spongie moves the recipes button after vanilla positions the statistics.
-    -- Report its expected bottom during layout so vanilla reserves enough space.
-    local button = self.literatureButton
-    local originalGetBottom = button and rawget(button, "getBottom")
-    if mods:contains("SPNCC") and button then
+    -- Spongie moves the recipes button down to make space for its appearence buttons.
+    -- Get the expected bottom during layout so our bottom extension reserves enough space.
+    if mods:contains("SPNCC") and self.literatureButton then
+        local button = self.literatureButton
+        local originalGetBottom = rawget(button, "getBottom")
         local getBottom = button.getBottom
         button.getBottom = function(literatureButton)
             local font = UIFont.Small
@@ -27,13 +28,13 @@ function ISCharacterScreen:render(...)
             local recipesY = lastButton:getY() + (buttonHeight - fontHeight) / 2 + 3 * (buttonHeight + 10)
             return math.max(getBottom(literatureButton), recipesY + literatureButton:getHeight())
         end
+        result = render(self, ...)
+        button.getBottom = originalGetBottom
+    -- ORIGINAL IMPLEMENTATION
+    else
+        result = render(self, ...)
     end
 
-    -- Let the existing renderer lay out the screen, then restore the button method.
-    local result = render(self, ...)
-    if mods:contains("SPNCC") and button then
-        button.getBottom = originalGetBottom
-    end
     for _, id in ipairs(redundantInfoModIds) do
         if mods:contains(id) then
             return result
