@@ -97,14 +97,21 @@ local player = {
 assert(TIHYD.getCharacterData(player).startingAge == 55, "The selected age must transfer to player data")
 assert(TIHYD.pendingStartingAges[second] == nil and TIHYD.pendingStartingAges[first] == 43)
 
-
 local function character(data, hours, age, descriptor)
     local storage = { TIHYD = data }
     return {
-        getModData = function() return storage end,
-        getHoursSurvived = function() return hours end,
-        getAge = function() return age end,
-        getDescriptor = function() return descriptor end,
+        getModData = function()
+            return storage
+        end,
+        getHoursSurvived = function()
+            return hours
+        end,
+        getAge = function()
+            return age
+        end,
+        getDescriptor = function()
+            return descriptor
+        end,
     }
 end
 
@@ -123,6 +130,5 @@ local existing = TIHYD.getCharacterData(character({}, 1200, 47))
 assert(existing.startingAge == 47, "Existing characters without data must retain their current age")
 local fresh = TIHYD.getCharacterData(character({}, 0, 20))
 assert(fresh.startingAge == 55, "New characters without selections must get a random age")
-
 
 print("Character creation tests passed")
