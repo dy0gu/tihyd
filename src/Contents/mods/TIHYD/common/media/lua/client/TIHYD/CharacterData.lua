@@ -3,7 +3,7 @@ require("TIHYD/Config")
 TIHYD.pendingStartingAges = TIHYD.pendingStartingAges or setmetatable({}, { __mode = "k" })
 
 TIHYD.MIN_STARTING_AGE = 18
-TIHYD.MAX_STARTING_AGE = 90
+TIHYD.MAX_STARTING_AGE = 75
 
 function TIHYD.randomStartingAge()
     return ZombRand(TIHYD.MIN_STARTING_AGE, TIHYD.MAX_STARTING_AGE + 1)

@@ -54,14 +54,20 @@ description=TIHYD is designed for compatibility and can even interact with other
 description=
 description=Mods that can enhance the experience:
 description=[list]
-description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2753086629]Surviving Through Seasons[/url] - Shortens seasons for multi-year playthroughs. Manually adjust [i]Days per year[/i] in the TIHYD sandbox settings to match. [b]Highly recommended![/b]
-description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809]Spongie's Character Customisation[/url] - Allows you to make your character's face and body look older during creation.
-description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3773911887]This Is Your Life[/url] - Gives life some meaning, before you age to death.
+description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2753086629]Surviving Through Seasons[/url] - Shortens seasons for multi-year playthroughs.
+description=
+description=[list]
+description=[*] Set [i]Days per year[/i] in the TIHYD sandbox settings to the total number of days in the STS months. For example, use 120 if you kept the default of 10-day months for all seasons. [b]Highly recommended![/b]
+description=[/list]
+description=
+description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3773911887]This Is Your Life[/url] - Gives life some meaning before you age to death.
 description=[/list]
 description=
 description=Mods with built-in integration:
 description=[list]
 description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3808944882]Survivor Briefing[/url] - Shows character age in the briefing!
+description=
+description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809]Spongie's Character Customisation[/url] - Lets you make your character look older during creation.
 description=[/list]
 description=
 description=If you're a modder and want to integrate TIHYD with your mod, call the following interface to get the player age set by this mod:
