@@ -21,8 +21,8 @@ local player = {
     end,
 }
 
-TIHYD.declineAge = 60
-TIHYD.physicalDecline = 1.2
+TIHYD.config.declineAge = 60
+TIHYD.config.physicalDeclinePercentPerDay = 1.2
 TIHYD.applyDecline(player, 59)
 assert(calls == 0, "Decline must not apply below the starting age")
 TIHYD.applyDecline(player, 60)
@@ -31,19 +31,19 @@ assert(
     "Decline must remove the configured percentage of each total"
 )
 values.strength = 0
-TIHYD.physicalDecline = 0
+TIHYD.config.physicalDeclinePercentPerDay = 0
 TIHYD.applyDecline(player, 80)
 assert(calls == 2, "Disabled rates and empty XP must not apply loss")
-TIHYD.physicalDecline = 1.2
+TIHYD.config.physicalDeclinePercentPerDay = 1.2
 TIHYD.applyDecline(player, 80)
 assert(
     math.abs(values.fitness - 97.6144) < 0.000001 and values.strength == 0,
     "Daily decline must use the updated XP total"
 )
-TIHYD.physicalDecline = 0.5
+TIHYD.config.physicalDeclinePercentPerDay = 0.5
 TIHYD.applyDecline(player, 80)
 assert(math.abs(values.fitness - 97.126328) < 0.000001, "Fractional percentages must be supported")
-TIHYD.physicalDecline = 150
+TIHYD.config.physicalDeclinePercentPerDay = 150
 TIHYD.applyDecline(player, 80)
 assert(math.abs(values.fitness - 94.21253816) < 0.000001, "Decline must cap out-of-range rates at 3 percent")
 

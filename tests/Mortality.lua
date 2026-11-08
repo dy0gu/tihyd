@@ -7,7 +7,7 @@ rawset(TIHYD, "log", function() end)
 local annualRisk = (1 / (100 * math.exp(75 * -0.091))) / 100
 
 for _, days in ipairs({ 1, 7, 30, 365, 1000 }) do
-    TIHYD.daysPerYear = days
+    TIHYD.config.daysPerYear = days
     local dailyRisk = TIHYD.getDailyDeathRisk(75, 0)
     local cumulativeRisk = 1 - (1 - dailyRisk) ^ days
 
@@ -17,8 +17,8 @@ end
 assert(TIHYD.getDailyDeathRisk(75, 1000) == 0, "Mortality risk must not fall below zero")
 assert(TIHYD.getDailyDeathRisk(75, -1000) == 1, "Mortality risk must not exceed one")
 
-TIHYD.daysPerYear = 365
-TIHYD.deathAge = 75
+TIHYD.config.daysPerYear = 365
+TIHYD.config.deathAge = 75
 
 local deaths = 0
 local rolls = 0
@@ -77,11 +77,11 @@ ZombRand = function(min, max)
     return 0
 end
 
-TIHYD.isDeathEnabled = false
+TIHYD.config.isDeathEnabled = false
 TIHYD.tryDeath(player, 75)
 assert(rolls == 0, "Disabled mortality must not roll")
 
-TIHYD.isDeathEnabled = true
+TIHYD.config.isDeathEnabled = true
 TIHYD.tryDeath(player, 74)
 assert(rolls == 0, "Characters below the minimum age must not roll")
 
@@ -126,7 +126,7 @@ end
 selectedTraits = { [CharacterTrait.STRONG] = true, [CharacterTrait.ATHLETIC] = true, [CharacterTrait.RESILIENT] = true }
 assert(TIHYD.getHealthiness(player) == 15, "Beneficial traits must reduce mortality risk")
 
-TIHYD.isTraitsConsidered = true
+TIHYD.config.isTraitsConsidered = true
 TIHYD.tryDeath(player, 75)
 assert(deaths == 1, "A zero-risk character must survive even the lowest roll")
 
@@ -137,7 +137,7 @@ TIHYD.tryDeath(player, 75)
 assert(deaths == 2, "Harmful traits must still allow mortality")
 
 selectedTraits = { [CharacterTrait.STRONG] = true, [CharacterTrait.ATHLETIC] = true, [CharacterTrait.RESILIENT] = true }
-TIHYD.isTraitsConsidered = false
+TIHYD.config.isTraitsConsidered = false
 TIHYD.tryDeath(player, 75)
 assert(deaths == 3, "Disabling trait effects must ignore beneficial modifiers")
 

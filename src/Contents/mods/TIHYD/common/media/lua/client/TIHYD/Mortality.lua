@@ -2,19 +2,19 @@ require("TIHYD/Config")
 
 function TIHYD.getDailyDeathRisk(age, healthiness)
     local annualRisk = TIHYD.clamp((1 / (100 * math.exp(age * -0.091))) - healthiness, 0, 100) / 100
-    return 1 - (1 - annualRisk) ^ (1 / TIHYD.daysPerYear)
+    return 1 - (1 - annualRisk) ^ (1 / TIHYD.config.daysPerYear)
 end
 
 function TIHYD.tryDeath(player, age)
-    TIHYD.log("Minimum age for death by old age is set to " .. TIHYD.deathAge .. " years.")
+    TIHYD.log("Minimum age for death by old age is set to " .. TIHYD.config.deathAge .. " years.")
 
-    if not TIHYD.isDeathEnabled or age < TIHYD.deathAge then
+    if not TIHYD.config.isDeathEnabled or age < TIHYD.config.deathAge then
         return
     end
 
     local healthiness = 0
 
-    if TIHYD.isTraitsConsidered then
+    if TIHYD.config.isTraitsConsidered then
         healthiness = TIHYD.getHealthiness(player)
     end
 

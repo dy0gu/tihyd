@@ -3,7 +3,7 @@ require("TIHYD/Config")
 TIHYD = TIHYD or {}
 
 function TIHYD.applyDecline(player, age)
-    if age < TIHYD.declineAge then
+    if age < TIHYD.config.declineAge then
         return
     end
 
@@ -17,6 +17,6 @@ function TIHYD.applyDecline(player, age)
         end
     end
 
-    loseXP(Perks.Fitness, TIHYD.physicalDecline)
-    loseXP(Perks.Strength, TIHYD.physicalDecline)
+    loseXP(Perks.Fitness, TIHYD.config.physicalDeclinePercentPerDay)
+    loseXP(Perks.Strength, TIHYD.config.physicalDeclinePercentPerDay)
 end

@@ -53,6 +53,7 @@ local first, second = {}, {}
 rawset(_G, "MainScreen", { instance = { desc = first } })
 require("TIHYD/CharacterCreation")
 rawset(TIHYD, "log", function() end)
+TIHYD.config.daysPerYear = 100
 local nextAge = 30
 rawset(TIHYD, "randomStartingAge", function()
     return nextAge
@@ -66,20 +67,20 @@ local screen = { characterPanel = panel, yOffset = 0, columnWidth = 0 }
 setmetatable(screen, { __index = CharacterCreationMain })
 
 assert(screen:createNameAndGender() == "vanilla")
-assert(TIHYD.startingAges[first] == 30 and screen.TIHYDAgeCombo.selected == 13)
+assert(TIHYD.pendingStartingAges[first] == 30 and screen.TIHYDAgeCombo.selected == 13)
 assert(screen:createNameAndGender() == "vanilla")
 assert(calls == 2 and #panel.children == 2, "Recreation must call vanilla without duplicating controls")
 
 local combo = screen.TIHYDAgeCombo
 combo.selected = 26
 combo.onChange(combo.target, combo)
-assert(TIHYD.startingAges[first] == 43, "Selection must be stored for the current descriptor")
+assert(TIHYD.pendingStartingAges[first] == 43, "Selection must be stored for the current descriptor")
 
 MainScreen.instance.desc = second
 nextAge = 55
 screen:setVisible(true)
-assert(combo.selected == 38 and TIHYD.startingAges[second] == 55)
-assert(TIHYD.startingAges[first] == 43, "Switching descriptors must preserve the first selection")
+assert(combo.selected == 38 and TIHYD.pendingStartingAges[second] == 55)
+assert(TIHYD.pendingStartingAges[first] == 43, "Switching descriptors must preserve the first selection")
 
 local modData = {}
 local player = {
@@ -94,4 +95,34 @@ local player = {
     end,
 }
 assert(TIHYD.getCharacterData(player).startingAge == 55, "The selected age must transfer to player data")
-assert(TIHYD.startingAges[second] == nil and TIHYD.startingAges[first] == 43)
+assert(TIHYD.pendingStartingAges[second] == nil and TIHYD.pendingStartingAges[first] == 43)
+
+
+local function character(data, hours, age, descriptor)
+    local storage = { TIHYD = data }
+    return {
+        getModData = function() return storage end,
+        getHoursSurvived = function() return hours end,
+        getAge = function() return age end,
+        getDescriptor = function() return descriptor end,
+    }
+end
+
+local pending = {}
+TIHYD.pendingStartingAges[pending] = 40
+local selected = TIHYD.getCharacterData(character({}, 1200, 20, pending))
+assert(selected.startingAge == 40, "Pending selection must survive nonzero survival time")
+assert(TIHYD.pendingStartingAges[pending] == nil, "Consumed selections must be cleared")
+
+local legacyDescriptor = {}
+TIHYD.pendingStartingAges[legacyDescriptor] = 60
+local legacy = TIHYD.getCharacterData(character({ startingAge = 35 }, 1200, 20, legacyDescriptor))
+assert(legacy.startingAge == 35, "Saved starting age must take precedence")
+
+local existing = TIHYD.getCharacterData(character({}, 1200, 47))
+assert(existing.startingAge == 47, "Existing characters without data must retain their current age")
+local fresh = TIHYD.getCharacterData(character({}, 0, 20))
+assert(fresh.startingAge == 55, "New characters without selections must get a random age")
+
+
+print("Character creation tests passed")

@@ -6,8 +6,8 @@ function TIHYD.updateAgingTraits(player, age)
     local traits = player:getCharacterTraits()
 
     if
-        TIHYD.isShortSightedEnabled
-        and age >= TIHYD.shortSightedAge
+        TIHYD.config.isShortSightedEnabled
+        and age >= TIHYD.config.shortSightedAge
         and not traits:get(CharacterTrait.SHORT_SIGHTED)
         and not traits:get(CharacterTrait.EAGLE_EYED)
     then
@@ -16,8 +16,8 @@ function TIHYD.updateAgingTraits(player, age)
     end
 
     if
-        TIHYD.isHardOfHearingEnabled
-        and age >= TIHYD.hardOfHearingAge
+        TIHYD.config.isHardOfHearingEnabled
+        and age >= TIHYD.config.hardOfHearingAge
         and not traits:get(CharacterTrait.HARD_OF_HEARING)
         and not traits:get(CharacterTrait.KEEN_HEARING)
         and not traits:get(CharacterTrait.DEAF)

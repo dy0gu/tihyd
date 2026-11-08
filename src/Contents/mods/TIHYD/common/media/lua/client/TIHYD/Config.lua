@@ -1,4 +1,5 @@
 TIHYD = TIHYD or {}
+TIHYD.config = TIHYD.config or {}
 
 function TIHYD.log(message)
     DebugLog.log(DebugType.Mod, "TIHYD: " .. message)
@@ -27,17 +28,17 @@ function TIHYD.getSandboxValue(option, vartype)
     end
 end
 
-function TIHYD.build()
-    TIHYD.daysPerYear = TIHYD.getSandboxValue("TIHYD.daysPerYear", "number")
-    TIHYD.declineAge = TIHYD.getSandboxValue("TIHYD.declineAge", "number")
-    TIHYD.physicalDecline = TIHYD.getSandboxValue("TIHYD.physicalDecline", "number")
-    TIHYD.isDeathEnabled = TIHYD.getSandboxValue("TIHYD.isDeathEnabled", "boolean")
-    TIHYD.isTraitsConsidered = TIHYD.getSandboxValue("TIHYD.isTraitsConsidered", "boolean")
-    TIHYD.deathAge = TIHYD.getSandboxValue("TIHYD.deathAge", "number")
-    TIHYD.isGrayHairEnabled = TIHYD.getSandboxValue("TIHYD.isGrayHairEnabled", "boolean")
-    TIHYD.grayHairAge = TIHYD.getSandboxValue("TIHYD.grayHairAge", "number")
-    TIHYD.isShortSightedEnabled = TIHYD.getSandboxValue("TIHYD.isShortSightedEnabled", "boolean")
-    TIHYD.shortSightedAge = TIHYD.getSandboxValue("TIHYD.shortSightedAge", "number")
-    TIHYD.isHardOfHearingEnabled = TIHYD.getSandboxValue("TIHYD.isHardOfHearingEnabled", "boolean")
-    TIHYD.hardOfHearingAge = TIHYD.getSandboxValue("TIHYD.hardOfHearingAge", "number")
+function TIHYD.loadConfig()
+    TIHYD.config.daysPerYear = TIHYD.getSandboxValue("TIHYD.daysPerYear", "number")
+    TIHYD.config.declineAge = TIHYD.getSandboxValue("TIHYD.declineAge", "number")
+    TIHYD.config.physicalDeclinePercentPerDay = TIHYD.getSandboxValue("TIHYD.physicalDecline", "number")
+    TIHYD.config.isDeathEnabled = TIHYD.getSandboxValue("TIHYD.isDeathEnabled", "boolean")
+    TIHYD.config.isTraitsConsidered = TIHYD.getSandboxValue("TIHYD.isTraitsConsidered", "boolean")
+    TIHYD.config.deathAge = TIHYD.getSandboxValue("TIHYD.deathAge", "number")
+    TIHYD.config.isGrayHairEnabled = TIHYD.getSandboxValue("TIHYD.isGrayHairEnabled", "boolean")
+    TIHYD.config.grayHairAge = TIHYD.getSandboxValue("TIHYD.grayHairAge", "number")
+    TIHYD.config.isShortSightedEnabled = TIHYD.getSandboxValue("TIHYD.isShortSightedEnabled", "boolean")
+    TIHYD.config.shortSightedAge = TIHYD.getSandboxValue("TIHYD.shortSightedAge", "number")
+    TIHYD.config.isHardOfHearingEnabled = TIHYD.getSandboxValue("TIHYD.isHardOfHearingEnabled", "boolean")
+    TIHYD.config.hardOfHearingAge = TIHYD.getSandboxValue("TIHYD.hardOfHearingAge", "number")
 end

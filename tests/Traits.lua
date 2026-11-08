@@ -10,10 +10,10 @@ CharacterTrait = {
     KEEN_HEARING = "keen",
     DEAF = "deaf",
 }
-TIHYD.isShortSightedEnabled = true
-TIHYD.shortSightedAge = 60
-TIHYD.isHardOfHearingEnabled = true
-TIHYD.hardOfHearingAge = 70
+TIHYD.config.isShortSightedEnabled = true
+TIHYD.config.shortSightedAge = 60
+TIHYD.config.isHardOfHearingEnabled = true
+TIHYD.config.hardOfHearingAge = 70
 
 local present = {}
 local additions = 0
@@ -43,12 +43,12 @@ TIHYD.updateAgingTraits(player, 90)
 assert(additions == 2, "Repeated checks must be idempotent")
 
 present = {}
-TIHYD.isShortSightedEnabled = false
-TIHYD.isHardOfHearingEnabled = false
+TIHYD.config.isShortSightedEnabled = false
+TIHYD.config.isHardOfHearingEnabled = false
 TIHYD.updateAgingTraits(player, 90)
 assert(not present.short and not present.hard, "Disabled traits must not be added")
-TIHYD.isShortSightedEnabled = true
-TIHYD.isHardOfHearingEnabled = true
+TIHYD.config.isShortSightedEnabled = true
+TIHYD.config.isHardOfHearingEnabled = true
 present = { eagle = true, keen = true }
 TIHYD.updateAgingTraits(player, 90)
 assert(not present.short and not present.hard, "Positive sensory traits must be preserved")

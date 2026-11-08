@@ -2,125 +2,73 @@ package.path = "src/Contents/mods/TIHYD/common/media/lua/client/?.lua;" .. packa
 
 require("TIHYD/Aging")
 
+
+TIHYD.config.daysPerYear = 100
+local hours, currentAge, modData = 0, 74, { TIHYD = { startingAge = 74 } }
 local player = {
-    isDead = function()
-        return false
-    end,
-    getAge = function()
-        return 75
-    end,
+    isDead = function() return false end,
+    getAge = function() return currentAge end,
+    setAge = function(_, age) currentAge = age end,
+    getHoursSurvived = function() return hours end,
+    getModData = function() return modData end,
+    getDescriptor = function() return nil end,
 }
 
-getNumActivePlayers = function()
-    return 1
-end
+local age, increased = TIHYD.updatePlayerAge(player)
+assert(age == 74 and not increased)
+hours = 24 * 50
+age, increased = TIHYD.updatePlayerAge(player)
+assert(age == 74 and not increased)
+hours = 24 * 200
+age, increased = TIHYD.updatePlayerAge(player)
+assert(age == 76 and increased)
+TIHYD.config.daysPerYear = 200
+age, increased = TIHYD.updatePlayerAge(player)
+assert(age == 75 and not increased, "A longer year must recalculate all survived hours")
+TIHYD.config.daysPerYear = 100
+age, increased = TIHYD.updatePlayerAge(player)
+assert(age == 76 and increased, "A shorter year must recalculate all survived hours")
+TIHYD.config.daysPerYear = 200
+age, increased = TIHYD.updatePlayerAge(player)
+assert(age == 75 and not increased)
 
-getSpecificPlayer = function()
-    return player
-end
-
-local realAge = TIHYD.age
-rawset(TIHYD, "age", function()
-    return 75, false
-end)
-
-rawset(TIHYD, "updateVisual", function()
-    error("Appearance must not update between birthdays")
-end)
-
-rawset(TIHYD, "updateAgingTraits", function()
-    error("Traits must not update between birthdays")
-end)
-
-local checks = 0
-local declineChecks = 0
-local expectedAge = 75
-rawset(TIHYD, "applyDecline", function(_, age)
-    assert(age == expectedAge, "Decline must use the character's current age")
-    declineChecks = declineChecks + 1
-end)
-
-rawset(TIHYD, "tryDeath", function(_, age)
-    assert(age == expectedAge, "Mortality must use the character's current age")
-    checks = checks + 1
-end)
-
-TIHYD.main()
-TIHYD.main()
-assert(checks == 2, "Mortality must be checked daily, not just on birthdays")
-assert(declineChecks == 2, "Decline must be applied daily, not just on birthdays")
-
-local visualUpdates, traitUpdates = 0, 0
-expectedAge = 76
-rawset(TIHYD, "age", function()
-    return 76, true
-end)
-rawset(TIHYD, "updateVisual", function(_, age)
-    assert(age == 76)
+local visualUpdates, traitUpdates, declineChecks, deathChecks, configLoads = 0, 0, 0, 0, 0
+rawset(TIHYD, "loadConfig", function() configLoads = configLoads + 1 end)
+rawset(TIHYD, "log", function() end)
+rawset(TIHYD, "updateVisual", function(_, value)
+    assert(value == 75)
     visualUpdates = visualUpdates + 1
 end)
-rawset(TIHYD, "updateAgingTraits", function(_, age)
-    assert(age == 76)
+rawset(TIHYD, "updateAgingTraits", function(_, value)
+    assert(value == 75)
     traitUpdates = traitUpdates + 1
 end)
-TIHYD.main()
-assert(visualUpdates == 1 and traitUpdates == 1, "Birthday must update appearance and traits")
-
-rawset(TIHYD, "age", function()
-    return 75, false
+rawset(TIHYD, "applyDecline", function(_, value)
+    assert(value == 75)
+    declineChecks = declineChecks + 1
 end)
-player.getModData = function()
-    return { TIHYD = { startingAge = 75 } }
-end
-rawset(TIHYD, "build", function() end)
-rawset(TIHYD, "log", function() end)
-rawset(TIHYD, "updateVisual", function(_, age)
-    assert(age == 75)
+rawset(TIHYD, "tryDeath", function(_, value)
+    assert(value == 75)
+    deathChecks = deathChecks + 1
 end)
-rawset(TIHYD, "updateAgingTraits", function(_, age)
-    assert(age == 75)
-    traitUpdates = traitUpdates + 1
-end)
-TIHYD.init(0, player)
-assert(traitUpdates == 2, "Character load must update traits")
 
-player.isDead = function()
-    return true
-end
-
-TIHYD.main()
-assert(checks == 3, "Dead characters must not receive mortality checks")
-
-getSpecificPlayer = function()
-    return nil
-end
-
-TIHYD.main()
-assert(checks == 3, "Missing players must be skipped")
-assert(declineChecks == 3, "Dead and missing players must not receive decline")
-
-local currentAge = 74
-local agingPlayer = {
-    getHoursSurvived = function()
-        return 24 * 365
-    end,
-    getAge = function()
-        return currentAge
-    end,
-    setAge = function(_, age)
-        currentAge = age
-    end,
-}
-TIHYD.daysPerYear = 365
-rawset(TIHYD, "getCharacterData", function()
-    return { startingAge = 74 }
-end)
-local age, hasAged = realAge(agingPlayer, false)
-assert(age == 75 and not hasAged, "Initialization must return age without reporting a birthday")
-age, hasAged = realAge(agingPlayer, true)
-assert(age == 75 and not hasAged, "Unchanged age must still be returned")
+TIHYD.initializePlayer(0, player)
+assert(configLoads == 1 and visualUpdates == 1 and traitUpdates == 1, "Loading must refresh configuration and transitions")
+getNumActivePlayers = function() return 1 end
+getSpecificPlayer = function() return player end
+TIHYD.processAllPlayersDaily()
+TIHYD.processAllPlayersDaily()
+assert(declineChecks == 2 and deathChecks == 2, "Decline and mortality must run daily")
+assert(visualUpdates == 1 and traitUpdates == 1, "Transitions must not run between birthdays")
 currentAge = 74
-age, hasAged = realAge(agingPlayer, true)
-assert(age == 75 and hasAged, "Birthday must return age and report aging")
+TIHYD.processAllPlayersDaily()
+assert(visualUpdates == 2 and traitUpdates == 2, "An age increase must trigger transitions")
+player.isDead = function() return true end
+TIHYD.initializePlayer(0, player)
+TIHYD.processAllPlayersDaily()
+getSpecificPlayer = function() return nil end
+TIHYD.initializePlayer(0, nil)
+TIHYD.processAllPlayersDaily()
+assert(configLoads == 1 and declineChecks == 3 and deathChecks == 3, "Dead and missing players must be skipped")
 
 print("Aging tests passed")

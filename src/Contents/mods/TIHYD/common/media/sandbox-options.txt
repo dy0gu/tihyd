@@ -15,7 +15,7 @@ option TIHYD.declineAge
 {
 	type = integer,
 	min = 30,
-	max = 130,
+	max = 100,
 	default = 60,
 	page = TIHYD,
 	translation = declineAge,
@@ -50,8 +50,8 @@ option TIHYD.isTraitsConsidered
 option TIHYD.deathAge
 {
 	type = integer,
-	min = 56,
-	max = 130,
+	min = 60,
+	max = 100,
 	default = 75,
 	page = TIHYD,
 	translation = deathAge,
@@ -69,7 +69,7 @@ option TIHYD.grayHairAge
 {
 	type = integer,
 	min = 30,
-	max = 90,
+	max = 100,
 	default = 50,
 	page = TIHYD,
 	translation = grayHairAge,
@@ -87,7 +87,7 @@ option TIHYD.shortSightedAge
 {
 	type = integer,
 	min = 30,
-	max = 130,
+	max = 100,
 	default = 60,
 	page = TIHYD,
 	translation = shortSightedAge,
@@ -105,7 +105,7 @@ option TIHYD.hardOfHearingAge
 {
 	type = integer,
 	min = 30,
-	max = 130,
+	max = 100,
 	default = 70,
 	page = TIHYD,
 	translation = hardOfHearingAge,

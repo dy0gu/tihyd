@@ -4,60 +4,43 @@ require("TIHYD/Traits")
 require("TIHYD/Decline")
 require("TIHYD/Mortality")
 
-function TIHYD.init(playerNum, player)
+function TIHYD.updatePlayerAge(player)
+    local data = TIHYD.getCharacterData(player)
+    local previousAge = player:getAge()
+    local age = data.startingAge + math.floor(player:getHoursSurvived() / 24 / TIHYD.config.daysPerYear)
+    player:setAge(age)
+    return age, age > previousAge
+end
+
+function TIHYD.processAgeTransition(player, age)
+    TIHYD.updateVisual(player, age)
+    TIHYD.updateAgingTraits(player, age)
+end
+
+function TIHYD.initializePlayer(playerNum, player)
     if not player or player:isDead() then
         return
     end
-    TIHYD.build()
-    local age = TIHYD.age(player, false)
-    TIHYD.updateVisual(player, age)
-    TIHYD.updateAgingTraits(player, age)
-    TIHYD.log(
-        "OnCreatePlayer: player="
-            .. tostring(playerNum)
-            .. ", savedStartingAge="
-            .. tostring(player:getModData().TIHYD.startingAge)
-            .. ", currentAge="
-            .. tostring(age)
-    )
+    TIHYD.loadConfig()
+    local age = TIHYD.updatePlayerAge(player)
+    TIHYD.processAgeTransition(player, age)
+    TIHYD.log("Initialized player " .. tostring(playerNum) .. " at age " .. tostring(age))
 end
 
-function TIHYD.main()
+function TIHYD.processDailyAging(player)
+    local age, ageIncreased = TIHYD.updatePlayerAge(player)
+    if ageIncreased then
+        TIHYD.processAgeTransition(player, age)
+    end
+    TIHYD.applyDecline(player, age)
+    TIHYD.tryDeath(player, age)
+end
+
+function TIHYD.processAllPlayersDaily()
     for playerNum = 0, getNumActivePlayers() - 1 do
         local player = getSpecificPlayer(playerNum)
         if player and not player:isDead() then
-            local age, hasAged = TIHYD.age(player, true)
-            if hasAged then
-                TIHYD.updateVisual(player, age)
-                TIHYD.updateAgingTraits(player, age)
-            end
-            TIHYD.applyDecline(player, age)
-            TIHYD.tryDeath(player, age)
+            TIHYD.processDailyAging(player)
         end
     end
-end
-
-function TIHYD.age(player, init)
-    local lifespan = player:getHoursSurvived()
-    local previousAge = player:getAge()
-
-    local newAge = TIHYD.getCharacterData(player).startingAge + math.floor(lifespan / 24 / TIHYD.daysPerYear)
-    player:setAge(newAge)
-
-    local hasAged = newAge > previousAge
-
-    if not init then
-        TIHYD.log("Initializing player age!")
-        TIHYD.log("Player age (" .. newAge .. ") loaded.")
-        -- Ignore first iteration because setting the age would count as aging
-        return newAge, false
-    end
-
-    TIHYD.log("Updating player age!")
-    TIHYD.log("Player has survived for " .. math.floor(lifespan) .. " hours, they are " .. newAge .. " years old.")
-
-    if hasAged then
-        TIHYD.log("Player aged up since the last iteration!")
-    end
-    return newAge, hasAged
 end

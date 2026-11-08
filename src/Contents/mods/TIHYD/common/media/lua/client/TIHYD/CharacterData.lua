@@ -1,10 +1,12 @@
 require("TIHYD/Config")
 
--- Pending selections belong to descriptors, not a single shared local-player slot.
-TIHYD.startingAges = TIHYD.startingAges or setmetatable({}, { __mode = "k" })
+TIHYD.pendingStartingAges = TIHYD.pendingStartingAges or setmetatable({}, { __mode = "k" })
+
+TIHYD.MIN_STARTING_AGE = 18
+TIHYD.MAX_STARTING_AGE = 90
 
 function TIHYD.randomStartingAge()
-    return ZombRand(18, 91)
+    return ZombRand(TIHYD.MIN_STARTING_AGE, TIHYD.MAX_STARTING_AGE + 1)
 end
 
 function TIHYD.getCharacterData(player)
@@ -12,27 +14,19 @@ function TIHYD.getCharacterData(player)
     modData.TIHYD = modData.TIHYD or {}
     local data = modData.TIHYD
     if data.startingAge == nil then
+        local hours = player:getHoursSurvived()
         local descriptor = player:getDescriptor()
-        local selectedAge = descriptor and TIHYD.startingAges[descriptor]
-        TIHYD.log(
-            "Age handoff: descriptor="
-                .. tostring(descriptor)
-                .. ", selectedAge="
-                .. tostring(selectedAge)
-                .. ", hoursSurvived="
-                .. tostring(player:getHoursSurvived())
-        )
-        if player:getHoursSurvived() == 0 then
-            data.startingAge = selectedAge or TIHYD.randomStartingAge()
-            if selectedAge == nil then
-                TIHYD.log("No pending selection found; using random starting age=" .. tostring(data.startingAge))
-            end
+        local selectedAge = descriptor and TIHYD.pendingStartingAges[descriptor]
+        if selectedAge ~= nil then
+            data.startingAge = selectedAge
+        elseif hours == 0 then
+            data.startingAge = TIHYD.randomStartingAge()
         else
-            -- Preserve current age when migrating a character without per-character data.
-            data.startingAge = player:getAge() - math.floor(player:getHoursSurvived() / 24 / TIHYD.daysPerYear)
+            -- Preserve the current age when enabling the mod on an existing character.
+            data.startingAge = player:getAge() - math.floor(hours / 24 / TIHYD.config.daysPerYear)
         end
         if descriptor then
-            TIHYD.startingAges[descriptor] = nil
+            TIHYD.pendingStartingAges[descriptor] = nil
         end
     end
     return data

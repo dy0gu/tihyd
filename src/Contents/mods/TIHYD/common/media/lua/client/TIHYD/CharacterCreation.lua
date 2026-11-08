@@ -4,8 +4,8 @@ require("ISUI/ISComboBox")
 require("ISUI/ISLabel")
 
 local function selectAge(screen, age)
-    screen.TIHYDAgeCombo.selected = age - 18 + 1
-    TIHYD.startingAges[MainScreen.instance.desc] = age
+    screen.TIHYDAgeCombo.selected = age - TIHYD.MIN_STARTING_AGE + 1
+    TIHYD.pendingStartingAges[MainScreen.instance.desc] = age
     TIHYD.log("Age selected: descriptor=" .. tostring(MainScreen.instance.desc) .. ", age=" .. tostring(age))
 end
 
@@ -38,11 +38,11 @@ function CharacterCreationMain:createNameAndGender(...)
 
     local combo = ISComboBox:new(0, self.yOffset, 100, height, self, function(screen, control)
         syncDescriptor(screen)
-        selectAge(screen, control.selected + 17)
+        selectAge(screen, control.selected + TIHYD.MIN_STARTING_AGE - 1)
     end)
     combo:initialise()
     local tooltip = getText("UI_TIHYD_StartingAgeTooltip", nil)
-    for age = 18, 90 do
+    for age = TIHYD.MIN_STARTING_AGE, TIHYD.MAX_STARTING_AGE do
         combo:addOptionWithData(tostring(age), nil, tooltip)
     end
     panel:addChild(combo)
