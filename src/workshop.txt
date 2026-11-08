@@ -17,7 +17,7 @@ description=[*] Your character ages as you survive.
 description=[*] Your fitness and strength XP decline faster as you get older.
 description=[*] Death by old age becomes possible, influenced by your character's current health and age.
 description=[*] Your hair becomes gray!
-description=[*] You can become short sighted or hard of hearing.
+description=[*] You can become short-sighted or hard of hearing.
 description=[/list]
 description=
 description=[b]NEW:[/b] You can now choose your starting age on the character creation screen and see your current age on the info panel!
@@ -33,7 +33,7 @@ description=The mod is translated into all languages supported by the game.
 description=
 description=Use the sandbox settings to:
 description=[list]
-description=[*] Choose how long it takes to age a year, for faster aging playthroughs or for use with mods like [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2753086629]Surviving Through Seasons[/url].
+description=[*] Choose how long it takes to age a year, for faster aging playthroughs.
 description=[*] Enable or disable death by old age and set the minimum age at which it can happen.
 description=[*] Choose whether traits (good & bad) affect the chance of dying of old age.
 description=[*] Set when gray hair, short-sightedness or hearing loss appear, or disable them.
@@ -54,8 +54,9 @@ description=TIHYD is designed for compatibility and can even interact with other
 description=
 description=Mods that can enhance the experience:
 description=[list]
-description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809]Spongie's Character Customisation[/url] - Allows you to make the character face/body look older during creation.
-description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809]This Is Your Life[/url] - Gives life some meaning, before you age to death.
+description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2753086629]Surviving Through Seasons[/url] - Shortens seasons for multi-year playthroughs. Manually adjust [i]Days per year[/i] in the TIHYD sandbox settings to match. [b]Highly recommended![/b]
+description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3414634809]Spongie's Character Customisation[/url] - Allows you to make your character's face and body look older during creation.
+description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3773911887]This Is Your Life[/url] - Gives life some meaning, before you age to death.
 description=[/list]
 description=
 description=Mods with built-in integration:
@@ -77,11 +78,11 @@ description=Yes, you can. Installing on an existing save will give your characte
 description=
 description=[b]Does this work in multiplayer?[/b]
 description=
-description=This mod has not been tested for multiplayer with B42. It should work but I would appreciate it if you could test it and report back so I can update this section.
+description=This mod has not been tested for multiplayer with B42. It should work, but I would appreciate it if you could test it and report back so I can update this section.
 description=
 description=[b]How do I set my starting age?[/b]
 description=
-description=During character creation there will be a new [b]Age[/b] field which lets you choose the starting age for your character.
+description=During character creation, there will be a new [b]Age[/b] field which lets you choose the starting age for your character.
 description=
 description=[b]How can I see my current age while playing?[/b]
 description=
@@ -93,13 +94,13 @@ description=Death is essentially instant once your character rolls the chance to
 description=
 description=[b]What is the performance hit?[/b]
 description=
-description=Aside from the initialization there is only a script running [b]once per in-game day[/b], so your performance will remain untouched.
+description=Aside from the initialization, there is only a script running [b]once per in-game day[/b], so your performance will remain untouched.
 description=
 description=[b]Can I dye my hair after it turns gray/white?[/b]
 description=
-description=Of course, just remember that much like the way your hair grows back in vanilla so will it regain its natural gray/white color after some time.
+description=Of course! Just remember that, like hair growing back in vanilla, it will regain its natural gray/white color after some time.
 description=
-description=[b]Are these actual questions that people made or did you just write them all yourself?[/b]
+description=[b]Are these actual questions that people asked or did you just write them all yourself?[/b]
 description=
 description=Yes.
 description=
@@ -109,14 +110,13 @@ description=[h1]Bugs & Ideas[/h1]
 description=
 description=If you find a bug or have a feature idea, [b]don't just leave it in the comments[/b]. Comments aren't the right place for that, and messages left there often get lost or repeated even after I've addressed them.
 description=
-description=For bug reports and suggestions you should instead open a discussion [url=https://steamcommunity.com/sharedfiles/filedetails/discussions/3013368173]here[/url] or create an issue on [url=https://github.com/dy0gu/tihyd/issues]GitHub[/url].
+description=For bug reports and suggestions, you should instead open a discussion [url=https://steamcommunity.com/sharedfiles/filedetails/discussions/3013368173]here[/url] or create an issue on [url=https://github.com/dy0gu/tihyd/issues]GitHub[/url].
 description=
 description=▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 description=
 description=[h1]Permission[/h1]
 description=
-description=All the code is under the terms of the open-source license in the git repository, but I
-would appreciate it if you give credit back to me anywhere you can.
+description=All the code is under the terms of the open-source license in the git repository, but I would appreciate it if you give credit back to me anywhere you can.
 description=
 description=▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂▂
 description=

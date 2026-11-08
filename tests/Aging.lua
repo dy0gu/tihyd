@@ -53,7 +53,7 @@ rawset(TIHYD, "tryDeath", function(_, value)
 end)
 
 TIHYD.initializePlayer(0, player)
-assert(configLoads == 1 and visualUpdates == 1 and traitUpdates == 1, "Loading must refresh configuration and transitions")
+assert(configLoads == 0 and visualUpdates == 1 and traitUpdates == 1, "Initialization must use loaded configuration and apply transitions")
 getNumActivePlayers = function() return 1 end
 getSpecificPlayer = function() return player end
 TIHYD.processAllPlayersDaily()
@@ -69,6 +69,6 @@ TIHYD.processAllPlayersDaily()
 getSpecificPlayer = function() return nil end
 TIHYD.initializePlayer(0, nil)
 TIHYD.processAllPlayersDaily()
-assert(configLoads == 1 and declineChecks == 3 and deathChecks == 3, "Dead and missing players must be skipped")
+assert(configLoads == 0 and declineChecks == 3 and deathChecks == 3, "Dead and missing players must be skipped")
 
 print("Aging tests passed")

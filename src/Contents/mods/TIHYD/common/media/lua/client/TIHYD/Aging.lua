@@ -21,7 +21,6 @@ function TIHYD.initializePlayer(playerNum, player)
     if not player or player:isDead() then
         return
     end
-    TIHYD.loadConfig()
     local age = TIHYD.updatePlayerAge(player)
     TIHYD.processAgeTransition(player, age)
     TIHYD.log("Initialized player " .. tostring(playerNum) .. " at age " .. tostring(age))
