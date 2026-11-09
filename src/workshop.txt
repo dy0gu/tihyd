@@ -52,6 +52,15 @@ description=[h1]Compatibility & Extensibility[/h1]
 description=
 description=TIHYD is designed for compatibility and can even interact with other mods. [b]Place it as early as possible in your load order.[/b]
 description=
+description=Mods that are imcompatible:
+description=[list]
+description=[*] [url=https://steamcommunity.com/workshop/filedetails/?id=3589548354]Improved Hair Menu Build 42[/url] - Functional, but hides the age selection field in character creation, so your character spawns with a random age.
+description=
+description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3488600400]TwisTonFire - Better Character Info[/url] - Functional, but hides your current age on the character info panel, so you have to find another way to track it.
+description=[/list]
+description=
+description=If you find an incompatible mod, please report it in the discussions or on GitHub using the links below.
+description=
 description=Mods that can enhance the experience:
 description=[list]
 description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2753086629]Surviving Through Seasons[/url] - Shortens seasons for multi-year playthroughs.
