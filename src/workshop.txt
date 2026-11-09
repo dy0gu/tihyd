@@ -59,7 +59,7 @@ description=
 description=[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3488600400]TwisTonFire - Better Character Info[/url] - Functional, but hides your current age on the character info panel, so you have to find another way to track it.
 description=[/list]
 description=
-description=If you find an incompatible mod, please report it in the discussions or on GitHub using the links below.
+description=If you find an incompatible mod, please report it.
 description=
 description=Mods that can enhance the experience:
 description=[list]
